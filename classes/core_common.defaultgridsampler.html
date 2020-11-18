@@ -1,0 +1,375 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DefaultGridSampler | @zxing/library - v0.18.3</title>
+	<meta name="description" content="Documentation for @zxing/library - v0.18.3">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@zxing/library - v0.18.3</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/core_common.html">core/common</a>
+				</li>
+				<li>
+					<a href="core_common.defaultgridsampler.html">DefaultGridSampler</a>
+				</li>
+			</ul>
+			<h1>Class DefaultGridSampler</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<dl class="tsd-comment-tags">
+						<dt>author</dt>
+						<dd><p>Sean Owen</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="core_common.gridsampler.html" class="tsd-signature-type">GridSampler</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">DefaultGridSampler</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="core_common.defaultgridsampler.html#samplegrid" class="tsd-kind-icon">sample<wbr>Grid</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="core_common.defaultgridsampler.html#samplegridwithtransform" class="tsd-kind-icon">sample<wbr>Grid<wbr>With<wbr>Transform</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static"><a href="core_common.defaultgridsampler.html#checkandnudgepoints" class="tsd-kind-icon">check<wbr>And<wbr>Nudge<wbr>Points</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="samplegrid" class="tsd-anchor"></a>
+					<h3>sample<wbr>Grid</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">sample<wbr>Grid<span class="tsd-signature-symbol">(</span>image<span class="tsd-signature-symbol">: </span><a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a>, dimensionX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, dimensionY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, p1ToX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, p1ToY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, p2ToX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, p2ToY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, p3ToX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, p3ToY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, p4ToX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, p4ToY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, p1FromX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, p1FromY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, p2FromX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, p2FromY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, p3FromX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, p3FromY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, p4FromX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, p4FromY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="core_common.gridsampler.html">GridSampler</a>.<a href="core_common.gridsampler.html#samplegrid">sampleGrid</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/common/DefaultGridSampler.ts#L33">src/core/common/DefaultGridSampler.ts:33</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>image: <a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></h5>
+								</li>
+								<li>
+									<h5>dimensionX: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>dimensionY: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>p1ToX: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>p1ToY: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>p2ToX: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>p2ToY: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>p3ToX: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>p3ToY: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>p4ToX: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>p4ToY: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>p1FromX: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>p1FromY: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>p2FromX: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>p2FromY: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>p3FromX: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>p3FromY: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>p4FromX: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>p4FromY: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="samplegridwithtransform" class="tsd-anchor"></a>
+					<h3>sample<wbr>Grid<wbr>With<wbr>Transform</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">sample<wbr>Grid<wbr>With<wbr>Transform<span class="tsd-signature-symbol">(</span>image<span class="tsd-signature-symbol">: </span><a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a>, dimensionX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, dimensionY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, transform<span class="tsd-signature-symbol">: </span><a href="core_common.perspectivetransform.html" class="tsd-signature-type">PerspectiveTransform</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="core_common.gridsampler.html">GridSampler</a>.<a href="core_common.gridsampler.html#samplegridwithtransform">sampleGridWithTransform</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/common/DefaultGridSampler.ts#L53">src/core/common/DefaultGridSampler.ts:53</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>image: <a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></h5>
+								</li>
+								<li>
+									<h5>dimensionX: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>dimensionY: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>transform: <a href="core_common.perspectivetransform.html" class="tsd-signature-type">PerspectiveTransform</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static">
+					<a name="checkandnudgepoints" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagProtected">Protected</span> check<wbr>And<wbr>Nudge<wbr>Points</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">check<wbr>And<wbr>Nudge<wbr>Points<span class="tsd-signature-symbol">(</span>image<span class="tsd-signature-symbol">: </span><a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a>, points<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Float32Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="core_common.gridsampler.html">GridSampler</a>.<a href="core_common.gridsampler.html#checkandnudgepoints">checkAndNudgePoints</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/common/GridSampler.ts#L106">src/core/common/GridSampler.ts:106</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks a set of points that have been transformed to sample points on an image against
+									the image's dimensions to see if the point are even within the image.</p>
+								</div>
+								<p>This method will actually "nudge" the endpoints back onto the image if they are found to be
+									barely (less than 1 pixel) off the image. This accounts for imperfect detection of finder
+								patterns in an image where the QR Code runs all the way to the image border.</p>
+								<p>For efficiency, the method will check points from either end of the line until one is found
+								to be within the image. Because the set of points are assumed to be linear, this is valid.</p>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>NotFoundException if an endpoint is lies outside the image boundaries</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>image: <a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>image into which the points should map</p>
+									</div>
+								</li>
+								<li>
+									<h5>points: <span class="tsd-signature-type">Float32Array</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>actual points in x1,y1,...,xn,yn form</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/core_common.html">core/common</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-module">
+						<a href="../enums/core_common.charactersetvalueidentifiers.html" class="tsd-kind-icon">Character<wbr>Set<wbr>Value<wbr>Identifiers</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_common.bitarray.html" class="tsd-kind-icon">Bit<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_common.bitmatrix.html" class="tsd-kind-icon">Bit<wbr>Matrix</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_common.bitsource.html" class="tsd-kind-icon">Bit<wbr>Source</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_common.characterseteci.html" class="tsd-kind-icon">Character<wbr>SetECI</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_common.decoderresult.html" class="tsd-kind-icon">Decoder<wbr>Result</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="core_common.defaultgridsampler.html" class="tsd-kind-icon">Default<wbr>Grid<wbr>Sampler</a>
+						<ul>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="core_common.defaultgridsampler.html#samplegrid" class="tsd-kind-icon">sample<wbr>Grid</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="core_common.defaultgridsampler.html#samplegridwithtransform" class="tsd-kind-icon">sample<wbr>Grid<wbr>With<wbr>Transform</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static">
+								<a href="core_common.defaultgridsampler.html#checkandnudgepoints" class="tsd-kind-icon">check<wbr>And<wbr>Nudge<wbr>Points</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_common.detectorresult.html" class="tsd-kind-icon">Detector<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_common.globalhistogrambinarizer.html" class="tsd-kind-icon">Global<wbr>Histogram<wbr>Binarizer</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_common.gridsampler.html" class="tsd-kind-icon">Grid<wbr>Sampler</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_common.gridsamplerinstance.html" class="tsd-kind-icon">Grid<wbr>Sampler<wbr>Instance</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_common.hybridbinarizer.html" class="tsd-kind-icon">Hybrid<wbr>Binarizer</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_common.perspectivetransform.html" class="tsd-kind-icon">Perspective<wbr>Transform</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_common.stringutils.html" class="tsd-kind-icon">String<wbr>Utils</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

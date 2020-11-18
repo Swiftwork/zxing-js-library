@@ -1,0 +1,509 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>@zxing/library - v0.18.3</title>
+	<meta name="description" content="Documentation for @zxing/library - v0.18.3">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">@zxing/library - v0.18.3</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1>@zxing/library - v0.18.3</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<p><a href="https://github.com/zxing/zxing"><img align="right" src="https://raw.github.com/wiki/zxing/zxing/zxing-logo.png"/></a></p>
+				<a href="#zxing" id="zxing" style="color: inherit; text-decoration: none;">
+					<h1>ZXing</h1>
+				</a>
+				<a href="#runs-on-your-favorite-ecmascript-ecosystem" id="runs-on-your-favorite-ecmascript-ecosystem" style="color: inherit; text-decoration: none;">
+					<h3>Runs on your favorite ECMAScript ecosystem</h3>
+				</a>
+				<blockquote>
+					<p>If it doesn&#39;t, we gonna make it.</p>
+				</blockquote>
+				<a href="#what-is-zxing" id="what-is-zxing" style="color: inherit; text-decoration: none;">
+					<h2>What is ZXing?</h2>
+				</a>
+				<blockquote>
+					<p><a href="https://github.com/zxing/zxing">ZXing</a> (&quot;zebra crossing&quot;) is an open-source, multi-format 1D/2D barcode image processing library implemented in Java, with ports to other languages.</p>
+				</blockquote>
+				<a href="#supported-formats" id="supported-formats" style="color: inherit; text-decoration: none;">
+					<h2>Supported Formats</h2>
+				</a>
+				<blockquote>
+					<p>See <a href="https://github.com/zxing-js/library/projects">Projects</a> and <a href="https://github.com/zxing-js/library/milestones">Milestones</a> for what is currently done and what&#39;s planned next. 👀</p>
+				</blockquote>
+				<table>
+					<thead>
+						<tr>
+							<th>1D product</th>
+							<th>1D industrial</th>
+							<th>2D</th>
+						</tr>
+					</thead>
+					<tbody><tr>
+							<td><del>UPC-A</del></td>
+							<td>Code 39</td>
+							<td>QR Code</td>
+						</tr>
+						<tr>
+							<td><del>UPC-E</del></td>
+							<td><del>Code 93</del></td>
+							<td>Data Matrix</td>
+						</tr>
+						<tr>
+							<td>EAN-8</td>
+							<td>Code 128</td>
+							<td><del>Aztec</del> *</td>
+						</tr>
+						<tr>
+							<td>EAN-13</td>
+							<td><del>Codabar</del></td>
+							<td>PDF 417</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>ITF</td>
+							<td><del>MaxiCode</del></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>RSS-14</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><del>RSS-Expanded</del> *</td>
+							<td></td>
+						</tr>
+				</tbody></table>
+				<p><strong>*</strong> In progress, may have open PR.</p>
+				<a href="#status" id="status" style="color: inherit; text-decoration: none;">
+					<h2>Status</h2>
+				</a>
+				<p><a href="https://travis-ci.org/zxing-js/library"><img src="https://travis-ci.org/zxing-js/library.svg?branch=master" alt="Build Status"></a>
+					<img src="https://david-dm.org/zxing-js/library.svg" alt="Dependencies">
+				<a href="https://greenkeeper.io/"><img src="https://badges.greenkeeper.io/zxing-js/library.svg" alt="Greenkeeper badge"></a></p>
+				<p><a href="https://www.npmjs.com/package/@zxing/library"><img src="https://img.shields.io/npm/v/@zxing/library.svg?&label=npm" alt="NPM version"></a>
+					<a href="https://www.npmjs.com/package/@zxing/library"><img src="https://img.shields.io/npm/dm/localeval.svg" alt="npm"></a>
+					<a href="https://github.com/zxing-js/library/graphs/contributors"><img src="https://img.shields.io/github/contributors/zxing-js/library.svg" alt="Contributors"></a>
+				<a href="https://github.com/zxing-js/library/compare/master...develop"><img src="https://img.shields.io/github/commits-since/zxing-js/library/master.svg?label=commits%20to%20deploy" alt="Commits to deploy"></a></p>
+				<p><a href="https://www.codacy.com/app/zxing/library?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=zxing-js/library&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/9aaa5317fcc740af9f25b3c7f832aa1d" alt="Codacy Badge"></a>
+					<a href="https://codeclimate.com/github/zxing-js/library/maintainability"><img src="https://api.codeclimate.com/v1/badges/2b9c6ae92412ee8e15a9/maintainability" alt="Maintainability"></a>
+					<a href="https://codeclimate.com/github/zxing-js/library/test_coverage"><img src="https://api.codeclimate.com/v1/badges/2b9c6ae92412ee8e15a9/test_coverage" alt="Test Coverage"></a>
+				<a href="https://bettercodehub.com/"><img src="https://bettercodehub.com/edge/badge/zxing-js/library?branch=master" alt="BCH compliance"></a></p>
+				<a href="#demo" id="demo" style="color: inherit; text-decoration: none;">
+					<h2>Demo</h2>
+				</a>
+				<p>See <a href="https://zxing-js.github.io/library/">Live Preview</a> in browser.</p>
+				<p><strong>Note:</strong> All the examples are using ES6, be sure is supported in your browser or modify as needed, Chrome recommended.</p>
+				<a href="#installation" id="installation" style="color: inherit; text-decoration: none;">
+					<h2>Installation</h2>
+				</a>
+				<p><code>npm i @zxing/library --save</code></p>
+				<p>or</p>
+				<p><code>yarn add @zxing/library</code></p>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h2>Usage</h2>
+				</a>
+				<a href="#use-on-browser-with-es6-modules" id="use-on-browser-with-es6-modules" style="color: inherit; text-decoration: none;">
+					<h3>Use on browser with ES6 modules:</h3>
+				</a>
+				<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;module&quot;</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">import</span> { BrowserQRCodeReader } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;@zxing/library&#x27;</span>;
+
+  <span class="hljs-keyword">const</span> codeReader = <span class="hljs-keyword">new</span> BrowserQRCodeReader();
+  <span class="hljs-keyword">const</span> img = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&#x27;img&#x27;</span>);
+
+  <span class="hljs-keyword">try</span> {
+      <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> codeReader.decodeFromImage(img);
+  } <span class="hljs-keyword">catch</span> (err) {
+      <span class="hljs-built_in">console</span>.error(err);
+  }
+
+  <span class="hljs-built_in">console</span>.log(result);
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
+				<a href="#or-asynchronously" id="or-asynchronously" style="color: inherit; text-decoration: none;">
+					<h4>Or asynchronously:</h4>
+				</a>
+				<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;module&quot;</span>&gt;</span><span class="javascript">
+  <span class="hljs-keyword">import</span>(<span class="hljs-string">&#x27;@zxing/library&#x27;</span>).then({ BrowserQRCodeReader } =&gt; {
+
+    <span class="hljs-keyword">const</span> codeReader = <span class="hljs-keyword">new</span> BrowserQRCodeReader();
+    <span class="hljs-keyword">const</span> img = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&#x27;img&#x27;</span>);
+
+    <span class="hljs-keyword">try</span> {
+        <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> codeReader.decodeFromImage(img);
+    } <span class="hljs-keyword">catch</span> (err) {
+        <span class="hljs-built_in">console</span>.error(err);
+    }
+
+    <span class="hljs-built_in">console</span>.log(result);
+
+  });
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
+				<a href="#use-on-browser-with-amd" id="use-on-browser-with-amd" style="color: inherit; text-decoration: none;">
+					<h3>Use on browser with AMD:</h3>
+				</a>
+				<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://unpkg.com/requirejs&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span>&gt;</span><span class="javascript">
+  <span class="hljs-built_in">require</span>([<span class="hljs-string">&#x27;@zxing/library&#x27;</span>], <span class="hljs-function"><span class="hljs-params">ZXing</span> =&gt;</span> {
+    <span class="hljs-keyword">const</span> codeReader = <span class="hljs-keyword">new</span> ZXing.BrowserQRCodeReader();
+    <span class="hljs-keyword">const</span> img = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&#x27;img&#x27;</span>);
+
+    <span class="hljs-keyword">try</span> {
+        <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> codeReader.decodeFromImage(img);
+    } <span class="hljs-keyword">catch</span> (err) {
+        <span class="hljs-built_in">console</span>.error(err);
+    }
+
+    <span class="hljs-built_in">console</span>.log(result);
+  });
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
+				<a href="#use-on-browser-with-umd" id="use-on-browser-with-umd" style="color: inherit; text-decoration: none;">
+					<h3>Use on browser with UMD:</h3>
+				</a>
+				<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://unpkg.com/@zxing/library@latest&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span>&gt;</span><span class="javascript">
+  <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">&#x27;load&#x27;</span>, <span class="hljs-function">() =&gt;</span> {
+    <span class="hljs-keyword">const</span> codeReader = <span class="hljs-keyword">new</span> ZXing.BrowserQRCodeReader();
+    <span class="hljs-keyword">const</span> img = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&#x27;img&#x27;</span>);
+
+    <span class="hljs-keyword">try</span> {
+        <span class="hljs-keyword">const</span> result = <span class="hljs-keyword">await</span> codeReader.decodeFromImage(img);
+    } <span class="hljs-keyword">catch</span> (err) {
+        <span class="hljs-built_in">console</span>.error(err);
+    }
+
+    <span class="hljs-built_in">console</span>.log(result);
+  });
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
+				<a href="#use-outside-the-browser-with-commonjs" id="use-outside-the-browser-with-commonjs" style="color: inherit; text-decoration: none;">
+					<h3>Use outside the browser with CommonJS:</h3>
+				</a>
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> { MultiFormatReader, BarcodeFormat } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;@zxing/library/esm5&#x27;</span>); <span class="hljs-comment">// use this path since v0.5.1</span>
+
+<span class="hljs-keyword">const</span> hints = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Map</span>();
+<span class="hljs-keyword">const</span> formats = [BarcodeFormat.QR_CODE, BarcodeFormat.DATA_MATRIX<span class="hljs-comment">/*, ...*/</span>];
+
+hints.set(DecodeHintType.POSSIBLE_FORMATS, formats);
+
+<span class="hljs-keyword">const</span> reader = <span class="hljs-keyword">new</span> MultiFormatReader();
+
+reader.setHints(hints);
+
+<span class="hljs-keyword">const</span> luminanceSource = <span class="hljs-keyword">new</span> RGBLuminanceSource(imgByteArray, imgWidth, imgHeight);
+<span class="hljs-keyword">const</span> binaryBitmap = <span class="hljs-keyword">new</span> BinaryBitmap(<span class="hljs-keyword">new</span> HybridBinarizer(luminanceSource));
+
+reader.decode(binaryBitmap);</code></pre>
+				<a href="#browser-support" id="browser-support" style="color: inherit; text-decoration: none;">
+					<h2>Browser Support</h2>
+				</a>
+				<p>The browser layer is using the <a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices">MediaDevices</a> web API which is not supported by older browsers.</p>
+				<p><em>You can use external polyfills like <a href="https://github.com/webrtc/adapter">WebRTC adapter</a> to increase browser compatibility.</em></p>
+				<p>Also, note that the library is using the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray"><code>TypedArray</code></a> (<code>Int32Array</code>, <code>Uint8ClampedArray</code>, etc.) which are not available in older browsers (e.g. Android 4 default browser).</p>
+				<p><em>You can use <a href="https://github.com/zloirock/core-js">core-js</a> to add support to these browsers.</em></p>
+				<p>In the PDF 417 decoder recent addition, the library now makes use of the new <code>BigInt</code> type, which <a href="https://caniuse.com/#feat=bigint">is not supported by all browsers</a> as well. There&#39;s no way to polyfill that and ponyfill libraries are <strong>way to big</strong>, but even if PDF 417 decoding relies on <code>BigInt</code> the rest of the library shall work ok in browsers that doesn&#39;t support it.</p>
+				<p><em>There&#39;s no polyfills for <code>BigInt</code> in the way it&#39;s coded in here.</em></p>
+				<a href="#scanning-from-video-camera" id="scanning-from-video-camera" style="color: inherit; text-decoration: none;">
+					<h3>Scanning from Video Camera</h3>
+				</a>
+				<p>To display the input from the video camera you will need to add a video element in the HTML page:</p>
+				<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">video</span>
+  <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;video&quot;</span>
+  <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;300&quot;</span>
+  <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;200&quot;</span>
+  <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;border: 1px solid gray&quot;</span>
+&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">video</span>&gt;</span></code></pre>
+				<p>To start decoding, first obtain a list of video input devices with:</p>
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> codeReader = <span class="hljs-keyword">new</span> ZXing.BrowserQRCodeReader();
+
+codeReader
+  .listVideoInputDevices()
+  .then(<span class="hljs-function"><span class="hljs-params">videoInputDevices</span> =&gt;</span> {
+    videoInputDevices.forEach(<span class="hljs-function"><span class="hljs-params">device</span> =&gt;</span>
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`<span class="hljs-subst">${device.label}</span>, <span class="hljs-subst">${device.deviceId}</span>`</span>)
+    );
+  })
+  .catch(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> <span class="hljs-built_in">console</span>.error(err));</code></pre>
+				<p>If there is just one input device you can use the first <code>deviceId</code> and the video element id (in the example below is also &#39;video&#39;) to decode:</p>
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> firstDeviceId = videoInputDevices[<span class="hljs-number">0</span>].deviceId;
+
+codeReader
+  .decodeOnceFromVideoDevice(firstDeviceId, <span class="hljs-string">&#x27;video&#x27;</span>)
+  .then(<span class="hljs-function"><span class="hljs-params">result</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(result.text))
+  .catch(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> <span class="hljs-built_in">console</span>.error(err));</code></pre>
+				<p>If there are more input devices then you will need to chose one for <code>codeReader.decodeOnceFromVideoDevice</code> device id parameter.</p>
+				<p>You can also provide <code>undefined</code> for the device id parameter in which case the library will automatically choose the camera, preferring the main (environment facing) camera if more are available:</p>
+				<pre><code class="language-javascript">codeReader
+  .decodeOnceFromVideoDevice(<span class="hljs-literal">undefined</span>, <span class="hljs-string">&#x27;video&#x27;</span>)
+  .then(<span class="hljs-function"><span class="hljs-params">result</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(result.text))
+  .catch(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> <span class="hljs-built_in">console</span>.error(err));</code></pre>
+				<a href="#scanning-from-video-file" id="scanning-from-video-file" style="color: inherit; text-decoration: none;">
+					<h3>Scanning from Video File</h3>
+				</a>
+				<p>Similar as above you can use a video element in the HTML page:</p>
+				<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">video</span>
+  <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;video&quot;</span>
+  <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;300&quot;</span>
+  <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;200&quot;</span>
+  <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;border: 1px solid gray&quot;</span>
+&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">video</span>&gt;</span></code></pre>
+				<p>And to decode the video from an url:</p>
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> codeReader = <span class="hljs-keyword">new</span> ZXing.BrowserQRCodeReader();
+<span class="hljs-keyword">const</span> videoSrc = <span class="hljs-string">&#x27;your url to a video&#x27;</span>;
+
+codeReader
+  .decodeFromVideo(<span class="hljs-string">&#x27;video&#x27;</span>, videoSrc)
+  .then(<span class="hljs-function"><span class="hljs-params">result</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(result.text))
+  .catch(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> <span class="hljs-built_in">console</span>.error(err));</code></pre>
+				<p>You can also decode the video url without showing it in the page, in this case no <code>video</code> element is needed in HTML.</p>
+				<pre><code class="language-javascript">codeReader
+  .decodeFromVideoUrl(videoUrl)
+  .then(<span class="hljs-function"><span class="hljs-params">result</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(result.text))
+  .catch(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> <span class="hljs-built_in">console</span>.error(err));
+
+<span class="hljs-comment">// or alternatively</span>
+
+codeReader
+  .decodeFromVideo(<span class="hljs-literal">null</span>, videoUrl)
+  .then(<span class="hljs-function"><span class="hljs-params">result</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(result.text))
+  .catch(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> <span class="hljs-built_in">console</span>.error(err));</code></pre>
+				<a href="#scanning-from-image" id="scanning-from-image" style="color: inherit; text-decoration: none;">
+					<h3>Scanning from Image</h3>
+				</a>
+				<p>Similar as above you can use a img element in the HTML page (with src attribute set):</p>
+				<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span>
+  <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;img&quot;</span>
+  <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;qrcode-image.png&quot;</span>
+  <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;200&quot;</span>
+  <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;300&quot;</span>
+  <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;border: 1px solid gray&quot;</span>
+/&gt;</span></code></pre>
+				<p>And to decode the image:</p>
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> codeReader = <span class="hljs-keyword">new</span> ZXing.BrowserQRCodeReader();
+<span class="hljs-keyword">const</span> img = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&#x27;img&#x27;</span>);
+
+codeReader
+  .decodeFromImage(img)
+  .then(<span class="hljs-function"><span class="hljs-params">result</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(result.text))
+  .catch(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> <span class="hljs-built_in">console</span>.error(err));</code></pre>
+				<p>You can also decode the image url without showing it in the page, in this case no <code>img</code> element is needed in HTML:</p>
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> imgSrc = <span class="hljs-string">&#x27;url to image&#x27;</span>;
+
+codeReader
+  .decodeFromImage(<span class="hljs-literal">undefined</span>, imgSrc)
+  .then(<span class="hljs-function"><span class="hljs-params">result</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(result.text))
+  .catch(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> <span class="hljs-built_in">console</span>.error(err));</code></pre>
+				<p>Or decode the image url directly from an url, with an <code>img</code> element in page (notice no <code>src</code> attribute is set for <code>img</code> element):</p>
+				<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">img</span>
+  <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;img-to-decode&quot;</span>
+  <span class="hljs-attr">width</span>=<span class="hljs-string">&quot;200&quot;</span>
+  <span class="hljs-attr">height</span>=<span class="hljs-string">&quot;300&quot;</span>
+  <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;border: 1px solid gray&quot;</span>
+/&gt;</span></code></pre>
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> imgSrc = <span class="hljs-string">&#x27;url to image&#x27;</span>;
+<span class="hljs-keyword">const</span> imgDomId = <span class="hljs-string">&#x27;img-to-decode&#x27;</span>;
+
+codeReader
+  .decodeFromImage(imgDomId, imgSrc)
+  .then(<span class="hljs-function"><span class="hljs-params">result</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(result.text))
+  .catch(<span class="hljs-function"><span class="hljs-params">err</span> =&gt;</span> <span class="hljs-built_in">console</span>.error(err));</code></pre>
+				<a href="#barcode-generation" id="barcode-generation" style="color: inherit; text-decoration: none;">
+					<h2>Barcode generation</h2>
+				</a>
+				<p>To generate a QR Code SVG image include &#39;zxing.qrcodewriter.min.js&#39; from <code>build/vanillajs</code>. You will need to include an element where the SVG element will be appended:</p>
+				<pre><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;result&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+				<p>And then:</p>
+				<pre><code class="language-javascript"><span class="hljs-keyword">const</span> codeWriter = <span class="hljs-keyword">new</span> ZXing.BrowserQRCodeSvgWriter();
+<span class="hljs-comment">// you can get a SVG element.</span>
+<span class="hljs-keyword">const</span> svgElement = codeWriter.write(input, <span class="hljs-number">300</span>, <span class="hljs-number">300</span>);
+<span class="hljs-comment">// or render it directly to DOM.</span>
+codeWriter.writeToDom(<span class="hljs-string">&#x27;#result&#x27;</span>, input, <span class="hljs-number">300</span>, <span class="hljs-number">300</span>);</code></pre>
+				<a href="#contributing" id="contributing" style="color: inherit; text-decoration: none;">
+					<h2>Contributing</h2>
+				</a>
+				<p>See <a href="https://github.com/zxing-js/library/blob/master/CONTRIBUTING.md">Contributing Guide</a> for information regarding porting approach and reasoning behind some of the approaches taken.</p>
+				<a href="#contributors" id="contributors" style="color: inherit; text-decoration: none;">
+					<h2>Contributors</h2>
+				</a>
+				<p>Special thanks to all the contributors who have contributed for this project. We heartly thankful to you all.</p>
+				<p><a href="https://sourcerer.io/fame/odahcam/zxing-js/library/links/0"><img src="https://sourcerer.io/fame/odahcam/zxing-js/library/images/0" alt=""></a><a href="https://sourcerer.io/fame/odahcam/zxing-js/library/links/1"><img src="https://sourcerer.io/fame/odahcam/zxing-js/library/images/1" alt=""></a><a href="https://sourcerer.io/fame/odahcam/zxing-js/library/links/2"><img src="https://sourcerer.io/fame/odahcam/zxing-js/library/images/2" alt=""></a><a href="https://sourcerer.io/fame/odahcam/zxing-js/library/links/3"><img src="https://sourcerer.io/fame/odahcam/zxing-js/library/images/3" alt=""></a><a href="https://sourcerer.io/fame/odahcam/zxing-js/library/links/4"><img src="https://sourcerer.io/fame/odahcam/zxing-js/library/images/4" alt=""></a><a href="https://sourcerer.io/fame/odahcam/zxing-js/library/links/5"><img src="https://sourcerer.io/fame/odahcam/zxing-js/library/images/5" alt=""></a><a href="https://sourcerer.io/fame/odahcam/zxing-js/library/links/6"><img src="https://sourcerer.io/fame/odahcam/zxing-js/library/images/6" alt=""></a><a href="https://sourcerer.io/fame/odahcam/zxing-js/library/links/7"><img src="https://sourcerer.io/fame/odahcam/zxing-js/library/images/7" alt=""></a></p>
+				<p>And a special thanks to <a href="https://github.com/aleris">@aleris</a> who created the project itself and made available the initial QR code port.</p>
+				<hr>
+				<p><a href="http://lunagao.github.io/BlessYourCodeTag/"><img src="https://cdn.rawgit.com/LunaGao/BlessYourCodeTag/master/tags/alpaca.svg" alt="Bless"></a></p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module tsd-is-not-exported">
+						<a href="modules/reflection-6167.html">&lt;em&gt;<wbr>Module&lt;/em&gt;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/core.html">core</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/core_aztec.html">core/aztec</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/core_aztec_decoder.html">core/aztec/decoder</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/core_aztec_detector.html">core/aztec/detector</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/core_aztec_encoder.html">core/aztec/encoder</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/core_common.html">core/common</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/core_common_detector.html">core/common/detector</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/core_common_reedsolomon.html">core/common/reedsolomon</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/core_datamatrix.html">core/datamatrix</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/core_datamatrix_decoder.html">core/datamatrix/decoder</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/core_datamatrix_detector.html">core/datamatrix/detector</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/core_multi.html">core/multi</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/core_oned.html">core/oned</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/core_oned_rss.html">core/oned/rss</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/core_oned_rss_expanded.html">core/oned/rss/expanded</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/core_oned_rss_expanded_decoders.html">core/oned/rss/expanded/decoders</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/core_pdf417.html">core/pdf417</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/core_pdf417_decoder.html">core/pdf417/decoder</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/core_pdf417_decoder_ec.html">core/pdf417/decoder/ec</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/core_pdf417_detector.html">core/pdf417/detector</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/core_qrcode.html">core/qrcode</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/core_qrcode_decoder.html">core/qrcode/decoder</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/core_qrcode_detector.html">core/qrcode/detector</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/core_qrcode_encoder.html">core/qrcode/encoder</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/core_util.html">core/util</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

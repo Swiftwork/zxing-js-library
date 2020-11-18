@@ -1,0 +1,378 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Reader | @zxing/library - v0.18.3</title>
+	<meta name="description" content="Documentation for @zxing/library - v0.18.3">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@zxing/library - v0.18.3</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/core.html">core</a>
+				</li>
+				<li>
+					<a href="core.reader.html">Reader</a>
+				</li>
+			</ul>
+			<h1>Interface Reader</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Implementations of this interface can decode an image of a barcode in some format into
+							the it: string encodes. For example, {@link com.google.zxing.qrcode.QRCodeReader} can
+							decode a QR code. The decoder may optionally receive hints from the caller which may help
+						it decode more quickly or accurately.</p>
+					</div>
+					<p>See <a href="../classes/core.multiformatreader.html">MultiFormatReader</a>, which attempts to determine what barcode
+					format is present within the image as well, and then decodes it accordingly.</p>
+					<dl class="tsd-comment-tags">
+						<dt>author</dt>
+						<dd><p>Sean Owen</p>
+						</dd>
+						<dt>author</dt>
+						<dd><p><a href="mailto:&#100;&#115;&#119;&#x69;&#x74;&#x6b;&#105;&#x6e;&#x40;&#x67;&#x6f;&#x6f;&#103;&#x6c;&#x65;&#x2e;&#x63;&#x6f;&#109;">&#100;&#115;&#119;&#x69;&#x74;&#x6b;&#105;&#x6e;&#x40;&#x67;&#x6f;&#x6f;&#103;&#x6c;&#x65;&#x2e;&#x63;&#x6f;&#109;</a> (Daniel Switkin)</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">Reader</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implemented by</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../classes/core_oned_rss.abstractrssreader.html" class="tsd-signature-type">AbstractRSSReader</a></li>
+					<li><a href="../classes/core_oned.abstractupceanreader.html" class="tsd-signature-type">AbstractUPCEANReader</a></li>
+					<li><a href="../classes/core_aztec.aztecreader.html" class="tsd-signature-type">AztecReader</a></li>
+					<li><a href="../classes/core_oned.code128reader.html" class="tsd-signature-type">Code128Reader</a></li>
+					<li><a href="../classes/core_oned.code39reader.html" class="tsd-signature-type">Code39Reader</a></li>
+					<li><a href="../classes/core_datamatrix.datamatrixreader.html" class="tsd-signature-type">DataMatrixReader</a></li>
+					<li><a href="../classes/core_oned.ean13reader.html" class="tsd-signature-type">EAN13Reader</a></li>
+					<li><a href="../classes/core_oned.ean8reader.html" class="tsd-signature-type">EAN8Reader</a></li>
+					<li><a href="../classes/core_oned.itfreader.html" class="tsd-signature-type">ITFReader</a></li>
+					<li><a href="../classes/core_oned.multiformatonedreader.html" class="tsd-signature-type">MultiFormatOneDReader</a></li>
+					<li><a href="../classes/core.multiformatreader.html" class="tsd-signature-type">MultiFormatReader</a></li>
+					<li><a href="../classes/core_oned.multiformatupceanreader.html" class="tsd-signature-type">MultiFormatUPCEANReader</a></li>
+					<li><a href="../classes/core_oned.onedreader.html" class="tsd-signature-type">OneDReader</a></li>
+					<li><a href="../classes/core_pdf417.pdf417reader.html" class="tsd-signature-type">PDF417Reader</a></li>
+					<li><a href="../classes/core_qrcode.qrcodereader.html" class="tsd-signature-type">QRCodeReader</a></li>
+					<li><a href="../classes/core_oned_rss.rss14reader.html" class="tsd-signature-type">RSS14Reader</a></li>
+					<li><a href="../classes/core_oned_rss_expanded.rssexpandedreader.html" class="tsd-signature-type">RSSExpandedReader</a></li>
+					<li><a href="../classes/core_oned.upcareader.html" class="tsd-signature-type">UPCAReader</a></li>
+					<li><a href="../classes/core_oned.upceanreader.html" class="tsd-signature-type">UPCEANReader</a></li>
+					<li><a href="../classes/core_oned.upcereader.html" class="tsd-signature-type">UPCEReader</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="core.reader.html#decode" class="tsd-kind-icon">decode</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="core.reader.html#reset" class="tsd-kind-icon">reset</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="decode" class="tsd-anchor"></a>
+					<h3>decode</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">decode<span class="tsd-signature-symbol">(</span>image<span class="tsd-signature-symbol">: </span><a href="../classes/core.binarybitmap.html" class="tsd-signature-type">BinaryBitmap</a>, hints<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../enums/core.decodehinttype.html" class="tsd-signature-type">DecodeHintType</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/core.result.html" class="tsd-signature-type">Result</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/Reader.ts#L68">src/core/Reader.ts:68</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Locates and decodes a barcode in some format within an image. This method also accepts
+									hints, each possibly associated to some data, which may help the implementation decode.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>NotFoundException if no potential barcode is found</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>ChecksumException if a potential barcode is found but does not pass its checksum</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>FormatException if a potential barcode is found but format is invalid</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>image: <a href="../classes/core.binarybitmap.html" class="tsd-signature-type">BinaryBitmap</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>image of barcode to decode</p>
+									</div>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> hints: <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../enums/core.decodehinttype.html" class="tsd-signature-type">DecodeHintType</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>passed as a {@link Map} from <a href="../enums/core.decodehinttype.html">DecodeHintType</a>
+											to arbitrary data. The
+											meaning of the data depends upon the hint type. The implementation may or may not do
+										anything with these hints.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/core.result.html" class="tsd-signature-type">Result</a></h4>
+							<p>which: string the barcode encodes</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="reset" class="tsd-anchor"></a>
+					<h3>reset</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">reset<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/Reader.ts#L74">src/core/Reader.ts:74</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Resets any internal state the implementation has after a decode, to prepare it
+									for reuse.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/core.html">core</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-module">
+						<a href="../enums/core.barcodeformat.html" class="tsd-kind-icon">Barcode<wbr>Format</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-module">
+						<a href="../enums/core.decodehinttype.html" class="tsd-kind-icon">Decode<wbr>Hint<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-module">
+						<a href="../enums/core.encodehinttype.html" class="tsd-kind-icon">Encode<wbr>Hint<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-enum tsd-parent-kind-module">
+						<a href="../enums/core.resultmetadatatype.html" class="tsd-kind-icon">Result<wbr>Metadata<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core.argumentexception.html" class="tsd-kind-icon">Argument<wbr>Exception</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core.arithmeticexception.html" class="tsd-kind-icon">Arithmetic<wbr>Exception</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core.arrayindexoutofboundsexception.html" class="tsd-kind-icon">Array<wbr>Index<wbr>Out<wbr>OfBounds<wbr>Exception</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core.binarizer.html" class="tsd-kind-icon">Binarizer</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core.binarybitmap.html" class="tsd-kind-icon">Binary<wbr>Bitmap</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core.checksumexception.html" class="tsd-kind-icon">Checksum<wbr>Exception</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core.dimension.html" class="tsd-kind-icon">Dimension</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core.exception.html" class="tsd-kind-icon">Exception</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core.formatexception.html" class="tsd-kind-icon">Format<wbr>Exception</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core.illegalargumentexception.html" class="tsd-kind-icon">Illegal<wbr>Argument<wbr>Exception</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core.illegalstateexception.html" class="tsd-kind-icon">Illegal<wbr>State<wbr>Exception</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core.indexoutofboundsexception.html" class="tsd-kind-icon">Index<wbr>Out<wbr>OfBounds<wbr>Exception</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core.invertedluminancesource.html" class="tsd-kind-icon">Inverted<wbr>Luminance<wbr>Source</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core.luminancesource.html" class="tsd-kind-icon">Luminance<wbr>Source</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core.multiformatreader.html" class="tsd-kind-icon">Multi<wbr>Format<wbr>Reader</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core.multiformatwriter.html" class="tsd-kind-icon">Multi<wbr>Format<wbr>Writer</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core.notfoundexception.html" class="tsd-kind-icon">Not<wbr>Found<wbr>Exception</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core.nullpointerexception.html" class="tsd-kind-icon">Null<wbr>Pointer<wbr>Exception</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core.outofmemoryerror.html" class="tsd-kind-icon">Out<wbr>OfMemory<wbr>Error</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core.planaryuvluminancesource.html" class="tsd-kind-icon">PlanarYUVLuminance<wbr>Source</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core.rgbluminancesource.html" class="tsd-kind-icon">RGBLuminance<wbr>Source</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core.readerexception.html" class="tsd-kind-icon">Reader<wbr>Exception</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core.reedsolomonexception.html" class="tsd-kind-icon">Reed<wbr>Solomon<wbr>Exception</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core.result.html" class="tsd-kind-icon">Result</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core.resultpoint.html" class="tsd-kind-icon">Result<wbr>Point</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core.unsupportedoperationexception.html" class="tsd-kind-icon">Unsupported<wbr>Operation<wbr>Exception</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core.writerexception.html" class="tsd-kind-icon">Writer<wbr>Exception</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-module">
+						<a href="core.reader.html" class="tsd-kind-icon">Reader</a>
+						<ul>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="core.reader.html#decode" class="tsd-kind-icon">decode</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="core.reader.html#reset" class="tsd-kind-icon">reset</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="core.resultpointcallback.html" class="tsd-kind-icon">Result<wbr>Point<wbr>Callback</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="core.writer.html" class="tsd-kind-icon">Writer</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

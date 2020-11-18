@@ -1,0 +1,996 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Detector | @zxing/library - v0.18.3</title>
+	<meta name="description" content="Documentation for @zxing/library - v0.18.3">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@zxing/library - v0.18.3</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/core_aztec_detector.html">core/aztec/detector</a>
+				</li>
+				<li>
+					<a href="core_aztec_detector.detector.html">Detector</a>
+				</li>
+			</ul>
+			<h1>Class Detector</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Encapsulates logic that can detect an Aztec Code in an image, even if the Aztec Code
+						is rotated or skewed, or partially obscured.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>author</dt>
+						<dd><p>David Olivier</p>
+						</dd>
+						<dt>author</dt>
+						<dd><p>Frank Yellin</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">Detector</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="core_aztec_detector.detector.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_aztec_detector.detector.html#expected_corner_bits" class="tsd-kind-icon">EXPECTED_<wbr>CORNER_<wbr>BITS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_aztec_detector.detector.html#compact" class="tsd-kind-icon">compact</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_aztec_detector.detector.html#image" class="tsd-kind-icon">image</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_aztec_detector.detector.html#nbcenterlayers" class="tsd-kind-icon">nb<wbr>Center<wbr>Layers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_aztec_detector.detector.html#nbdatablocks" class="tsd-kind-icon">nb<wbr>Data<wbr>Blocks</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_aztec_detector.detector.html#nblayers" class="tsd-kind-icon">nb<wbr>Layers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_aztec_detector.detector.html#shift" class="tsd-kind-icon">shift</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core_aztec_detector.detector.html#detect" class="tsd-kind-icon">detect</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core_aztec_detector.detector.html#detectmirror" class="tsd-kind-icon">detect<wbr>Mirror</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_aztec_detector.detector.html#distancepoint" class="tsd-kind-icon">distance<wbr>Point</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_aztec_detector.detector.html#distanceresultpoint" class="tsd-kind-icon">distance<wbr>Result<wbr>Point</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_aztec_detector.detector.html#expandsquare" class="tsd-kind-icon">expand<wbr>Square</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_aztec_detector.detector.html#extractparameters" class="tsd-kind-icon">extract<wbr>Parameters</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_aztec_detector.detector.html#getbullseyecorners" class="tsd-kind-icon">get<wbr>Bulls<wbr>Eye<wbr>Corners</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_aztec_detector.detector.html#getcolor" class="tsd-kind-icon">get<wbr>Color</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_aztec_detector.detector.html#getcorrectedparameterdata" class="tsd-kind-icon">get<wbr>Corrected<wbr>Parameter<wbr>Data</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_aztec_detector.detector.html#getdimension" class="tsd-kind-icon">get<wbr>Dimension</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_aztec_detector.detector.html#getfirstdifferent" class="tsd-kind-icon">get<wbr>First<wbr>Different</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_aztec_detector.detector.html#getmatrixcenter" class="tsd-kind-icon">get<wbr>Matrix<wbr>Center</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_aztec_detector.detector.html#getmatrixcornerpoints" class="tsd-kind-icon">get<wbr>Matrix<wbr>Corner<wbr>Points</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_aztec_detector.detector.html#getrotation" class="tsd-kind-icon">get<wbr>Rotation</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_aztec_detector.detector.html#isvalid" class="tsd-kind-icon">is<wbr>Valid</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_aztec_detector.detector.html#isvalidpoint" class="tsd-kind-icon">is<wbr>Valid<wbr>Point</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_aztec_detector.detector.html#iswhiteorblackrectangle" class="tsd-kind-icon">is<wbr>White<wbr>OrBlack<wbr>Rectangle</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_aztec_detector.detector.html#samplegrid" class="tsd-kind-icon">sample<wbr>Grid</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_aztec_detector.detector.html#sampleline" class="tsd-kind-icon">sample<wbr>Line</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Detector<span class="tsd-signature-symbol">(</span>image<span class="tsd-signature-symbol">: </span><a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_aztec_detector.detector.html" class="tsd-signature-type">Detector</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/detector/Detector.ts#L79">src/core/aztec/detector/Detector.ts:79</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>image: <a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_aztec_detector.detector.html" class="tsd-signature-type">Detector</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="expected_corner_bits" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> EXPECTED_<wbr>CORNER_<wbr>BITS</h3>
+					<div class="tsd-signature tsd-kind-icon">EXPECTED_<wbr>CORNER_<wbr>BITS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol"> = new Int32Array([0xee0,  // 07340  XXX .XX X.. ...0x1dc,  // 00734  ... XXX .XX X..0x83b,  // 04073  X.. ... XXX .XX0x707,  // 03407 .XX X.. ... XXX])</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/detector/Detector.ts#L66">src/core/aztec/detector/Detector.ts:66</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="compact" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> compact</h3>
+					<div class="tsd-signature tsd-kind-icon">compact<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/detector/Detector.ts#L75">src/core/aztec/detector/Detector.ts:75</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="image" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> image</h3>
+					<div class="tsd-signature tsd-kind-icon">image<span class="tsd-signature-symbol">:</span> <a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/detector/Detector.ts#L73">src/core/aztec/detector/Detector.ts:73</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="nbcenterlayers" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> nb<wbr>Center<wbr>Layers</h3>
+					<div class="tsd-signature tsd-kind-icon">nb<wbr>Center<wbr>Layers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/detector/Detector.ts#L78">src/core/aztec/detector/Detector.ts:78</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="nbdatablocks" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> nb<wbr>Data<wbr>Blocks</h3>
+					<div class="tsd-signature tsd-kind-icon">nb<wbr>Data<wbr>Blocks<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/detector/Detector.ts#L77">src/core/aztec/detector/Detector.ts:77</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="nblayers" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> nb<wbr>Layers</h3>
+					<div class="tsd-signature tsd-kind-icon">nb<wbr>Layers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/detector/Detector.ts#L76">src/core/aztec/detector/Detector.ts:76</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="shift" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> shift</h3>
+					<div class="tsd-signature tsd-kind-icon">shift<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/detector/Detector.ts#L79">src/core/aztec/detector/Detector.ts:79</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="detect" class="tsd-anchor"></a>
+					<h3>detect</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">detect<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_aztec.aztecdetectorresult.html" class="tsd-signature-type">AztecDetectorResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/detector/Detector.ts#L85">src/core/aztec/detector/Detector.ts:85</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="core_aztec.aztecdetectorresult.html" class="tsd-signature-type">AztecDetectorResult</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="detectmirror" class="tsd-anchor"></a>
+					<h3>detect<wbr>Mirror</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">detect<wbr>Mirror<span class="tsd-signature-symbol">(</span>isMirror<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_aztec.aztecdetectorresult.html" class="tsd-signature-type">AztecDetectorResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/detector/Detector.ts#L96">src/core/aztec/detector/Detector.ts:96</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Detects an Aztec Code in an image.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>NotFoundException if no Aztec Code can be found</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>isMirror: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>if true, image is a mirror-image of original</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_aztec.aztecdetectorresult.html" class="tsd-signature-type">AztecDetectorResult</a></h4>
+							<p><a href="core_aztec.aztecdetectorresult.html">AztecDetectorResult</a> encapsulating results of detecting an Aztec Code</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="distancepoint" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> distance<wbr>Point</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">distance<wbr>Point<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><a href="core_aztec_detector.point.html" class="tsd-signature-type">Point</a>, b<span class="tsd-signature-symbol">: </span><a href="core_aztec_detector.point.html" class="tsd-signature-type">Point</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/detector/Detector.ts#L594">src/core/aztec/detector/Detector.ts:594</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>a: <a href="core_aztec_detector.point.html" class="tsd-signature-type">Point</a></h5>
+								</li>
+								<li>
+									<h5>b: <a href="core_aztec_detector.point.html" class="tsd-signature-type">Point</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="distanceresultpoint" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> distance<wbr>Result<wbr>Point</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">distance<wbr>Result<wbr>Point<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a>, b<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/detector/Detector.ts#L598">src/core/aztec/detector/Detector.ts:598</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>a: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a></h5>
+								</li>
+								<li>
+									<h5>b: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="expandsquare" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> expand<wbr>Square</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">expand<wbr>Square<span class="tsd-signature-symbol">(</span>cornerPoints<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a><span class="tsd-signature-symbol">[]</span>, oldSide<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, newSide<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/detector/Detector.ts#L563">src/core/aztec/detector/Detector.ts:563</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Expand the square represented by the corner points by pushing out equally in all directions</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>cornerPoints: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the corners of the square, which has the bull&#39;s eye at its center</p>
+									</div>
+								</li>
+								<li>
+									<h5>oldSide: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the original length of the side of the square in the target bit matrix</p>
+									</div>
+								</li>
+								<li>
+									<h5>newSide: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the new length of the size of the square in the target bit matrix</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a><span class="tsd-signature-symbol">[]</span></h4>
+							<p>the corners of the expanded square</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="extractparameters" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> extract<wbr>Parameters</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">extract<wbr>Parameters<span class="tsd-signature-symbol">(</span>bullsEyeCorners<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/detector/Detector.ts#L135">src/core/aztec/detector/Detector.ts:135</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Extracts the number of data layers and data blocks from the layer around the bull&#39;s eye.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>NotFoundException in case of too many errors or invalid parameters</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bullsEyeCorners: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the array of bull&#39;s eye corners</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getbullseyecorners" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Bulls<wbr>Eye<wbr>Corners</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Bulls<wbr>Eye<wbr>Corners<span class="tsd-signature-symbol">(</span>pCenter<span class="tsd-signature-symbol">: </span><a href="core_aztec_detector.point.html" class="tsd-signature-type">Point</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/detector/Detector.ts#L270">src/core/aztec/detector/Detector.ts:270</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Finds the corners of a bull-eye centered on the passed point.
+										This returns the centers of the diagonal points just outside the bull&#39;s eye
+									Returns [topRight, bottomRight, bottomLeft, topLeft]</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>NotFoundException If no valid bull-eye can be found</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pCenter: <a href="core_aztec_detector.point.html" class="tsd-signature-type">Point</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Center point</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a><span class="tsd-signature-symbol">[]</span></h4>
+							<p>The corners of the bull-eye</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getcolor" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Color</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Color<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><a href="core_aztec_detector.point.html" class="tsd-signature-type">Point</a>, p2<span class="tsd-signature-symbol">: </span><a href="core_aztec_detector.point.html" class="tsd-signature-type">Point</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/detector/Detector.ts#L498">src/core/aztec/detector/Detector.ts:498</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the color of a segment</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>p1: <a href="core_aztec_detector.point.html" class="tsd-signature-type">Point</a></h5>
+								</li>
+								<li>
+									<h5>p2: <a href="core_aztec_detector.point.html" class="tsd-signature-type">Point</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>1 if segment more than 90% black, -1 if segment is more than 90% white, 0 else</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getcorrectedparameterdata" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Corrected<wbr>Parameter<wbr>Data</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Corrected<wbr>Parameter<wbr>Data<span class="tsd-signature-symbol">(</span>parameterData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, compact<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/detector/Detector.ts#L229">src/core/aztec/detector/Detector.ts:229</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Corrects the parameter bits using Reed-Solomon algorithm.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>NotFoundException if the array contains too many errors</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>parameterData: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>parameter bits</p>
+									</div>
+								</li>
+								<li>
+									<h5>compact: <span class="tsd-signature-type">boolean</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>true if this is a compact Aztec code</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getdimension" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Dimension</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Dimension<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/detector/Detector.ts#L602">src/core/aztec/detector/Detector.ts:602</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getfirstdifferent" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>First<wbr>Different</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>First<wbr>Different<span class="tsd-signature-symbol">(</span>init<span class="tsd-signature-symbol">: </span><a href="core_aztec_detector.point.html" class="tsd-signature-type">Point</a>, color<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, dx<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, dy<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_aztec_detector.point.html" class="tsd-signature-type">Point</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/detector/Detector.ts#L530">src/core/aztec/detector/Detector.ts:530</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the coordinate of the first point with a different color in the given direction</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>init: <a href="core_aztec_detector.point.html" class="tsd-signature-type">Point</a></h5>
+								</li>
+								<li>
+									<h5>color: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5>dx: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>dy: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_aztec_detector.point.html" class="tsd-signature-type">Point</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getmatrixcenter" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Matrix<wbr>Center</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Matrix<wbr>Center<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_aztec_detector.point.html" class="tsd-signature-type">Point</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/detector/Detector.ts#L331">src/core/aztec/detector/Detector.ts:331</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Finds a candidate center point of an Aztec code from an image</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="core_aztec_detector.point.html" class="tsd-signature-type">Point</a></h4>
+							<p>the center point</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getmatrixcornerpoints" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Matrix<wbr>Corner<wbr>Points</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Matrix<wbr>Corner<wbr>Points<span class="tsd-signature-symbol">(</span>bullsEyeCorners<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/detector/Detector.ts#L395">src/core/aztec/detector/Detector.ts:395</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the Aztec code corners from the bull&#39;s eye corners and the parameters.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bullsEyeCorners: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the array of bull&#39;s eye corners</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a><span class="tsd-signature-symbol">[]</span></h4>
+							<p>the array of aztec code corners</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getrotation" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Rotation</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Rotation<span class="tsd-signature-symbol">(</span>sides<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span>, length<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/detector/Detector.ts#L185">src/core/aztec/detector/Detector.ts:185</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sides: <span class="tsd-signature-type">Int32Array</span></h5>
+								</li>
+								<li>
+									<h5>length: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="isvalid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>Valid</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Valid<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/detector/Detector.ts#L584">src/core/aztec/detector/Detector.ts:584</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>x: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="isvalidpoint" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>Valid<wbr>Point</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Valid<wbr>Point<span class="tsd-signature-symbol">(</span>point<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/detector/Detector.ts#L588">src/core/aztec/detector/Detector.ts:588</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>point: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="iswhiteorblackrectangle" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>White<wbr>OrBlack<wbr>Rectangle</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>White<wbr>OrBlack<wbr>Rectangle<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><a href="core_aztec_detector.point.html" class="tsd-signature-type">Point</a>, p2<span class="tsd-signature-symbol">: </span><a href="core_aztec_detector.point.html" class="tsd-signature-type">Point</a>, p3<span class="tsd-signature-symbol">: </span><a href="core_aztec_detector.point.html" class="tsd-signature-type">Point</a>, p4<span class="tsd-signature-symbol">: </span><a href="core_aztec_detector.point.html" class="tsd-signature-type">Point</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/detector/Detector.ts#L458">src/core/aztec/detector/Detector.ts:458</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>p1: <a href="core_aztec_detector.point.html" class="tsd-signature-type">Point</a></h5>
+								</li>
+								<li>
+									<h5>p2: <a href="core_aztec_detector.point.html" class="tsd-signature-type">Point</a></h5>
+								</li>
+								<li>
+									<h5>p3: <a href="core_aztec_detector.point.html" class="tsd-signature-type">Point</a></h5>
+								</li>
+								<li>
+									<h5>p4: <a href="core_aztec_detector.point.html" class="tsd-signature-type">Point</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>true if the border of the rectangle passed in parameter is compound of white points only
+							or black points only</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="samplegrid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> sample<wbr>Grid</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">sample<wbr>Grid<span class="tsd-signature-symbol">(</span>image<span class="tsd-signature-symbol">: </span><a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a>, topLeft<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a>, topRight<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a>, bottomRight<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a>, bottomLeft<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/detector/Detector.ts#L404">src/core/aztec/detector/Detector.ts:404</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a BitMatrix by sampling the provided image.
+										topLeft, topRight, bottomRight, and bottomLeft are the centers of the squares on the
+									diagonal just outside the bull&#39;s eye.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>image: <a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></h5>
+								</li>
+								<li>
+									<h5>topLeft: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a></h5>
+								</li>
+								<li>
+									<h5>topRight: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a></h5>
+								</li>
+								<li>
+									<h5>bottomRight: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a></h5>
+								</li>
+								<li>
+									<h5>bottomLeft: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="sampleline" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> sample<wbr>Line</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">sample<wbr>Line<span class="tsd-signature-symbol">(</span>p1<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a>, p2<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a>, size<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/detector/Detector.ts#L437">src/core/aztec/detector/Detector.ts:437</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Samples a line.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>p1: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>start point (inclusive)</p>
+									</div>
+								</li>
+								<li>
+									<h5>p2: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>end point (exclusive)</p>
+									</div>
+								</li>
+								<li>
+									<h5>size: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>number of bits</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>the array of bits as an int (first bit is high-order bit of result)</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/core_aztec_detector.html">core/aztec/detector</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="core_aztec_detector.detector.html" class="tsd-kind-icon">Detector</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="core_aztec_detector.detector.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_aztec_detector.detector.html#expected_corner_bits" class="tsd-kind-icon">EXPECTED_<wbr>CORNER_<wbr>BITS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_aztec_detector.detector.html#compact" class="tsd-kind-icon">compact</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_aztec_detector.detector.html#image" class="tsd-kind-icon">image</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_aztec_detector.detector.html#nbcenterlayers" class="tsd-kind-icon">nb<wbr>Center<wbr>Layers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_aztec_detector.detector.html#nbdatablocks" class="tsd-kind-icon">nb<wbr>Data<wbr>Blocks</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_aztec_detector.detector.html#nblayers" class="tsd-kind-icon">nb<wbr>Layers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_aztec_detector.detector.html#shift" class="tsd-kind-icon">shift</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="core_aztec_detector.detector.html#detect" class="tsd-kind-icon">detect</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="core_aztec_detector.detector.html#detectmirror" class="tsd-kind-icon">detect<wbr>Mirror</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_aztec_detector.detector.html#distancepoint" class="tsd-kind-icon">distance<wbr>Point</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_aztec_detector.detector.html#distanceresultpoint" class="tsd-kind-icon">distance<wbr>Result<wbr>Point</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_aztec_detector.detector.html#expandsquare" class="tsd-kind-icon">expand<wbr>Square</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_aztec_detector.detector.html#extractparameters" class="tsd-kind-icon">extract<wbr>Parameters</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_aztec_detector.detector.html#getbullseyecorners" class="tsd-kind-icon">get<wbr>Bulls<wbr>Eye<wbr>Corners</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_aztec_detector.detector.html#getcolor" class="tsd-kind-icon">get<wbr>Color</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_aztec_detector.detector.html#getcorrectedparameterdata" class="tsd-kind-icon">get<wbr>Corrected<wbr>Parameter<wbr>Data</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_aztec_detector.detector.html#getdimension" class="tsd-kind-icon">get<wbr>Dimension</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_aztec_detector.detector.html#getfirstdifferent" class="tsd-kind-icon">get<wbr>First<wbr>Different</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_aztec_detector.detector.html#getmatrixcenter" class="tsd-kind-icon">get<wbr>Matrix<wbr>Center</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_aztec_detector.detector.html#getmatrixcornerpoints" class="tsd-kind-icon">get<wbr>Matrix<wbr>Corner<wbr>Points</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_aztec_detector.detector.html#getrotation" class="tsd-kind-icon">get<wbr>Rotation</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_aztec_detector.detector.html#isvalid" class="tsd-kind-icon">is<wbr>Valid</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_aztec_detector.detector.html#isvalidpoint" class="tsd-kind-icon">is<wbr>Valid<wbr>Point</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_aztec_detector.detector.html#iswhiteorblackrectangle" class="tsd-kind-icon">is<wbr>White<wbr>OrBlack<wbr>Rectangle</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_aztec_detector.detector.html#samplegrid" class="tsd-kind-icon">sample<wbr>Grid</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_aztec_detector.detector.html#sampleline" class="tsd-kind-icon">sample<wbr>Line</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_aztec_detector.point.html" class="tsd-kind-icon">Point</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

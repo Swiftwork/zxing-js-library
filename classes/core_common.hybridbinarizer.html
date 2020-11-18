@@ -1,0 +1,684 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>HybridBinarizer | @zxing/library - v0.18.3</title>
+	<meta name="description" content="Documentation for @zxing/library - v0.18.3">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@zxing/library - v0.18.3</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/core_common.html">core/common</a>
+				</li>
+				<li>
+					<a href="core_common.hybridbinarizer.html">HybridBinarizer</a>
+				</li>
+			</ul>
+			<h1>Class HybridBinarizer</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>This class implements a local thresholding algorithm, which while slower than the
+							GlobalHistogramBinarizer, is fairly efficient for what it does. It is designed for
+							high frequency images of barcodes with black data on white backgrounds. For this application,
+							it does a much better job than a global blackpoint with severe shadows and gradients.
+							However it tends to produce artifacts on lower frequency images and is therefore not
+						a good general purpose binarizer for uses outside ZXing.</p>
+					</div>
+					<p>This class extends GlobalHistogramBinarizer, using the older histogram approach for 1D readers,
+						and the newer local approach for 2D readers. 1D decoding using a per-row histogram is already
+						inherently local, and only fails for horizontal gradients. We can revisit that problem later,
+					but for now it was not a win to use local blocks for 1D.</p>
+					<p>This Binarizer is the default for the unit tests and the recommended class for library users.</p>
+					<dl class="tsd-comment-tags">
+						<dt>author</dt>
+						<dd><p><a href="mailto:&#x64;&#x73;&#x77;&#105;&#116;&#x6b;&#105;&#110;&#64;&#x67;&#111;&#x6f;&#x67;&#108;&#101;&#46;&#x63;&#111;&#x6d;">&#x64;&#x73;&#x77;&#105;&#116;&#x6b;&#105;&#110;&#64;&#x67;&#111;&#x6f;&#x67;&#108;&#101;&#46;&#x63;&#111;&#x6d;</a> (Daniel Switkin)</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="core_common.globalhistogrambinarizer.html" class="tsd-signature-type">GlobalHistogramBinarizer</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">HybridBinarizer</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="core_common.hybridbinarizer.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_common.hybridbinarizer.html#matrix" class="tsd-kind-icon">matrix</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_common.hybridbinarizer.html#block_size" class="tsd-kind-icon">BLOCK_<wbr>SIZE</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_common.hybridbinarizer.html#block_size_mask" class="tsd-kind-icon">BLOCK_<wbr>SIZE_<wbr>MASK</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_common.hybridbinarizer.html#block_size_power" class="tsd-kind-icon">BLOCK_<wbr>SIZE_<wbr>POWER</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_common.hybridbinarizer.html#minimum_dimension" class="tsd-kind-icon">MINIMUM_<wbr>DIMENSION</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_common.hybridbinarizer.html#min_dynamic_range" class="tsd-kind-icon">MIN_<wbr>DYNAMIC_<wbr>RANGE</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="core_common.hybridbinarizer.html#createbinarizer" class="tsd-kind-icon">create<wbr>Binarizer</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="core_common.hybridbinarizer.html#getblackmatrix" class="tsd-kind-icon">get<wbr>Black<wbr>Matrix</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited"><a href="core_common.hybridbinarizer.html#getblackrow" class="tsd-kind-icon">get<wbr>Black<wbr>Row</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="core_common.hybridbinarizer.html#getheight" class="tsd-kind-icon">get<wbr>Height</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="core_common.hybridbinarizer.html#getluminancesource" class="tsd-kind-icon">get<wbr>Luminance<wbr>Source</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="core_common.hybridbinarizer.html#getwidth" class="tsd-kind-icon">get<wbr>Width</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_common.hybridbinarizer.html#calculateblackpoints" class="tsd-kind-icon">calculate<wbr>Black<wbr>Points</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_common.hybridbinarizer.html#calculatethresholdforblock" class="tsd-kind-icon">calculate<wbr>Threshold<wbr>For<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_common.hybridbinarizer.html#cap" class="tsd-kind-icon">cap</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_common.hybridbinarizer.html#thresholdblock" class="tsd-kind-icon">threshold<wbr>Block</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Hybrid<wbr>Binarizer<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><a href="core.luminancesource.html" class="tsd-signature-type">LuminanceSource</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_common.hybridbinarizer.html" class="tsd-signature-type">HybridBinarizer</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="core_common.globalhistogrambinarizer.html">GlobalHistogramBinarizer</a>.<a href="core_common.globalhistogrambinarizer.html#constructor">constructor</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/common/HybridBinarizer.ts#L51">src/core/common/HybridBinarizer.ts:51</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>source: <a href="core.luminancesource.html" class="tsd-signature-type">LuminanceSource</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_common.hybridbinarizer.html" class="tsd-signature-type">HybridBinarizer</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="matrix" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> matrix</h3>
+					<div class="tsd-signature tsd-kind-icon">matrix<span class="tsd-signature-symbol">:</span> <a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol"> = null</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/common/HybridBinarizer.ts#L51">src/core/common/HybridBinarizer.ts:51</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="block_size" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> BLOCK_<wbr>SIZE</h3>
+					<div class="tsd-signature tsd-kind-icon">BLOCK_<wbr>SIZE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1 &lt;&lt; HybridBinarizer.BLOCK_SIZE_POWER</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/common/HybridBinarizer.ts#L46">src/core/common/HybridBinarizer.ts:46</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="block_size_mask" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> BLOCK_<wbr>SIZE_<wbr>MASK</h3>
+					<div class="tsd-signature tsd-kind-icon">BLOCK_<wbr>SIZE_<wbr>MASK<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = HybridBinarizer.BLOCK_SIZE - 1</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/common/HybridBinarizer.ts#L47">src/core/common/HybridBinarizer.ts:47</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="block_size_power" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> BLOCK_<wbr>SIZE_<wbr>POWER</h3>
+					<div class="tsd-signature tsd-kind-icon">BLOCK_<wbr>SIZE_<wbr>POWER<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 3</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/common/HybridBinarizer.ts#L45">src/core/common/HybridBinarizer.ts:45</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="minimum_dimension" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> MINIMUM_<wbr>DIMENSION</h3>
+					<div class="tsd-signature tsd-kind-icon">MINIMUM_<wbr>DIMENSION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = HybridBinarizer.BLOCK_SIZE * 5</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/common/HybridBinarizer.ts#L48">src/core/common/HybridBinarizer.ts:48</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="min_dynamic_range" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> MIN_<wbr>DYNAMIC_<wbr>RANGE</h3>
+					<div class="tsd-signature tsd-kind-icon">MIN_<wbr>DYNAMIC_<wbr>RANGE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 24</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/common/HybridBinarizer.ts#L49">src/core/common/HybridBinarizer.ts:49</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="createbinarizer" class="tsd-anchor"></a>
+					<h3>create<wbr>Binarizer</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Binarizer<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><a href="core.luminancesource.html" class="tsd-signature-type">LuminanceSource</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.binarizer.html" class="tsd-signature-type">Binarizer</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="core_common.globalhistogrambinarizer.html">GlobalHistogramBinarizer</a>.<a href="core_common.globalhistogrambinarizer.html#createbinarizer">createBinarizer</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/common/HybridBinarizer.ts#L93">src/core/common/HybridBinarizer.ts:93</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>source: <a href="core.luminancesource.html" class="tsd-signature-type">LuminanceSource</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core.binarizer.html" class="tsd-signature-type">Binarizer</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="getblackmatrix" class="tsd-anchor"></a>
+					<h3>get<wbr>Black<wbr>Matrix</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Black<wbr>Matrix<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="core_common.globalhistogrambinarizer.html">GlobalHistogramBinarizer</a>.<a href="core_common.globalhistogrambinarizer.html#getblackmatrix">getBlackMatrix</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/common/HybridBinarizer.ts#L63">src/core/common/HybridBinarizer.ts:63</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Calculates the final BitMatrix once for all requests. This could be called once from the
+										constructor instead, but there are some advantages to doing it lazily, such as making
+									profiling easier, and not doing heavy lifting when callers don&#39;t expect it.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+					<a name="getblackrow" class="tsd-anchor"></a>
+					<h3>get<wbr>Black<wbr>Row</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Black<wbr>Row<span class="tsd-signature-symbol">(</span>y<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, row<span class="tsd-signature-symbol">: </span><a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="core_common.globalhistogrambinarizer.html">GlobalHistogramBinarizer</a>.<a href="core_common.globalhistogrambinarizer.html#getblackrow">getBlackRow</a></p>
+								<p>Overrides <a href="core.binarizer.html">Binarizer</a>.<a href="core.binarizer.html#getblackrow">getBlackRow</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/common/GlobalHistogramBinarizer.ts#L55">src/core/common/GlobalHistogramBinarizer.ts:55</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>y: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>row: <a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="getheight" class="tsd-anchor"></a>
+					<h3>get<wbr>Height</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Height<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="core.binarizer.html">Binarizer</a>.<a href="core.binarizer.html#getheight">getHeight</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/Binarizer.ts#L80">src/core/Binarizer.ts:80</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="getluminancesource" class="tsd-anchor"></a>
+					<h3>get<wbr>Luminance<wbr>Source</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Luminance<wbr>Source<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.luminancesource.html" class="tsd-signature-type">LuminanceSource</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="core.binarizer.html">Binarizer</a>.<a href="core.binarizer.html#getluminancesource">getLuminanceSource</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/Binarizer.ts#L35">src/core/Binarizer.ts:35</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="core.luminancesource.html" class="tsd-signature-type">LuminanceSource</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="getwidth" class="tsd-anchor"></a>
+					<h3>get<wbr>Width</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Width<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="core.binarizer.html">Binarizer</a>.<a href="core.binarizer.html#getwidth">getWidth</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/Binarizer.ts#L76">src/core/Binarizer.ts:76</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="calculateblackpoints" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> calculate<wbr>Black<wbr>Points</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">calculate<wbr>Black<wbr>Points<span class="tsd-signature-symbol">(</span>luminances<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8ClampedArray</span>, subWidth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, subHeight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/common/HybridBinarizer.ts#L162">src/core/common/HybridBinarizer.ts:162</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Calculates a single black point for each block of pixels and saves it away.
+										See the following thread for a discussion of this algorithm:
+									<a href="http://groups.google.com/group/zxing/browse_thread/thread/d06efa2c35a7ddc0">http://groups.google.com/group/zxing/browse_thread/thread/d06efa2c35a7ddc0</a></p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>luminances: <span class="tsd-signature-type">Uint8ClampedArray</span></h5>
+								</li>
+								<li>
+									<h5>subWidth: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>subHeight: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>width: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>height: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="calculatethresholdforblock" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> calculate<wbr>Threshold<wbr>For<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">calculate<wbr>Threshold<wbr>For<wbr>Block<span class="tsd-signature-symbol">(</span>luminances<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8ClampedArray</span>, subWidth<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, subHeight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, blackPoints<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">[]</span>, matrix<span class="tsd-signature-symbol">: </span><a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/common/HybridBinarizer.ts#L102">src/core/common/HybridBinarizer.ts:102</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>For each block in the image, calculate the average black point using a 5x5 grid
+										of the blocks around it. Also handles the corner cases (fractional blocks are computed based
+									on the last pixels in the row/column which are also used in the previous block).</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>luminances: <span class="tsd-signature-type">Uint8ClampedArray</span></h5>
+								</li>
+								<li>
+									<h5>subWidth: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>subHeight: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>width: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>height: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>blackPoints: <span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>matrix: <a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="cap" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> cap</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">cap<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, min<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, max<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/common/HybridBinarizer.ts#L134">src/core/common/HybridBinarizer.ts:134</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>min: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>max: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="thresholdblock" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> threshold<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">threshold<wbr>Block<span class="tsd-signature-symbol">(</span>luminances<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8ClampedArray</span>, xoffset<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, yoffset<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, threshold<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, stride<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, matrix<span class="tsd-signature-symbol">: </span><a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/common/HybridBinarizer.ts#L141">src/core/common/HybridBinarizer.ts:141</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Applies a single threshold to a block of pixels.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>luminances: <span class="tsd-signature-type">Uint8ClampedArray</span></h5>
+								</li>
+								<li>
+									<h5>xoffset: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>yoffset: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>threshold: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>stride: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>matrix: <a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/core_common.html">core/common</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-module">
+						<a href="../enums/core_common.charactersetvalueidentifiers.html" class="tsd-kind-icon">Character<wbr>Set<wbr>Value<wbr>Identifiers</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_common.bitarray.html" class="tsd-kind-icon">Bit<wbr>Array</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_common.bitmatrix.html" class="tsd-kind-icon">Bit<wbr>Matrix</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_common.bitsource.html" class="tsd-kind-icon">Bit<wbr>Source</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_common.characterseteci.html" class="tsd-kind-icon">Character<wbr>SetECI</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_common.decoderresult.html" class="tsd-kind-icon">Decoder<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_common.defaultgridsampler.html" class="tsd-kind-icon">Default<wbr>Grid<wbr>Sampler</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_common.detectorresult.html" class="tsd-kind-icon">Detector<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_common.globalhistogrambinarizer.html" class="tsd-kind-icon">Global<wbr>Histogram<wbr>Binarizer</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_common.gridsampler.html" class="tsd-kind-icon">Grid<wbr>Sampler</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_common.gridsamplerinstance.html" class="tsd-kind-icon">Grid<wbr>Sampler<wbr>Instance</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="core_common.hybridbinarizer.html" class="tsd-kind-icon">Hybrid<wbr>Binarizer</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+								<a href="core_common.hybridbinarizer.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_common.hybridbinarizer.html#matrix" class="tsd-kind-icon">matrix</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_common.hybridbinarizer.html#block_size" class="tsd-kind-icon">BLOCK_<wbr>SIZE</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_common.hybridbinarizer.html#block_size_mask" class="tsd-kind-icon">BLOCK_<wbr>SIZE_<wbr>MASK</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_common.hybridbinarizer.html#block_size_power" class="tsd-kind-icon">BLOCK_<wbr>SIZE_<wbr>POWER</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_common.hybridbinarizer.html#minimum_dimension" class="tsd-kind-icon">MINIMUM_<wbr>DIMENSION</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_common.hybridbinarizer.html#min_dynamic_range" class="tsd-kind-icon">MIN_<wbr>DYNAMIC_<wbr>RANGE</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="core_common.hybridbinarizer.html#createbinarizer" class="tsd-kind-icon">create<wbr>Binarizer</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="core_common.hybridbinarizer.html#getblackmatrix" class="tsd-kind-icon">get<wbr>Black<wbr>Matrix</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite tsd-is-inherited">
+								<a href="core_common.hybridbinarizer.html#getblackrow" class="tsd-kind-icon">get<wbr>Black<wbr>Row</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="core_common.hybridbinarizer.html#getheight" class="tsd-kind-icon">get<wbr>Height</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="core_common.hybridbinarizer.html#getluminancesource" class="tsd-kind-icon">get<wbr>Luminance<wbr>Source</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="core_common.hybridbinarizer.html#getwidth" class="tsd-kind-icon">get<wbr>Width</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_common.hybridbinarizer.html#calculateblackpoints" class="tsd-kind-icon">calculate<wbr>Black<wbr>Points</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_common.hybridbinarizer.html#calculatethresholdforblock" class="tsd-kind-icon">calculate<wbr>Threshold<wbr>For<wbr>Block</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_common.hybridbinarizer.html#cap" class="tsd-kind-icon">cap</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_common.hybridbinarizer.html#thresholdblock" class="tsd-kind-icon">threshold<wbr>Block</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_common.perspectivetransform.html" class="tsd-kind-icon">Perspective<wbr>Transform</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_common.stringutils.html" class="tsd-kind-icon">String<wbr>Utils</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

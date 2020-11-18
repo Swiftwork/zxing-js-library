@@ -1,0 +1,1026 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DecodedBitStreamParser | @zxing/library - v0.18.3</title>
+	<meta name="description" content="Documentation for @zxing/library - v0.18.3">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@zxing/library - v0.18.3</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/core_pdf417_decoder.html">core/pdf417/decoder</a>
+				</li>
+				<li>
+					<a href="core_pdf417_decoder.decodedbitstreamparser.html">DecodedBitStreamParser</a>
+				</li>
+			</ul>
+			<h1>Class DecodedBitStreamParser</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>This class contains the methods for decoding the PDF417 codewords.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>author</dt>
+						<dd><p>SITA Lab (<a href="mailto:&#107;&#x65;&#x76;&#x69;&#110;&#46;&#x6f;&#115;&#117;&#108;&#108;&#x69;&#x76;&#97;&#110;&#64;&#x73;&#105;&#x74;&#97;&#46;&#97;&#101;&#114;&#x6f;">&#107;&#x65;&#x76;&#x69;&#110;&#46;&#x6f;&#115;&#117;&#108;&#108;&#x69;&#x76;&#97;&#110;&#64;&#x73;&#105;&#x74;&#97;&#46;&#97;&#101;&#114;&#x6f;</a>)</p>
+						</dd>
+						<dt>author</dt>
+						<dd><p>Guenther Grau</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">DecodedBitStreamParser</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#al" class="tsd-kind-icon">AL</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#as" class="tsd-kind-icon">AS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#begin_macro_pdf417_control_block" class="tsd-kind-icon">BEGIN_<wbr>MACRO_<wbr>PDF417_<wbr>CONTROL_<wbr>BLOCK</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#begin_macro_pdf417_optional_field" class="tsd-kind-icon">BEGIN_<wbr>MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#byte_compaction_mode_latch" class="tsd-kind-icon">BYTE_<wbr>COMPACTION_<wbr>MODE_<wbr>LATCH</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#byte_compaction_mode_latch_6" class="tsd-kind-icon">BYTE_<wbr>COMPACTION_<wbr>MODE_<wbr>LATCH_<wbr>6</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#eci_charset" class="tsd-kind-icon">ECI_<wbr>CHARSET</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#eci_general_purpose" class="tsd-kind-icon">ECI_<wbr>GENERAL_<wbr>PURPOSE</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#eci_user_defined" class="tsd-kind-icon">ECI_<wbr>USER_<wbr>DEFINED</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#exp900" class="tsd-kind-icon">EXP900</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#ll" class="tsd-kind-icon">LL</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#macro_pdf417_optional_field_addressee" class="tsd-kind-icon">MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD_<wbr>ADDRESSEE</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#macro_pdf417_optional_field_checksum" class="tsd-kind-icon">MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD_<wbr>CHECKSUM</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#macro_pdf417_optional_field_file_name" class="tsd-kind-icon">MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD_<wbr>FILE_<wbr>NAME</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#macro_pdf417_optional_field_file_size" class="tsd-kind-icon">MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD_<wbr>FILE_<wbr>SIZE</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#macro_pdf417_optional_field_segment_count" class="tsd-kind-icon">MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD_<wbr>SEGMENT_<wbr>COUNT</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#macro_pdf417_optional_field_sender" class="tsd-kind-icon">MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD_<wbr>SENDER</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#macro_pdf417_optional_field_time_stamp" class="tsd-kind-icon">MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD_<wbr>TIME_<wbr>STAMP</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#macro_pdf417_terminator" class="tsd-kind-icon">MACRO_<wbr>PDF417_<wbr>TERMINATOR</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#max_numeric_codewords" class="tsd-kind-icon">MAX_<wbr>NUMERIC_<wbr>CODEWORDS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#mixed_chars" class="tsd-kind-icon">MIXED_<wbr>CHARS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#ml" class="tsd-kind-icon">ML</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#mode_shift_to_byte_compaction_mode" class="tsd-kind-icon">MODE_<wbr>SHIFT_<wbr>TO_<wbr>BYTE_<wbr>COMPACTION_<wbr>MODE</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#number_of_sequence_codewords" class="tsd-kind-icon">NUMBER_<wbr>OF_<wbr>SEQUENCE_<wbr>CODEWORDS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#numeric_compaction_mode_latch" class="tsd-kind-icon">NUMERIC_<wbr>COMPACTION_<wbr>MODE_<wbr>LATCH</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#pal" class="tsd-kind-icon">PAL</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#pl" class="tsd-kind-icon">PL</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#ps" class="tsd-kind-icon">PS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#punct_chars" class="tsd-kind-icon">PUNCT_<wbr>CHARS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#text_compaction_mode_latch" class="tsd-kind-icon">TEXT_<wbr>COMPACTION_<wbr>MODE_<wbr>LATCH</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#bytecompaction" class="tsd-kind-icon">byte<wbr>Compaction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#decode" class="tsd-kind-icon">decode</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#decodebase900tobase10" class="tsd-kind-icon">decode<wbr>Base900to<wbr>Base10</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#decodemacroblock" class="tsd-kind-icon">decode<wbr>Macro<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#decodetextcompaction" class="tsd-kind-icon">decode<wbr>Text<wbr>Compaction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#numericcompaction" class="tsd-kind-icon">numeric<wbr>Compaction</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.decodedbitstreamparser.html#textcompaction" class="tsd-kind-icon">text<wbr>Compaction</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="al" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> AL</h3>
+					<div class="tsd-signature tsd-kind-icon">AL<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 28</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L150">src/core/pdf417/decoder/DecodedBitStreamParser.ts:150</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="as" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> AS</h3>
+					<div class="tsd-signature tsd-kind-icon">AS<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 27</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L148">src/core/pdf417/decoder/DecodedBitStreamParser.ts:148</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="begin_macro_pdf417_control_block" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> BEGIN_<wbr>MACRO_<wbr>PDF417_<wbr>CONTROL_<wbr>BLOCK</h3>
+					<div class="tsd-signature tsd-kind-icon">BEGIN_<wbr>MACRO_<wbr>PDF417_<wbr>CONTROL_<wbr>BLOCK<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 928</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L132">src/core/pdf417/decoder/DecodedBitStreamParser.ts:132</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="begin_macro_pdf417_optional_field" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> BEGIN_<wbr>MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD</h3>
+					<div class="tsd-signature tsd-kind-icon">BEGIN_<wbr>MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 923</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L133">src/core/pdf417/decoder/DecodedBitStreamParser.ts:133</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="byte_compaction_mode_latch" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> BYTE_<wbr>COMPACTION_<wbr>MODE_<wbr>LATCH</h3>
+					<div class="tsd-signature tsd-kind-icon">BYTE_<wbr>COMPACTION_<wbr>MODE_<wbr>LATCH<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 901</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L126">src/core/pdf417/decoder/DecodedBitStreamParser.ts:126</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="byte_compaction_mode_latch_6" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> BYTE_<wbr>COMPACTION_<wbr>MODE_<wbr>LATCH_<wbr>6</h3>
+					<div class="tsd-signature tsd-kind-icon">BYTE_<wbr>COMPACTION_<wbr>MODE_<wbr>LATCH_<wbr>6<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 924</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L128">src/core/pdf417/decoder/DecodedBitStreamParser.ts:128</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="eci_charset" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> ECI_<wbr>CHARSET</h3>
+					<div class="tsd-signature tsd-kind-icon">ECI_<wbr>CHARSET<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 927</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L131">src/core/pdf417/decoder/DecodedBitStreamParser.ts:131</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="eci_general_purpose" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> ECI_<wbr>GENERAL_<wbr>PURPOSE</h3>
+					<div class="tsd-signature tsd-kind-icon">ECI_<wbr>GENERAL_<wbr>PURPOSE<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 926</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L130">src/core/pdf417/decoder/DecodedBitStreamParser.ts:130</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="eci_user_defined" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> ECI_<wbr>USER_<wbr>DEFINED</h3>
+					<div class="tsd-signature tsd-kind-icon">ECI_<wbr>USER_<wbr>DEFINED<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 925</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L129">src/core/pdf417/decoder/DecodedBitStreamParser.ts:129</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="exp900" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> EXP900</h3>
+					<div class="tsd-signature tsd-kind-icon">EXP900<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">bigint</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = getBigIntConstructor() ? getEXP900() : []</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L164">src/core/pdf417/decoder/DecodedBitStreamParser.ts:164</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Table containing values for the exponent of 900.
+							This is used in the numeric compaction decode algorithm.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="ll" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> LL</h3>
+					<div class="tsd-signature tsd-kind-icon">LL<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 27</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L147">src/core/pdf417/decoder/DecodedBitStreamParser.ts:147</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="macro_pdf417_optional_field_addressee" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD_<wbr>ADDRESSEE</h3>
+					<div class="tsd-signature tsd-kind-icon">MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD_<wbr>ADDRESSEE<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 4</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L142">src/core/pdf417/decoder/DecodedBitStreamParser.ts:142</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="macro_pdf417_optional_field_checksum" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD_<wbr>CHECKSUM</h3>
+					<div class="tsd-signature tsd-kind-icon">MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD_<wbr>CHECKSUM<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 6</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L144">src/core/pdf417/decoder/DecodedBitStreamParser.ts:144</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="macro_pdf417_optional_field_file_name" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD_<wbr>FILE_<wbr>NAME</h3>
+					<div class="tsd-signature tsd-kind-icon">MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD_<wbr>FILE_<wbr>NAME<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L138">src/core/pdf417/decoder/DecodedBitStreamParser.ts:138</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="macro_pdf417_optional_field_file_size" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD_<wbr>FILE_<wbr>SIZE</h3>
+					<div class="tsd-signature tsd-kind-icon">MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD_<wbr>FILE_<wbr>SIZE<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 5</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L143">src/core/pdf417/decoder/DecodedBitStreamParser.ts:143</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="macro_pdf417_optional_field_segment_count" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD_<wbr>SEGMENT_<wbr>COUNT</h3>
+					<div class="tsd-signature tsd-kind-icon">MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD_<wbr>SEGMENT_<wbr>COUNT<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 1</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L139">src/core/pdf417/decoder/DecodedBitStreamParser.ts:139</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="macro_pdf417_optional_field_sender" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD_<wbr>SENDER</h3>
+					<div class="tsd-signature tsd-kind-icon">MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD_<wbr>SENDER<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 3</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L141">src/core/pdf417/decoder/DecodedBitStreamParser.ts:141</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="macro_pdf417_optional_field_time_stamp" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD_<wbr>TIME_<wbr>STAMP</h3>
+					<div class="tsd-signature tsd-kind-icon">MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD_<wbr>TIME_<wbr>STAMP<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 2</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L140">src/core/pdf417/decoder/DecodedBitStreamParser.ts:140</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="macro_pdf417_terminator" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> MACRO_<wbr>PDF417_<wbr>TERMINATOR</h3>
+					<div class="tsd-signature tsd-kind-icon">MACRO_<wbr>PDF417_<wbr>TERMINATOR<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 922</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L134">src/core/pdf417/decoder/DecodedBitStreamParser.ts:134</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="max_numeric_codewords" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> MAX_<wbr>NUMERIC_<wbr>CODEWORDS</h3>
+					<div class="tsd-signature tsd-kind-icon">MAX_<wbr>NUMERIC_<wbr>CODEWORDS<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 15</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L136">src/core/pdf417/decoder/DecodedBitStreamParser.ts:136</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="mixed_chars" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> MIXED_<wbr>CHARS</h3>
+					<div class="tsd-signature tsd-kind-icon">MIXED_<wbr>CHARS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;0123456789&amp;
+					,:#-.$/+%*&#x3D;^&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L157">src/core/pdf417/decoder/DecodedBitStreamParser.ts:157</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="ml" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> ML</h3>
+					<div class="tsd-signature tsd-kind-icon">ML<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 28</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L149">src/core/pdf417/decoder/DecodedBitStreamParser.ts:149</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="mode_shift_to_byte_compaction_mode" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> MODE_<wbr>SHIFT_<wbr>TO_<wbr>BYTE_<wbr>COMPACTION_<wbr>MODE</h3>
+					<div class="tsd-signature tsd-kind-icon">MODE_<wbr>SHIFT_<wbr>TO_<wbr>BYTE_<wbr>COMPACTION_<wbr>MODE<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 913</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L135">src/core/pdf417/decoder/DecodedBitStreamParser.ts:135</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="number_of_sequence_codewords" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> NUMBER_<wbr>OF_<wbr>SEQUENCE_<wbr>CODEWORDS</h3>
+					<div class="tsd-signature tsd-kind-icon">NUMBER_<wbr>OF_<wbr>SEQUENCE_<wbr>CODEWORDS<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 2</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L166">src/core/pdf417/decoder/DecodedBitStreamParser.ts:166</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="numeric_compaction_mode_latch" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> NUMERIC_<wbr>COMPACTION_<wbr>MODE_<wbr>LATCH</h3>
+					<div class="tsd-signature tsd-kind-icon">NUMERIC_<wbr>COMPACTION_<wbr>MODE_<wbr>LATCH<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 902</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L127">src/core/pdf417/decoder/DecodedBitStreamParser.ts:127</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="pal" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> PAL</h3>
+					<div class="tsd-signature tsd-kind-icon">PAL<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 29</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L152">src/core/pdf417/decoder/DecodedBitStreamParser.ts:152</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="pl" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> PL</h3>
+					<div class="tsd-signature tsd-kind-icon">PL<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 25</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L146">src/core/pdf417/decoder/DecodedBitStreamParser.ts:146</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="ps" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> PS</h3>
+					<div class="tsd-signature tsd-kind-icon">PS<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 29</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L151">src/core/pdf417/decoder/DecodedBitStreamParser.ts:151</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="punct_chars" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> PUNCT_<wbr>CHARS</h3>
+					<div class="tsd-signature tsd-kind-icon">PUNCT_<wbr>CHARS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;;&lt;&gt;@[\]_&#x60;~!
+					,:-.$/&quot;|*()?{}&#x27;&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L154">src/core/pdf417/decoder/DecodedBitStreamParser.ts:154</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="text_compaction_mode_latch" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> TEXT_<wbr>COMPACTION_<wbr>MODE_<wbr>LATCH</h3>
+					<div class="tsd-signature tsd-kind-icon">TEXT_<wbr>COMPACTION_<wbr>MODE_<wbr>LATCH<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 900</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L125">src/core/pdf417/decoder/DecodedBitStreamParser.ts:125</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="bytecompaction" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> byte<wbr>Compaction</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">byte<wbr>Compaction<span class="tsd-signature-symbol">(</span>mode<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, codewords<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span>, encoding<span class="tsd-signature-symbol">: </span><a href="core_common.characterseteci.html" class="tsd-signature-type">CharacterSetECI</a>, codeIndex<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, result<span class="tsd-signature-symbol">: </span><a href="core_util.stringbuilder.html" class="tsd-signature-type">StringBuilder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L618">src/core/pdf417/decoder/DecodedBitStreamParser.ts:618</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Byte Compaction mode (see 5.4.3) permits all 256 possible 8-bit byte values to be encoded.
+										This includes all ASCII characters value 0 to 127 inclusive and provides for international
+									character set support.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>mode: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The byte compaction mode i.e. 901 or 924</p>
+									</div>
+								</li>
+								<li>
+									<h5>codewords: <span class="tsd-signature-type">Int32Array</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The array of codewords (data + error)</p>
+									</div>
+								</li>
+								<li>
+									<h5>encoding: <a href="core_common.characterseteci.html" class="tsd-signature-type">CharacterSetECI</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Currently active character encoding</p>
+									</div>
+								</li>
+								<li>
+									<h5>codeIndex: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The current index into the codeword array.</p>
+									</div>
+								</li>
+								<li>
+									<h5>result: <a href="core_util.stringbuilder.html" class="tsd-signature-type">StringBuilder</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The decoded data is appended to the result.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>The next index into the codeword array.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="decode" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> decode</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">decode<span class="tsd-signature-symbol">(</span>codewords<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span>, ecLevel<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_common.decoderresult.html" class="tsd-signature-type">DecoderResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L178">src/core/pdf417/decoder/DecodedBitStreamParser.ts:178</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>FormatException</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>codewords: <span class="tsd-signature-type">Int32Array</span></h5>
+								</li>
+								<li>
+									<h5>ecLevel: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_common.decoderresult.html" class="tsd-signature-type">DecoderResult</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="decodebase900tobase10" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> decode<wbr>Base900to<wbr>Base10</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">decode<wbr>Base900to<wbr>Base10<span class="tsd-signature-symbol">(</span>codewords<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span>, count<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L820">src/core/pdf417/decoder/DecodedBitStreamParser.ts:820</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert a list of Numeric Compacted codewords from Base 900 to Base 10.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>FormatException</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>codewords: <span class="tsd-signature-type">Int32Array</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The array of codewords</p>
+									</div>
+								</li>
+								<li>
+									<h5>count: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The number of codewords</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>The decoded string representing the Numeric data.</p>
+							<p>EXAMPLE
+								Encode the fifteen digit numeric string 000213298174000
+								Prefix the numeric string with a 1 and set the initial value of
+								t = 1 000 213 298 174 000
+								Calculate codeword 0
+							d0 = 1 000 213 298 174 000 mod 900 = 200</p>
+							<p>t = 1 000 213 298 174 000 div 900 = 1 111 348 109 082
+								Calculate codeword 1
+							d1 = 1 111 348 109 082 mod 900 = 282</p>
+							<p>t = 1 111 348 109 082 div 900 = 1 234 831 232
+								Calculate codeword 2
+							d2 = 1 234 831 232 mod 900 = 632</p>
+							<p>t = 1 234 831 232 div 900 = 1 372 034
+								Calculate codeword 3
+							d3 = 1 372 034 mod 900 = 434</p>
+							<p>t = 1 372 034 div 900 = 1 524
+								Calculate codeword 4
+							d4 = 1 524 mod 900 = 624</p>
+							<p>t = 1 524 div 900 = 1
+								Calculate codeword 5
+								d5 = 1 mod 900 = 1
+								t = 1 div 900 = 0
+							Codeword sequence is: 1, 624, 434, 632, 282, 200</p>
+							<p>Decode the above codewords involves
+								1 x 900 power of 5 + 624 x 900 power of 4 + 434 x 900 power of 3 +
+							632 x 900 power of 2 + 282 x 900 power of 1 + 200 x 900 power of 0 = 1000213298174000</p>
+							<p>Remove leading 1 =&gt;  Result is 000213298174000</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="decodemacroblock" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> decode<wbr>Macro<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">decode<wbr>Macro<wbr>Block<span class="tsd-signature-symbol">(</span>codewords<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span>, codeIndex<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, resultMetadata<span class="tsd-signature-symbol">: </span><a href="core_pdf417.pdf417resultmetadata.html" class="tsd-signature-type">PDF417ResultMetadata</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L265">src/core/pdf417/decoder/DecodedBitStreamParser.ts:265</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>FormatException</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>codewords: <span class="tsd-signature-type">Int32Array</span></h5>
+								</li>
+								<li>
+									<h5>codeIndex: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>resultMetadata: <a href="core_pdf417.pdf417resultmetadata.html" class="tsd-signature-type">PDF417ResultMetadata</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="decodetextcompaction" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> decode<wbr>Text<wbr>Compaction</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">decode<wbr>Text<wbr>Compaction<span class="tsd-signature-symbol">(</span>textCompactionData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span>, byteCompactionData<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span>, length<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, result<span class="tsd-signature-symbol">: </span><a href="core_util.stringbuilder.html" class="tsd-signature-type">StringBuilder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L426">src/core/pdf417/decoder/DecodedBitStreamParser.ts:426</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>The Text Compaction mode includes all the printable ASCII characters
+										(i.e. values from 32 to 126) and three ASCII control characters: HT or tab
+										(9: e), LF or line feed (10: e), and CR or carriage
+										return (13: e). The Text Compaction mode also includes various latch
+										and shift characters which are used exclusively within the mode. The Text
+										Compaction mode encodes up to 2 characters per codeword. The compaction rules
+										for converting data into PDF417 codewords are defined in 5.4.2.2. The sub-mode
+									switches are defined in 5.4.2.3.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>textCompactionData: <span class="tsd-signature-type">Int32Array</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The text compaction data.</p>
+									</div>
+								</li>
+								<li>
+									<h5>byteCompactionData: <span class="tsd-signature-type">Int32Array</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The byte compaction data if there
+										was a mode shift.</p>
+									</div>
+								</li>
+								<li>
+									<h5>length: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The size of the text compaction and byte compaction data.</p>
+									</div>
+								</li>
+								<li>
+									<h5>result: <a href="core_util.stringbuilder.html" class="tsd-signature-type">StringBuilder</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The decoded data is appended to the result.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="numericcompaction" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> numeric<wbr>Compaction</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">numeric<wbr>Compaction<span class="tsd-signature-symbol">(</span>codewords<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span>, codeIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, result<span class="tsd-signature-symbol">: </span><a href="core_util.stringbuilder.html" class="tsd-signature-type">StringBuilder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L737">src/core/pdf417/decoder/DecodedBitStreamParser.ts:737</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Numeric Compaction mode (see 5.4.4) permits efficient encoding of numeric data strings.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>FormatException</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>codewords: <span class="tsd-signature-type">Int32Array</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The array of codewords (data + error)</p>
+									</div>
+								</li>
+								<li>
+									<h5>codeIndex: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The current index into the codeword array.</p>
+									</div>
+								</li>
+								<li>
+									<h5>result: <a href="core_util.stringbuilder.html" class="tsd-signature-type">StringBuilder</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The decoded data is appended to the result.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h4>
+							<p>The next index into the codeword array.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="textcompaction" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> text<wbr>Compaction</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">text<wbr>Compaction<span class="tsd-signature-symbol">(</span>codewords<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span>, codeIndex<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, result<span class="tsd-signature-symbol">: </span><a href="core_util.stringbuilder.html" class="tsd-signature-type">StringBuilder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/DecodedBitStreamParser.ts#L362">src/core/pdf417/decoder/DecodedBitStreamParser.ts:362</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Text Compaction mode (see 5.4.1.5) permits all printable ASCII characters to be
+										encoded, i.e. values 32 - 126 inclusive in accordance with ISO/IEC 646 (IRV), as
+									well as selected control characters.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>codewords: <span class="tsd-signature-type">Int32Array</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The array of codewords (data + error)</p>
+									</div>
+								</li>
+								<li>
+									<h5>codeIndex: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The current index into the codeword array.</p>
+									</div>
+								</li>
+								<li>
+									<h5>result: <a href="core_util.stringbuilder.html" class="tsd-signature-type">StringBuilder</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The decoded data is appended to the result.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h4>
+							<p>The next index into the codeword array.</p>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/core_pdf417_decoder.html">core/pdf417/decoder</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../enums/core_pdf417_decoder.mode.html" class="tsd-kind-icon">Mode</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_pdf417_decoder.barcodemetadata.html" class="tsd-kind-icon">Barcode<wbr>Metadata</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_pdf417_decoder.barcodevalue.html" class="tsd-kind-icon">Barcode<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_pdf417_decoder.boundingbox.html" class="tsd-kind-icon">Bounding<wbr>Box</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_pdf417_decoder.codeword.html" class="tsd-kind-icon">Codeword</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="core_pdf417_decoder.decodedbitstreamparser.html" class="tsd-kind-icon">Decoded<wbr>Bit<wbr>Stream<wbr>Parser</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#al" class="tsd-kind-icon">AL</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#as" class="tsd-kind-icon">AS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#begin_macro_pdf417_control_block" class="tsd-kind-icon">BEGIN_<wbr>MACRO_<wbr>PDF417_<wbr>CONTROL_<wbr>BLOCK</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#begin_macro_pdf417_optional_field" class="tsd-kind-icon">BEGIN_<wbr>MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#byte_compaction_mode_latch" class="tsd-kind-icon">BYTE_<wbr>COMPACTION_<wbr>MODE_<wbr>LATCH</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#byte_compaction_mode_latch_6" class="tsd-kind-icon">BYTE_<wbr>COMPACTION_<wbr>MODE_<wbr>LATCH_<wbr>6</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#eci_charset" class="tsd-kind-icon">ECI_<wbr>CHARSET</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#eci_general_purpose" class="tsd-kind-icon">ECI_<wbr>GENERAL_<wbr>PURPOSE</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#eci_user_defined" class="tsd-kind-icon">ECI_<wbr>USER_<wbr>DEFINED</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#exp900" class="tsd-kind-icon">EXP900</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#ll" class="tsd-kind-icon">LL</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#macro_pdf417_optional_field_addressee" class="tsd-kind-icon">MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD_<wbr>ADDRESSEE</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#macro_pdf417_optional_field_checksum" class="tsd-kind-icon">MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD_<wbr>CHECKSUM</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#macro_pdf417_optional_field_file_name" class="tsd-kind-icon">MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD_<wbr>FILE_<wbr>NAME</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#macro_pdf417_optional_field_file_size" class="tsd-kind-icon">MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD_<wbr>FILE_<wbr>SIZE</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#macro_pdf417_optional_field_segment_count" class="tsd-kind-icon">MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD_<wbr>SEGMENT_<wbr>COUNT</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#macro_pdf417_optional_field_sender" class="tsd-kind-icon">MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD_<wbr>SENDER</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#macro_pdf417_optional_field_time_stamp" class="tsd-kind-icon">MACRO_<wbr>PDF417_<wbr>OPTIONAL_<wbr>FIELD_<wbr>TIME_<wbr>STAMP</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#macro_pdf417_terminator" class="tsd-kind-icon">MACRO_<wbr>PDF417_<wbr>TERMINATOR</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#max_numeric_codewords" class="tsd-kind-icon">MAX_<wbr>NUMERIC_<wbr>CODEWORDS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#mixed_chars" class="tsd-kind-icon">MIXED_<wbr>CHARS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#ml" class="tsd-kind-icon">ML</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#mode_shift_to_byte_compaction_mode" class="tsd-kind-icon">MODE_<wbr>SHIFT_<wbr>TO_<wbr>BYTE_<wbr>COMPACTION_<wbr>MODE</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#number_of_sequence_codewords" class="tsd-kind-icon">NUMBER_<wbr>OF_<wbr>SEQUENCE_<wbr>CODEWORDS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#numeric_compaction_mode_latch" class="tsd-kind-icon">NUMERIC_<wbr>COMPACTION_<wbr>MODE_<wbr>LATCH</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#pal" class="tsd-kind-icon">PAL</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#pl" class="tsd-kind-icon">PL</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#ps" class="tsd-kind-icon">PS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#punct_chars" class="tsd-kind-icon">PUNCT_<wbr>CHARS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#text_compaction_mode_latch" class="tsd-kind-icon">TEXT_<wbr>COMPACTION_<wbr>MODE_<wbr>LATCH</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#bytecompaction" class="tsd-kind-icon">byte<wbr>Compaction</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#decode" class="tsd-kind-icon">decode</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#decodebase900tobase10" class="tsd-kind-icon">decode<wbr>Base900to<wbr>Base10</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#decodemacroblock" class="tsd-kind-icon">decode<wbr>Macro<wbr>Block</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#decodetextcompaction" class="tsd-kind-icon">decode<wbr>Text<wbr>Compaction</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#numericcompaction" class="tsd-kind-icon">numeric<wbr>Compaction</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.decodedbitstreamparser.html#textcompaction" class="tsd-kind-icon">text<wbr>Compaction</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_pdf417_decoder.detectionresult.html" class="tsd-kind-icon">Detection<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_pdf417_decoder.detectionresultcolumn.html" class="tsd-kind-icon">Detection<wbr>Result<wbr>Column</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_pdf417_decoder.detectionresultrowindicatorcolumn.html" class="tsd-kind-icon">Detection<wbr>Result<wbr>Row<wbr>Indicator<wbr>Column</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_pdf417_decoder.pdf417codeworddecoder.html" class="tsd-kind-icon">PDF417<wbr>Codeword<wbr>Decoder</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_pdf417_decoder.pdf417scanningdecoder.html" class="tsd-kind-icon">PDF417<wbr>Scanning<wbr>Decoder</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/core_pdf417_decoder.html#biginteger" class="tsd-kind-icon">Big<wbr>Integer</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/core_pdf417_decoder.html#createbigint" class="tsd-kind-icon">create<wbr>Big<wbr>Int</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/core_pdf417_decoder.html#getbigintconstructor" class="tsd-kind-icon">get<wbr>Big<wbr>Int<wbr>Constructor</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/core_pdf417_decoder.html#getexp900" class="tsd-kind-icon">getEXP900</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

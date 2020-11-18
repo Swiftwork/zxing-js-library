@@ -1,0 +1,430 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>core/aztec/encoder | @zxing/library - v0.18.3</title>
+	<meta name="description" content="Documentation for @zxing/library - v0.18.3">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@zxing/library - v0.18.3</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="core_aztec_encoder.html">core/aztec/encoder</a>
+				</li>
+			</ul>
+			<h1>Module core/aztec/encoder</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Classes</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/core_aztec_encoder.azteccode.html" class="tsd-kind-icon">Aztec<wbr>Code</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/core_aztec_encoder.binaryshifttoken.html" class="tsd-kind-icon">Binary<wbr>Shift<wbr>Token</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/core_aztec_encoder.encoder.html" class="tsd-kind-icon">Encoder</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/core_aztec_encoder.highlevelencoder.html" class="tsd-kind-icon">High<wbr>Level<wbr>Encoder</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/core_aztec_encoder.simpletoken.html" class="tsd-kind-icon">Simple<wbr>Token</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/core_aztec_encoder.state.html" class="tsd-kind-icon">State</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/core_aztec_encoder.token.html" class="tsd-kind-icon">Token</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Variables</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="core_aztec_encoder.html#char_map" class="tsd-kind-icon">CHAR_<wbr>MAP</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="core_aztec_encoder.html#empty_token" class="tsd-kind-icon">EMPTY_<wbr>TOKEN</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="core_aztec_encoder.html#latch_table" class="tsd-kind-icon">LATCH_<wbr>TABLE</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="core_aztec_encoder.html#mode_digit" class="tsd-kind-icon">MODE_<wbr>DIGIT</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="core_aztec_encoder.html#mode_lower" class="tsd-kind-icon">MODE_<wbr>LOWER</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="core_aztec_encoder.html#mode_mixed" class="tsd-kind-icon">MODE_<wbr>MIXED</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="core_aztec_encoder.html#mode_names" class="tsd-kind-icon">MODE_<wbr>NAMES</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="core_aztec_encoder.html#mode_punct" class="tsd-kind-icon">MODE_<wbr>PUNCT</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="core_aztec_encoder.html#mode_upper" class="tsd-kind-icon">MODE_<wbr>UPPER</a></li>
+								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="core_aztec_encoder.html#shift_table" class="tsd-kind-icon">SHIFT_<wbr>TABLE</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Functions</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="core_aztec_encoder.html#add" class="tsd-kind-icon">add</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="core_aztec_encoder.html#addbinaryshift" class="tsd-kind-icon">add<wbr>Binary<wbr>Shift</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="core_aztec_encoder.html#static_char_map" class="tsd-kind-icon">static_<wbr>CHAR_<wbr>MAP</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="core_aztec_encoder.html#static_shift_table" class="tsd-kind-icon">static_<wbr>SHIFT_<wbr>TABLE</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Variables</h2>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="char_map" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> CHAR_<wbr>MAP</h3>
+					<div class="tsd-signature tsd-kind-icon">CHAR_<wbr>MAP<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = static_CHAR_MAP(Arrays.createInt32Array(5, 256))</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/encoder/CharMap.ts#L108">src/core/aztec/encoder/CharMap.ts:108</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="empty_token" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> EMPTY_<wbr>TOKEN</h3>
+					<div class="tsd-signature tsd-kind-icon">EMPTY_<wbr>TOKEN<span class="tsd-signature-symbol">:</span> <a href="../classes/core_aztec_encoder.token.html" class="tsd-signature-type">Token</a><span class="tsd-signature-symbol"> = new SimpleToken(null, 0, 0)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/encoder/EncoderConstants.ts#L20">src/core/aztec/encoder/EncoderConstants.ts:20</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="latch_table" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> LATCH_<wbr>TABLE</h3>
+					<div class="tsd-signature tsd-kind-icon">LATCH_<wbr>TABLE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [Int32Array.from([0,(5 &lt;&lt; 16) + 28, // UPPER -&gt; LOWER(5 &lt;&lt; 16) + 30, // UPPER -&gt; DIGIT(5 &lt;&lt; 16) + 29, // UPPER -&gt; MIXED(10 &lt;&lt; 16) + (29 &lt;&lt; 5) + 30 // UPPER -&gt; MIXED -&gt; PUNCT]),Int32Array.from([(9 &lt;&lt; 16) + (30 &lt;&lt; 4) + 14, // LOWER -&gt; DIGIT -&gt; UPPER0,(5 &lt;&lt; 16) + 30, // LOWER -&gt; DIGIT(5 &lt;&lt; 16) + 29, // LOWER -&gt; MIXED(10 &lt;&lt; 16) + (29 &lt;&lt; 5) + 30 // LOWER -&gt; MIXED -&gt; PUNCT]),Int32Array.from([(4 &lt;&lt; 16) + 14, // DIGIT -&gt; UPPER(9 &lt;&lt; 16) + (14 &lt;&lt; 5) + 28, // DIGIT -&gt; UPPER -&gt; LOWER0,(9 &lt;&lt; 16) + (14 &lt;&lt; 5) + 29, // DIGIT -&gt; UPPER -&gt; MIXED(14 &lt;&lt; 16) + (14 &lt;&lt; 10) + (29 &lt;&lt; 5) + 30// DIGIT -&gt; UPPER -&gt; MIXED -&gt; PUNCT]),Int32Array.from([(5 &lt;&lt; 16) + 29, // MIXED -&gt; UPPER(5 &lt;&lt; 16) + 28, // MIXED -&gt; LOWER(10 &lt;&lt; 16) + (29 &lt;&lt; 5) + 30, // MIXED -&gt; UPPER -&gt; DIGIT0,(5 &lt;&lt; 16) + 30 // MIXED -&gt; PUNCT]),Int32Array.from([(5 &lt;&lt; 16) + 31, // PUNCT -&gt; UPPER(10 &lt;&lt; 16) + (31 &lt;&lt; 5) + 28, // PUNCT -&gt; UPPER -&gt; LOWER(10 &lt;&lt; 16) + (31 &lt;&lt; 5) + 30, // PUNCT -&gt; UPPER -&gt; DIGIT(10 &lt;&lt; 16) + (31 &lt;&lt; 5) + 29, // PUNCT -&gt; UPPER -&gt; MIXED0])]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/encoder/LatchTable.ts#L6">src/core/aztec/encoder/LatchTable.ts:6</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="mode_digit" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> MODE_<wbr>DIGIT</h3>
+					<div class="tsd-signature tsd-kind-icon">MODE_<wbr>DIGIT<span class="tsd-signature-symbol">:</span> <a href="reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 2</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/encoder/EncoderConstants.ts#L16">src/core/aztec/encoder/EncoderConstants.ts:16</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="mode_lower" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> MODE_<wbr>LOWER</h3>
+					<div class="tsd-signature tsd-kind-icon">MODE_<wbr>LOWER<span class="tsd-signature-symbol">:</span> <a href="reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 1</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/encoder/EncoderConstants.ts#L15">src/core/aztec/encoder/EncoderConstants.ts:15</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="mode_mixed" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> MODE_<wbr>MIXED</h3>
+					<div class="tsd-signature tsd-kind-icon">MODE_<wbr>MIXED<span class="tsd-signature-symbol">:</span> <a href="reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 3</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/encoder/EncoderConstants.ts#L17">src/core/aztec/encoder/EncoderConstants.ts:17</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="mode_names" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> MODE_<wbr>NAMES</h3>
+					<div class="tsd-signature tsd-kind-icon">MODE_<wbr>NAMES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">String</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [&#x27;UPPER&#x27;,&#x27;LOWER&#x27;,&#x27;DIGIT&#x27;,&#x27;MIXED&#x27;,&#x27;PUNCT&#x27;]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/encoder/EncoderConstants.ts#L6">src/core/aztec/encoder/EncoderConstants.ts:6</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="mode_punct" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> MODE_<wbr>PUNCT</h3>
+					<div class="tsd-signature tsd-kind-icon">MODE_<wbr>PUNCT<span class="tsd-signature-symbol">:</span> <a href="reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 4</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/encoder/EncoderConstants.ts#L18">src/core/aztec/encoder/EncoderConstants.ts:18</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="mode_upper" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> MODE_<wbr>UPPER</h3>
+					<div class="tsd-signature tsd-kind-icon">MODE_<wbr>UPPER<span class="tsd-signature-symbol">:</span> <a href="reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/encoder/EncoderConstants.ts#L14">src/core/aztec/encoder/EncoderConstants.ts:14</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
+					<a name="shift_table" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> SHIFT_<wbr>TABLE</h3>
+					<div class="tsd-signature tsd-kind-icon">SHIFT_<wbr>TABLE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = static_SHIFT_TABLE(Arrays.createInt32Array(6, 6))</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/encoder/ShiftTable.ts#L17">src/core/aztec/encoder/ShiftTable.ts:17</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Functions</h2>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="add" class="tsd-anchor"></a>
+					<h3>add</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">add<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><a href="../classes/core_aztec_encoder.token.html" class="tsd-signature-type">Token</a>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, bitCount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/core_aztec_encoder.token.html" class="tsd-signature-type">Token</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/encoder/TokenHelpers.ts#L14">src/core/aztec/encoder/TokenHelpers.ts:14</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>token: <a href="../classes/core_aztec_encoder.token.html" class="tsd-signature-type">Token</a></h5>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>bitCount: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/core_aztec_encoder.token.html" class="tsd-signature-type">Token</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="addbinaryshift" class="tsd-anchor"></a>
+					<h3>add<wbr>Binary<wbr>Shift</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Binary<wbr>Shift<span class="tsd-signature-symbol">(</span>token<span class="tsd-signature-symbol">: </span><a href="../classes/core_aztec_encoder.token.html" class="tsd-signature-type">Token</a>, start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, byteCount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../classes/core_aztec_encoder.token.html" class="tsd-signature-type">Token</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/encoder/TokenHelpers.ts#L5">src/core/aztec/encoder/TokenHelpers.ts:5</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>token: <a href="../classes/core_aztec_encoder.token.html" class="tsd-signature-type">Token</a></h5>
+								</li>
+								<li>
+									<h5>start: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>byteCount: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../classes/core_aztec_encoder.token.html" class="tsd-signature-type">Token</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="static_char_map" class="tsd-anchor"></a>
+					<h3>static_<wbr>CHAR_<wbr>MAP</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">static_<wbr>CHAR_<wbr>MAP<span class="tsd-signature-symbol">(</span>CHAR_MAP<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/encoder/CharMap.ts#L7">src/core/aztec/encoder/CharMap.ts:7</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>CHAR_MAP: <span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
+					<a name="static_shift_table" class="tsd-anchor"></a>
+					<h3>static_<wbr>SHIFT_<wbr>TABLE</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
+						<li class="tsd-signature tsd-kind-icon">static_<wbr>SHIFT_<wbr>TABLE<span class="tsd-signature-symbol">(</span>SHIFT_TABLE<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/encoder/ShiftTable.ts#L4">src/core/aztec/encoder/ShiftTable.ts:4</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>SHIFT_TABLE: <span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="core_aztec_encoder.html">core/aztec/encoder</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core_aztec_encoder.azteccode.html" class="tsd-kind-icon">Aztec<wbr>Code</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core_aztec_encoder.binaryshifttoken.html" class="tsd-kind-icon">Binary<wbr>Shift<wbr>Token</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core_aztec_encoder.encoder.html" class="tsd-kind-icon">Encoder</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core_aztec_encoder.highlevelencoder.html" class="tsd-kind-icon">High<wbr>Level<wbr>Encoder</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core_aztec_encoder.simpletoken.html" class="tsd-kind-icon">Simple<wbr>Token</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core_aztec_encoder.state.html" class="tsd-kind-icon">State</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="../classes/core_aztec_encoder.token.html" class="tsd-kind-icon">Token</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="core_aztec_encoder.html#char_map" class="tsd-kind-icon">CHAR_<wbr>MAP</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="core_aztec_encoder.html#empty_token" class="tsd-kind-icon">EMPTY_<wbr>TOKEN</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="core_aztec_encoder.html#latch_table" class="tsd-kind-icon">LATCH_<wbr>TABLE</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="core_aztec_encoder.html#mode_digit" class="tsd-kind-icon">MODE_<wbr>DIGIT</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="core_aztec_encoder.html#mode_lower" class="tsd-kind-icon">MODE_<wbr>LOWER</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="core_aztec_encoder.html#mode_mixed" class="tsd-kind-icon">MODE_<wbr>MIXED</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="core_aztec_encoder.html#mode_names" class="tsd-kind-icon">MODE_<wbr>NAMES</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="core_aztec_encoder.html#mode_punct" class="tsd-kind-icon">MODE_<wbr>PUNCT</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="core_aztec_encoder.html#mode_upper" class="tsd-kind-icon">MODE_<wbr>UPPER</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="core_aztec_encoder.html#shift_table" class="tsd-kind-icon">SHIFT_<wbr>TABLE</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="core_aztec_encoder.html#add" class="tsd-kind-icon">add</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="core_aztec_encoder.html#addbinaryshift" class="tsd-kind-icon">add<wbr>Binary<wbr>Shift</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="core_aztec_encoder.html#static_char_map" class="tsd-kind-icon">static_<wbr>CHAR_<wbr>MAP</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="core_aztec_encoder.html#static_shift_table" class="tsd-kind-icon">static_<wbr>SHIFT_<wbr>TABLE</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

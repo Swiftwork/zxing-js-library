@@ -1,0 +1,1532 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>RSSExpandedReader | @zxing/library - v0.18.3</title>
+	<meta name="description" content="Documentation for @zxing/library - v0.18.3">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@zxing/library - v0.18.3</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/core_oned_rss_expanded.html">core/oned/rss/expanded</a>
+				</li>
+				<li>
+					<a href="core_oned_rss_expanded.rssexpandedreader.html">RSSExpandedReader</a>
+				</li>
+			</ul>
+			<h1>Class RSSExpandedReader</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="core_oned_rss.abstractrssreader.html" class="tsd-signature-type">AbstractRSSReader</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">RSSExpandedReader</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/core.reader.html" class="tsd-signature-type">Reader</a></li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-inherited">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><a href="core_oned_rss_expanded.rssexpandedreader.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_oned_rss_expanded.rssexpandedreader.html#pairs" class="tsd-kind-icon">pairs</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_oned_rss_expanded.rssexpandedreader.html#rows" class="tsd-kind-icon">rows</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_oned_rss_expanded.rssexpandedreader.html#startend" class="tsd-kind-icon">start<wbr>End</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_oned_rss_expanded.rssexpandedreader.html#startfromeven" class="tsd-kind-icon">start<wbr>From<wbr>Even</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_oned_rss_expanded.rssexpandedreader.html#even_total_subset" class="tsd-kind-icon">EVEN_<wbr>TOTAL_<wbr>SUBSET</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_oned_rss_expanded.rssexpandedreader.html#finder_patterns" class="tsd-kind-icon">FINDER_<wbr>PATTERNS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_oned_rss_expanded.rssexpandedreader.html#finder_pattern_sequences" class="tsd-kind-icon">FINDER_<wbr>PATTERN_<wbr>SEQUENCES</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_oned_rss_expanded.rssexpandedreader.html#finder_pat_a" class="tsd-kind-icon">FINDER_<wbr>PAT_<wbr>A</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_oned_rss_expanded.rssexpandedreader.html#finder_pat_b" class="tsd-kind-icon">FINDER_<wbr>PAT_<wbr>B</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_oned_rss_expanded.rssexpandedreader.html#finder_pat_c" class="tsd-kind-icon">FINDER_<wbr>PAT_<wbr>C</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_oned_rss_expanded.rssexpandedreader.html#finder_pat_d" class="tsd-kind-icon">FINDER_<wbr>PAT_<wbr>D</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_oned_rss_expanded.rssexpandedreader.html#finder_pat_e" class="tsd-kind-icon">FINDER_<wbr>PAT_<wbr>E</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_oned_rss_expanded.rssexpandedreader.html#finder_pat_f" class="tsd-kind-icon">FINDER_<wbr>PAT_<wbr>F</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_oned_rss_expanded.rssexpandedreader.html#gsum" class="tsd-kind-icon">GSUM</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_oned_rss_expanded.rssexpandedreader.html#max_pairs" class="tsd-kind-icon">MAX_<wbr>PAIRS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_oned_rss_expanded.rssexpandedreader.html#symbol_widest" class="tsd-kind-icon">SYMBOL_<wbr>WIDEST</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_oned_rss_expanded.rssexpandedreader.html#weights" class="tsd-kind-icon">WEIGHTS</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_oned_rss_expanded.rssexpandedreader.html#adjustoddevencounts" class="tsd-kind-icon">adjust<wbr>Odd<wbr>Even<wbr>Counts</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_oned_rss_expanded.rssexpandedreader.html#checkchecksum" class="tsd-kind-icon">check<wbr>Checksum</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_oned_rss_expanded.rssexpandedreader.html#checkrows" class="tsd-kind-icon">check<wbr>Rows</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_oned_rss_expanded.rssexpandedreader.html#checkrowsboolean" class="tsd-kind-icon">check<wbr>Rows<wbr>Boolean</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="core_oned_rss_expanded.rssexpandedreader.html#decode" class="tsd-kind-icon">decode</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core_oned_rss_expanded.rssexpandedreader.html#decodedatacharacter" class="tsd-kind-icon">decode<wbr>Data<wbr>Character</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="core_oned_rss_expanded.rssexpandedreader.html#decoderow" class="tsd-kind-icon">decode<wbr>Row</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core_oned_rss_expanded.rssexpandedreader.html#decoderow2pairs" class="tsd-kind-icon">decode<wbr>Row2pairs</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_oned_rss_expanded.rssexpandedreader.html#findnextpair" class="tsd-kind-icon">find<wbr>Next<wbr>Pair</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="core_oned_rss_expanded.rssexpandedreader.html#getdatacharactercounters" class="tsd-kind-icon">get<wbr>Data<wbr>Character<wbr>Counters</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="core_oned_rss_expanded.rssexpandedreader.html#getdecodefindercounters" class="tsd-kind-icon">get<wbr>Decode<wbr>Finder<wbr>Counters</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="core_oned_rss_expanded.rssexpandedreader.html#getevencounts" class="tsd-kind-icon">get<wbr>Even<wbr>Counts</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="core_oned_rss_expanded.rssexpandedreader.html#getevenroundingerrors" class="tsd-kind-icon">get<wbr>Even<wbr>Rounding<wbr>Errors</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="core_oned_rss_expanded.rssexpandedreader.html#getoddcounts" class="tsd-kind-icon">get<wbr>Odd<wbr>Counts</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="core_oned_rss_expanded.rssexpandedreader.html#getoddroundingerrors" class="tsd-kind-icon">get<wbr>Odd<wbr>Rounding<wbr>Errors</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core_oned_rss_expanded.rssexpandedreader.html#getrows" class="tsd-kind-icon">get<wbr>Rows</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core_oned_rss_expanded.rssexpandedreader.html#isemptypair" class="tsd-kind-icon">is<wbr>Empty<wbr>Pair</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="core_oned_rss_expanded.rssexpandedreader.html#parsefindervalue" class="tsd-kind-icon">parse<wbr>Finder<wbr>Value</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_oned_rss_expanded.rssexpandedreader.html#parsefoundfinderpattern" class="tsd-kind-icon">parse<wbr>Found<wbr>Finder<wbr>Pattern</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_oned_rss_expanded.rssexpandedreader.html#removepartialrows" class="tsd-kind-icon">remove<wbr>Partial<wbr>Rows</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="core_oned_rss_expanded.rssexpandedreader.html#reset" class="tsd-kind-icon">reset</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core_oned_rss_expanded.rssexpandedreader.html#retrievenextpair" class="tsd-kind-icon">retrieve<wbr>Next<wbr>Pair</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_oned_rss_expanded.rssexpandedreader.html#storerow" class="tsd-kind-icon">store<wbr>Row</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="core_oned_rss_expanded.rssexpandedreader.html#constructresult" class="tsd-kind-icon">construct<wbr>Result</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static"><a href="core_oned_rss_expanded.rssexpandedreader.html#count" class="tsd-kind-icon">count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static"><a href="core_oned_rss_expanded.rssexpandedreader.html#decrement" class="tsd-kind-icon">decrement</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_oned_rss_expanded.rssexpandedreader.html#getnextsecondbar" class="tsd-kind-icon">get<wbr>Next<wbr>Second<wbr>Bar</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static"><a href="core_oned_rss_expanded.rssexpandedreader.html#increment" class="tsd-kind-icon">increment</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static"><a href="core_oned_rss_expanded.rssexpandedreader.html#isfinderpattern" class="tsd-kind-icon">is<wbr>Finder<wbr>Pattern</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_oned_rss_expanded.rssexpandedreader.html#isnota1left" class="tsd-kind-icon">is<wbr>Not<wbr>A1left</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_oned_rss_expanded.rssexpandedreader.html#ispartialrow" class="tsd-kind-icon">is<wbr>Partial<wbr>Row</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_oned_rss_expanded.rssexpandedreader.html#isvalidsequence" class="tsd-kind-icon">is<wbr>Valid<wbr>Sequence</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static"><a href="core_oned_rss_expanded.rssexpandedreader.html#patternmatchvariance" class="tsd-kind-icon">pattern<wbr>Match<wbr>Variance</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static"><a href="core_oned_rss_expanded.rssexpandedreader.html#recordpattern" class="tsd-kind-icon">record<wbr>Pattern</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static"><a href="core_oned_rss_expanded.rssexpandedreader.html#recordpatterninreverse" class="tsd-kind-icon">record<wbr>Pattern<wbr>InReverse</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_oned_rss_expanded.rssexpandedreader.html#reversecounters" class="tsd-kind-icon">reverse<wbr>Counters</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">new RSSExpanded<wbr>Reader<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_oned_rss_expanded.rssexpandedreader.html" class="tsd-signature-type">RSSExpandedReader</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="core_oned_rss.abstractrssreader.html">AbstractRSSReader</a>.<a href="core_oned_rss.abstractrssreader.html#constructor">constructor</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/AbstractRSSReader.ts#L20">src/core/oned/rss/AbstractRSSReader.ts:20</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="core_oned_rss_expanded.rssexpandedreader.html" class="tsd-signature-type">RSSExpandedReader</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="pairs" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> pairs</h3>
+					<div class="tsd-signature tsd-kind-icon">pairs<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> = new Array&lt;any&gt;(RSSExpandedReader.MAX_PAIRS)</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L91">src/core/oned/rss/expanded/RSSExpandedReader.ts:91</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="rows" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> rows</h3>
+					<div class="tsd-signature tsd-kind-icon">rows<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol"> = new Array&lt;any&gt;()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L92">src/core/oned/rss/expanded/RSSExpandedReader.ts:92</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="startend" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> start<wbr>End</h3>
+					<div class="tsd-signature tsd-kind-icon">start<wbr>End<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [2]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L94">src/core/oned/rss/expanded/RSSExpandedReader.ts:94</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="startfromeven" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> start<wbr>From<wbr>Even</h3>
+					<div class="tsd-signature tsd-kind-icon">start<wbr>From<wbr>Even<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L95">src/core/oned/rss/expanded/RSSExpandedReader.ts:95</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="even_total_subset" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> EVEN_<wbr>TOTAL_<wbr>SUBSET</h3>
+					<div class="tsd-signature tsd-kind-icon">EVEN_<wbr>TOTAL_<wbr>SUBSET<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [4, 20, 52, 104, 204]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L31">src/core/oned/rss/expanded/RSSExpandedReader.ts:31</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="finder_patterns" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> FINDER_<wbr>PATTERNS</h3>
+					<div class="tsd-signature tsd-kind-icon">FINDER_<wbr>PATTERNS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [Int32Array.from([1, 8, 4, 1]), // AInt32Array.from([3, 6, 4, 1]), // BInt32Array.from([3, 4, 6, 1]), // CInt32Array.from([3, 2, 8, 1]), // DInt32Array.from([2, 6, 5, 1]), // EInt32Array.from([2, 2, 9, 1])  // F]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L34">src/core/oned/rss/expanded/RSSExpandedReader.ts:34</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="finder_pattern_sequences" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> FINDER_<wbr>PATTERN_<wbr>SEQUENCES</h3>
+					<div class="tsd-signature tsd-kind-icon">FINDER_<wbr>PATTERN_<wbr>SEQUENCES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [[RSSExpandedReader.FINDER_PAT_A, RSSExpandedReader.FINDER_PAT_A],[RSSExpandedReader.FINDER_PAT_A, RSSExpandedReader.FINDER_PAT_B, RSSExpandedReader.FINDER_PAT_B],[RSSExpandedReader.FINDER_PAT_A, RSSExpandedReader.FINDER_PAT_C, RSSExpandedReader.FINDER_PAT_B, RSSExpandedReader.FINDER_PAT_D],[RSSExpandedReader.FINDER_PAT_A, RSSExpandedReader.FINDER_PAT_E, RSSExpandedReader.FINDER_PAT_B, RSSExpandedReader.FINDER_PAT_D, RSSExpandedReader.FINDER_PAT_C],[RSSExpandedReader.FINDER_PAT_A, RSSExpandedReader.FINDER_PAT_E, RSSExpandedReader.FINDER_PAT_B, RSSExpandedReader.FINDER_PAT_D, RSSExpandedReader.FINDER_PAT_D, RSSExpandedReader.FINDER_PAT_F],[RSSExpandedReader.FINDER_PAT_A, RSSExpandedReader.FINDER_PAT_E, RSSExpandedReader.FINDER_PAT_B, RSSExpandedReader.FINDER_PAT_D, RSSExpandedReader.FINDER_PAT_E, RSSExpandedReader.FINDER_PAT_F, RSSExpandedReader.FINDER_PAT_F],[RSSExpandedReader.FINDER_PAT_A, RSSExpandedReader.FINDER_PAT_A, RSSExpandedReader.FINDER_PAT_B, RSSExpandedReader.FINDER_PAT_B, RSSExpandedReader.FINDER_PAT_C, RSSExpandedReader.FINDER_PAT_C, RSSExpandedReader.FINDER_PAT_D, RSSExpandedReader.FINDER_PAT_D],[RSSExpandedReader.FINDER_PAT_A, RSSExpandedReader.FINDER_PAT_A, RSSExpandedReader.FINDER_PAT_B, RSSExpandedReader.FINDER_PAT_B, RSSExpandedReader.FINDER_PAT_C, RSSExpandedReader.FINDER_PAT_C, RSSExpandedReader.FINDER_PAT_D, RSSExpandedReader.FINDER_PAT_E, RSSExpandedReader.FINDER_PAT_E],[RSSExpandedReader.FINDER_PAT_A, RSSExpandedReader.FINDER_PAT_A, RSSExpandedReader.FINDER_PAT_B, RSSExpandedReader.FINDER_PAT_B, RSSExpandedReader.FINDER_PAT_C, RSSExpandedReader.FINDER_PAT_C, RSSExpandedReader.FINDER_PAT_D, RSSExpandedReader.FINDER_PAT_E, RSSExpandedReader.FINDER_PAT_F, RSSExpandedReader.FINDER_PAT_F],[RSSExpandedReader.FINDER_PAT_A, RSSExpandedReader.FINDER_PAT_A, RSSExpandedReader.FINDER_PAT_B, RSSExpandedReader.FINDER_PAT_B, RSSExpandedReader.FINDER_PAT_C, RSSExpandedReader.FINDER_PAT_D, RSSExpandedReader.FINDER_PAT_D, RSSExpandedReader.FINDER_PAT_E, RSSExpandedReader.FINDER_PAT_E, RSSExpandedReader.FINDER_PAT_F, RSSExpandedReader.FINDER_PAT_F],]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L76">src/core/oned/rss/expanded/RSSExpandedReader.ts:76</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="finder_pat_a" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> FINDER_<wbr>PAT_<wbr>A</h3>
+					<div class="tsd-signature tsd-kind-icon">FINDER_<wbr>PAT_<wbr>A<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">0</span><span class="tsd-signature-symbol"> = 0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L69">src/core/oned/rss/expanded/RSSExpandedReader.ts:69</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="finder_pat_b" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> FINDER_<wbr>PAT_<wbr>B</h3>
+					<div class="tsd-signature tsd-kind-icon">FINDER_<wbr>PAT_<wbr>B<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> = 1</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L70">src/core/oned/rss/expanded/RSSExpandedReader.ts:70</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="finder_pat_c" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> FINDER_<wbr>PAT_<wbr>C</h3>
+					<div class="tsd-signature tsd-kind-icon">FINDER_<wbr>PAT_<wbr>C<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">2</span><span class="tsd-signature-symbol"> = 2</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L71">src/core/oned/rss/expanded/RSSExpandedReader.ts:71</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="finder_pat_d" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> FINDER_<wbr>PAT_<wbr>D</h3>
+					<div class="tsd-signature tsd-kind-icon">FINDER_<wbr>PAT_<wbr>D<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">3</span><span class="tsd-signature-symbol"> = 3</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L72">src/core/oned/rss/expanded/RSSExpandedReader.ts:72</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="finder_pat_e" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> FINDER_<wbr>PAT_<wbr>E</h3>
+					<div class="tsd-signature tsd-kind-icon">FINDER_<wbr>PAT_<wbr>E<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">4</span><span class="tsd-signature-symbol"> = 4</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L73">src/core/oned/rss/expanded/RSSExpandedReader.ts:73</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="finder_pat_f" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> FINDER_<wbr>PAT_<wbr>F</h3>
+					<div class="tsd-signature tsd-kind-icon">FINDER_<wbr>PAT_<wbr>F<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">5</span><span class="tsd-signature-symbol"> = 5</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L74">src/core/oned/rss/expanded/RSSExpandedReader.ts:74</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="gsum" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> GSUM</h3>
+					<div class="tsd-signature tsd-kind-icon">GSUM<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [0, 348, 1388, 2948, 3988]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L32">src/core/oned/rss/expanded/RSSExpandedReader.ts:32</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="max_pairs" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> MAX_<wbr>PAIRS</h3>
+					<div class="tsd-signature tsd-kind-icon">MAX_<wbr>PAIRS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">11</span><span class="tsd-signature-symbol"> = 11</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L89">src/core/oned/rss/expanded/RSSExpandedReader.ts:89</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="symbol_widest" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> SYMBOL_<wbr>WIDEST</h3>
+					<div class="tsd-signature tsd-kind-icon">SYMBOL_<wbr>WIDEST<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [7, 5, 4, 3, 1]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L30">src/core/oned/rss/expanded/RSSExpandedReader.ts:30</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="weights" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> WEIGHTS</h3>
+					<div class="tsd-signature tsd-kind-icon">WEIGHTS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [[1, 3, 9, 27, 81, 32, 96, 77],[20, 60, 180, 118, 143, 7, 21, 63],[189, 145, 13, 39, 117, 140, 209, 205],[193, 157, 49, 147, 19, 57, 171, 91],[62, 186, 136, 197, 169, 85, 44, 132],[185, 133, 188, 142, 4, 12, 36, 108],[113, 128, 173, 97, 80, 29, 87, 50],[150, 28, 84, 41, 123, 158, 52, 156],[46, 138, 203, 187, 139, 206, 196, 166],[76, 17, 51, 153, 37, 111, 122, 155],[43, 129, 176, 106, 107, 110, 119, 146],[16, 48, 144, 10, 30, 90, 59, 177],[109, 116, 137, 200, 178, 112, 125, 164],[70, 210, 208, 202, 184, 130, 179, 115],[134, 191, 151, 31, 93, 68, 204, 190],[148, 22, 66, 198, 172, 94, 71, 2],[6, 18, 54, 162, 64, 192, 154, 40],[120, 149, 25, 75, 14, 42, 126, 167],[79, 26, 78, 23, 69, 207, 199, 175],[103, 98, 83, 38, 114, 131, 182, 124],[161, 61, 183, 127, 170, 88, 53, 159],[55, 165, 73, 8, 24, 72, 5, 15],[45, 135, 194, 160, 58, 174, 100, 89]]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L43">src/core/oned/rss/expanded/RSSExpandedReader.ts:43</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="adjustoddevencounts" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> adjust<wbr>Odd<wbr>Even<wbr>Counts</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">adjust<wbr>Odd<wbr>Even<wbr>Counts<span class="tsd-signature-symbol">(</span>numModules<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L693">src/core/oned/rss/expanded/RSSExpandedReader.ts:693</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>numModules: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="checkchecksum" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> check<wbr>Checksum</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Checksum<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L382">src/core/oned/rss/expanded/RSSExpandedReader.ts:382</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="checkrows" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> check<wbr>Rows</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Rows<span class="tsd-signature-symbol">(</span>collectedRows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, currentRow<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="core_oned_rss_expanded.expandedpair.html" class="tsd-signature-type">ExpandedPair</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L198">src/core/oned/rss/expanded/RSSExpandedReader.ts:198</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>collectedRows: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>currentRow: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="core_oned_rss_expanded.expandedpair.html" class="tsd-signature-type">ExpandedPair</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="checkrowsboolean" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> check<wbr>Rows<wbr>Boolean</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Rows<wbr>Boolean<span class="tsd-signature-symbol">(</span>reverse<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="core_oned_rss_expanded.expandedpair.html" class="tsd-signature-type">ExpandedPair</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L166">src/core/oned/rss/expanded/RSSExpandedReader.ts:166</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>reverse: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="core_oned_rss_expanded.expandedpair.html" class="tsd-signature-type">ExpandedPair</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="decode" class="tsd-anchor"></a>
+					<h3>decode</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">decode<span class="tsd-signature-symbol">(</span>image<span class="tsd-signature-symbol">: </span><a href="core.binarybitmap.html" class="tsd-signature-type">BinaryBitmap</a>, hints<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../enums/core.decodehinttype.html" class="tsd-signature-type">DecodeHintType</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.result.html" class="tsd-signature-type">Result</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="core_oned.onedreader.html">OneDReader</a>.<a href="core_oned.onedreader.html#decode">decode</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/OneDReader.ts#L47">src/core/oned/OneDReader.ts:47</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>image: <a href="core.binarybitmap.html" class="tsd-signature-type">BinaryBitmap</a></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> hints: <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../enums/core.decodehinttype.html" class="tsd-signature-type">DecodeHintType</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core.result.html" class="tsd-signature-type">Result</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="decodedatacharacter" class="tsd-anchor"></a>
+					<h3>decode<wbr>Data<wbr>Character</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">decode<wbr>Data<wbr>Character<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a>, pattern<span class="tsd-signature-symbol">: </span><a href="core_oned_rss.finderpattern.html" class="tsd-signature-type">FinderPattern</a>, isOddPattern<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, leftChar<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_oned_rss.datacharacter.html" class="tsd-signature-type">DataCharacter</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L592">src/core/oned/rss/expanded/RSSExpandedReader.ts:592</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>row: <a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a></h5>
+								</li>
+								<li>
+									<h5>pattern: <a href="core_oned_rss.finderpattern.html" class="tsd-signature-type">FinderPattern</a></h5>
+								</li>
+								<li>
+									<h5>isOddPattern: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5>leftChar: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_oned_rss.datacharacter.html" class="tsd-signature-type">DataCharacter</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="decoderow" class="tsd-anchor"></a>
+					<h3>decode<wbr>Row</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">decode<wbr>Row<span class="tsd-signature-symbol">(</span>rowNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, row<span class="tsd-signature-symbol">: </span><a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a>, hints<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../enums/core.decodehinttype.html" class="tsd-signature-type">DecodeHintType</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.result.html" class="tsd-signature-type">Result</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="core_oned.onedreader.html">OneDReader</a>.<a href="core_oned.onedreader.html#decoderow">decodeRow</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L97">src/core/oned/rss/expanded/RSSExpandedReader.ts:97</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>rowNumber: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>row: <a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a></h5>
+								</li>
+								<li>
+									<h5>hints: <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../enums/core.decodehinttype.html" class="tsd-signature-type">DecodeHintType</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core.result.html" class="tsd-signature-type">Result</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="decoderow2pairs" class="tsd-anchor"></a>
+					<h3>decode<wbr>Row2pairs</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">decode<wbr>Row2pairs<span class="tsd-signature-symbol">(</span>rowNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, row<span class="tsd-signature-symbol">: </span><a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="core_oned_rss_expanded.expandedpair.html" class="tsd-signature-type">ExpandedPair</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L122">src/core/oned/rss/expanded/RSSExpandedReader.ts:122</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>rowNumber: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>row: <a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="core_oned_rss_expanded.expandedpair.html" class="tsd-signature-type">ExpandedPair</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="findnextpair" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> find<wbr>Next<wbr>Pair</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Next<wbr>Pair<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a>, previousPairs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="core_oned_rss_expanded.expandedpair.html" class="tsd-signature-type">ExpandedPair</a><span class="tsd-signature-symbol">&gt;</span>, forcedOffset<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L469">src/core/oned/rss/expanded/RSSExpandedReader.ts:469</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>row: <a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a></h5>
+								</li>
+								<li>
+									<h5>previousPairs: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="core_oned_rss_expanded.expandedpair.html" class="tsd-signature-type">ExpandedPair</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>forcedOffset: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="getdatacharactercounters" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Data<wbr>Character<wbr>Counters</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Data<wbr>Character<wbr>Counters<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="core_oned_rss.abstractrssreader.html">AbstractRSSReader</a>.<a href="core_oned_rss.abstractrssreader.html#getdatacharactercounters">getDataCharacterCounters</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/AbstractRSSReader.ts#L36">src/core/oned/rss/AbstractRSSReader.ts:36</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Int32Array</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="getdecodefindercounters" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Decode<wbr>Finder<wbr>Counters</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Decode<wbr>Finder<wbr>Counters<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="core_oned_rss.abstractrssreader.html">AbstractRSSReader</a>.<a href="core_oned_rss.abstractrssreader.html#getdecodefindercounters">getDecodeFinderCounters</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/AbstractRSSReader.ts#L32">src/core/oned/rss/AbstractRSSReader.ts:32</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Int32Array</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="getevencounts" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Even<wbr>Counts</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Even<wbr>Counts<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="core_oned_rss.abstractrssreader.html">AbstractRSSReader</a>.<a href="core_oned_rss.abstractrssreader.html#getevencounts">getEvenCounts</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/AbstractRSSReader.ts#L52">src/core/oned/rss/AbstractRSSReader.ts:52</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="getevenroundingerrors" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Even<wbr>Rounding<wbr>Errors</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Even<wbr>Rounding<wbr>Errors<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="core_oned_rss.abstractrssreader.html">AbstractRSSReader</a>.<a href="core_oned_rss.abstractrssreader.html#getevenroundingerrors">getEvenRoundingErrors</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/AbstractRSSReader.ts#L44">src/core/oned/rss/AbstractRSSReader.ts:44</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="getoddcounts" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Odd<wbr>Counts</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Odd<wbr>Counts<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="core_oned_rss.abstractrssreader.html">AbstractRSSReader</a>.<a href="core_oned_rss.abstractrssreader.html#getoddcounts">getOddCounts</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/AbstractRSSReader.ts#L48">src/core/oned/rss/AbstractRSSReader.ts:48</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="getoddroundingerrors" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Odd<wbr>Rounding<wbr>Errors</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Odd<wbr>Rounding<wbr>Errors<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="core_oned_rss.abstractrssreader.html">AbstractRSSReader</a>.<a href="core_oned_rss.abstractrssreader.html#getoddroundingerrors">getOddRoundingErrors</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/AbstractRSSReader.ts#L40">src/core/oned/rss/AbstractRSSReader.ts:40</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getrows" class="tsd-anchor"></a>
+					<h3>get<wbr>Rows</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Rows<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L357">src/core/oned/rss/expanded/RSSExpandedReader.ts:357</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isemptypair" class="tsd-anchor"></a>
+					<h3>is<wbr>Empty<wbr>Pair</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Empty<wbr>Pair<span class="tsd-signature-symbol">(</span>pairs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L463">src/core/oned/rss/expanded/RSSExpandedReader.ts:463</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pairs: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+					<a name="parsefindervalue" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> parse<wbr>Finder<wbr>Value</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">parse<wbr>Finder<wbr>Value<span class="tsd-signature-symbol">(</span>counters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span>, finderPatterns<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="core_oned_rss.abstractrssreader.html">AbstractRSSReader</a>.<a href="core_oned_rss.abstractrssreader.html#parsefindervalue">parseFinderValue</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/AbstractRSSReader.ts#L56">src/core/oned/rss/AbstractRSSReader.ts:56</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>counters: <span class="tsd-signature-type">Int32Array</span></h5>
+								</li>
+								<li>
+									<h5>finderPatterns: <span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="parsefoundfinderpattern" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> parse<wbr>Found<wbr>Finder<wbr>Pattern</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">parse<wbr>Found<wbr>Finder<wbr>Pattern<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a>, rowNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, oddPattern<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_oned_rss.finderpattern.html" class="tsd-signature-type">FinderPattern</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L547">src/core/oned/rss/expanded/RSSExpandedReader.ts:547</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>row: <a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a></h5>
+								</li>
+								<li>
+									<h5>rowNumber: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>oddPattern: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_oned_rss.finderpattern.html" class="tsd-signature-type">FinderPattern</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="removepartialrows" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> remove<wbr>Partial<wbr>Rows</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Partial<wbr>Rows<span class="tsd-signature-symbol">(</span>pairs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="core_oned_rss_expanded.expandedpair.html" class="tsd-signature-type">ExpandedPair</a><span class="tsd-signature-symbol">&gt;</span>, rows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="core_oned_rss_expanded.expandedrow.html" class="tsd-signature-type">ExpandedRow</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L286">src/core/oned/rss/expanded/RSSExpandedReader.ts:286</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pairs: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="core_oned_rss_expanded.expandedpair.html" class="tsd-signature-type">ExpandedPair</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>rows: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="core_oned_rss_expanded.expandedrow.html" class="tsd-signature-type">ExpandedRow</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="reset" class="tsd-anchor"></a>
+					<h3>reset</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">reset<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Implementation of <a href="../interfaces/core.reader.html">Reader</a>.<a href="../interfaces/core.reader.html#reset">reset</a></p>
+								<p>Overrides <a href="core_oned.onedreader.html">OneDReader</a>.<a href="core_oned.onedreader.html#reset">reset</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L116">src/core/oned/rss/expanded/RSSExpandedReader.ts:116</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="retrievenextpair" class="tsd-anchor"></a>
+					<h3>retrieve<wbr>Next<wbr>Pair</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">retrieve<wbr>Next<wbr>Pair<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a>, previousPairs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="core_oned_rss_expanded.expandedpair.html" class="tsd-signature-type">ExpandedPair</a><span class="tsd-signature-symbol">&gt;</span>, rowNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_oned_rss_expanded.expandedpair.html" class="tsd-signature-type">ExpandedPair</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L425">src/core/oned/rss/expanded/RSSExpandedReader.ts:425</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>row: <a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a></h5>
+								</li>
+								<li>
+									<h5>previousPairs: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="core_oned_rss_expanded.expandedpair.html" class="tsd-signature-type">ExpandedPair</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+								<li>
+									<h5>rowNumber: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_oned_rss_expanded.expandedpair.html" class="tsd-signature-type">ExpandedPair</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="storerow" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> store<wbr>Row</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">store<wbr>Row<span class="tsd-signature-symbol">(</span>rowNumber<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, wasReversed<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L253">src/core/oned/rss/expanded/RSSExpandedReader.ts:253</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>rowNumber: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>wasReversed: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="constructresult" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> construct<wbr>Result</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">construct<wbr>Result<span class="tsd-signature-symbol">(</span>pairs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="core_oned_rss_expanded.expandedpair.html" class="tsd-signature-type">ExpandedPair</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core.result.html" class="tsd-signature-type">Result</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L362">src/core/oned/rss/expanded/RSSExpandedReader.ts:362</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pairs: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="core_oned_rss_expanded.expandedpair.html" class="tsd-signature-type">ExpandedPair</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core.result.html" class="tsd-signature-type">Result</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static">
+					<a name="count" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagProtected">Protected</span> count</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">count<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="core_oned_rss.abstractrssreader.html">AbstractRSSReader</a>.<a href="core_oned_rss.abstractrssreader.html#count">count</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/AbstractRSSReader.ts#L70">src/core/oned/rss/AbstractRSSReader.ts:70</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>call {@link MathUtils#sum(int[])}</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>array: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>values to sum</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>sum of values</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static">
+					<a name="decrement" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagProtected">Protected</span> decrement</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">decrement<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, errors<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="core_oned_rss.abstractrssreader.html">AbstractRSSReader</a>.<a href="core_oned_rss.abstractrssreader.html#decrement">decrement</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/AbstractRSSReader.ts#L86">src/core/oned/rss/AbstractRSSReader.ts:86</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>array: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>errors: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="getnextsecondbar" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Next<wbr>Second<wbr>Bar</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Next<wbr>Second<wbr>Bar<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a>, initialPos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L412">src/core/oned/rss/expanded/RSSExpandedReader.ts:412</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>row: <a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a></h5>
+								</li>
+								<li>
+									<h5>initialPos: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static">
+					<a name="increment" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagProtected">Protected</span> increment</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">increment<span class="tsd-signature-symbol">(</span>array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span>, errors<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="core_oned_rss.abstractrssreader.html">AbstractRSSReader</a>.<a href="core_oned_rss.abstractrssreader.html#increment">increment</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/AbstractRSSReader.ts#L74">src/core/oned/rss/AbstractRSSReader.ts:74</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>array: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>errors: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static">
+					<a name="isfinderpattern" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagProtected">Protected</span> is<wbr>Finder<wbr>Pattern</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Finder<wbr>Pattern<span class="tsd-signature-symbol">(</span>counters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="core_oned_rss.abstractrssreader.html">AbstractRSSReader</a>.<a href="core_oned_rss.abstractrssreader.html#isfinderpattern">isFinderPattern</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/AbstractRSSReader.ts#L98">src/core/oned/rss/AbstractRSSReader.ts:98</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>counters: <span class="tsd-signature-type">Int32Array</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="isnota1left" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>Not<wbr>A1left</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Not<wbr>A1left<span class="tsd-signature-symbol">(</span>pattern<span class="tsd-signature-symbol">: </span><a href="core_oned_rss.finderpattern.html" class="tsd-signature-type">FinderPattern</a>, isOddPattern<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, leftChar<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L688">src/core/oned/rss/expanded/RSSExpandedReader.ts:688</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pattern: <a href="core_oned_rss.finderpattern.html" class="tsd-signature-type">FinderPattern</a></h5>
+								</li>
+								<li>
+									<h5>isOddPattern: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5>leftChar: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="ispartialrow" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>Partial<wbr>Row</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Partial<wbr>Row<span class="tsd-signature-symbol">(</span>pairs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, rows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L332">src/core/oned/rss/expanded/RSSExpandedReader.ts:332</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pairs: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>rows: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="isvalidsequence" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>Valid<wbr>Sequence</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Valid<wbr>Sequence<span class="tsd-signature-symbol">(</span>pairs<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="core_oned_rss_expanded.expandedpair.html" class="tsd-signature-type">ExpandedPair</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L231">src/core/oned/rss/expanded/RSSExpandedReader.ts:231</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pairs: <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><a href="core_oned_rss_expanded.expandedpair.html" class="tsd-signature-type">ExpandedPair</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static">
+					<a name="patternmatchvariance" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagProtected">Protected</span> pattern<wbr>Match<wbr>Variance</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">pattern<wbr>Match<wbr>Variance<span class="tsd-signature-symbol">(</span>counters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span>, pattern<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span>, maxIndividualVariance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="core_oned.onedreader.html">OneDReader</a>.<a href="core_oned.onedreader.html#patternmatchvariance">patternMatchVariance</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/OneDReader.ts#L246">src/core/oned/OneDReader.ts:246</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Determines how closely a set of observed counts of runs of black/white values matches a given
+										target pattern. This is reported as the ratio of the total variance from the expected pattern
+									proportions across all pattern elements, to the length of the pattern.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>counters: <span class="tsd-signature-type">Int32Array</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>observed counters</p>
+									</div>
+								</li>
+								<li>
+									<h5>pattern: <span class="tsd-signature-type">Int32Array</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>expected pattern</p>
+									</div>
+								</li>
+								<li>
+									<h5>maxIndividualVariance: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The most any counter can differ before we give up</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>ratio of total variance between counters and pattern compared to total pattern size</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static">
+					<a name="recordpattern" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagProtected">Protected</span> record<wbr>Pattern</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">record<wbr>Pattern<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a>, start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, counters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="core_oned.onedreader.html">OneDReader</a>.<a href="core_oned.onedreader.html#recordpattern">recordPattern</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/OneDReader.ts#L185">src/core/oned/OneDReader.ts:185</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Records the size of successive runs of white and black pixels in a row, starting at a given point.
+										The values are recorded in the given array, and the number of runs recorded is equal to the size
+										of the array. If the row starts on a white pixel at the given start point, then the first count
+										recorded is the run of white pixels starting from that point; likewise it is the count of a run
+									of black pixels if the row begin on a black pixels at that point.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>NotFoundException if counters cannot be filled entirely from row before running out
+										of pixels</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>row: <a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>row to count from</p>
+									</div>
+								</li>
+								<li>
+									<h5>start: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>offset into row to start at</p>
+									</div>
+								</li>
+								<li>
+									<h5>counters: <span class="tsd-signature-type">Int32Array</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>array into which to record counts</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static">
+					<a name="recordpatterninreverse" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagProtected">Protected</span> record<wbr>Pattern<wbr>InReverse</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">record<wbr>Pattern<wbr>InReverse<span class="tsd-signature-symbol">(</span>row<span class="tsd-signature-symbol">: </span><a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a>, start<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, counters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="core_oned.onedreader.html">OneDReader</a>.<a href="core_oned.onedreader.html#recordpatterninreverse">recordPatternInReverse</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/OneDReader.ts#L219">src/core/oned/OneDReader.ts:219</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>row: <a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a></h5>
+								</li>
+								<li>
+									<h5>start: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>counters: <span class="tsd-signature-type">Int32Array</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="reversecounters" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> reverse<wbr>Counters</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">reverse<wbr>Counters<span class="tsd-signature-symbol">(</span>counters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/RSSExpandedReader.ts#L538">src/core/oned/rss/expanded/RSSExpandedReader.ts:538</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>counters: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/core_oned_rss_expanded.html">core/oned/rss/expanded</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_oned_rss_expanded.bitarraybuilder.html" class="tsd-kind-icon">Bit<wbr>Array<wbr>Builder</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_oned_rss_expanded.expandedpair.html" class="tsd-kind-icon">Expanded<wbr>Pair</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_oned_rss_expanded.expandedrow.html" class="tsd-kind-icon">Expanded<wbr>Row</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="core_oned_rss_expanded.rssexpandedreader.html" class="tsd-kind-icon">RSSExpanded<wbr>Reader</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#pairs" class="tsd-kind-icon">pairs</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#rows" class="tsd-kind-icon">rows</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#startend" class="tsd-kind-icon">start<wbr>End</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#startfromeven" class="tsd-kind-icon">start<wbr>From<wbr>Even</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#even_total_subset" class="tsd-kind-icon">EVEN_<wbr>TOTAL_<wbr>SUBSET</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#finder_patterns" class="tsd-kind-icon">FINDER_<wbr>PATTERNS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#finder_pattern_sequences" class="tsd-kind-icon">FINDER_<wbr>PATTERN_<wbr>SEQUENCES</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#finder_pat_a" class="tsd-kind-icon">FINDER_<wbr>PAT_<wbr>A</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#finder_pat_b" class="tsd-kind-icon">FINDER_<wbr>PAT_<wbr>B</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#finder_pat_c" class="tsd-kind-icon">FINDER_<wbr>PAT_<wbr>C</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#finder_pat_d" class="tsd-kind-icon">FINDER_<wbr>PAT_<wbr>D</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#finder_pat_e" class="tsd-kind-icon">FINDER_<wbr>PAT_<wbr>E</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#finder_pat_f" class="tsd-kind-icon">FINDER_<wbr>PAT_<wbr>F</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#gsum" class="tsd-kind-icon">GSUM</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#max_pairs" class="tsd-kind-icon">MAX_<wbr>PAIRS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#symbol_widest" class="tsd-kind-icon">SYMBOL_<wbr>WIDEST</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#weights" class="tsd-kind-icon">WEIGHTS</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#adjustoddevencounts" class="tsd-kind-icon">adjust<wbr>Odd<wbr>Even<wbr>Counts</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#checkchecksum" class="tsd-kind-icon">check<wbr>Checksum</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#checkrows" class="tsd-kind-icon">check<wbr>Rows</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#checkrowsboolean" class="tsd-kind-icon">check<wbr>Rows<wbr>Boolean</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#decode" class="tsd-kind-icon">decode</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#decodedatacharacter" class="tsd-kind-icon">decode<wbr>Data<wbr>Character</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#decoderow" class="tsd-kind-icon">decode<wbr>Row</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#decoderow2pairs" class="tsd-kind-icon">decode<wbr>Row2pairs</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#findnextpair" class="tsd-kind-icon">find<wbr>Next<wbr>Pair</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#getdatacharactercounters" class="tsd-kind-icon">get<wbr>Data<wbr>Character<wbr>Counters</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#getdecodefindercounters" class="tsd-kind-icon">get<wbr>Decode<wbr>Finder<wbr>Counters</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#getevencounts" class="tsd-kind-icon">get<wbr>Even<wbr>Counts</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#getevenroundingerrors" class="tsd-kind-icon">get<wbr>Even<wbr>Rounding<wbr>Errors</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#getoddcounts" class="tsd-kind-icon">get<wbr>Odd<wbr>Counts</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#getoddroundingerrors" class="tsd-kind-icon">get<wbr>Odd<wbr>Rounding<wbr>Errors</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#getrows" class="tsd-kind-icon">get<wbr>Rows</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#isemptypair" class="tsd-kind-icon">is<wbr>Empty<wbr>Pair</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#parsefindervalue" class="tsd-kind-icon">parse<wbr>Finder<wbr>Value</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#parsefoundfinderpattern" class="tsd-kind-icon">parse<wbr>Found<wbr>Finder<wbr>Pattern</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#removepartialrows" class="tsd-kind-icon">remove<wbr>Partial<wbr>Rows</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#reset" class="tsd-kind-icon">reset</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#retrievenextpair" class="tsd-kind-icon">retrieve<wbr>Next<wbr>Pair</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#storerow" class="tsd-kind-icon">store<wbr>Row</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#constructresult" class="tsd-kind-icon">construct<wbr>Result</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#count" class="tsd-kind-icon">count</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#decrement" class="tsd-kind-icon">decrement</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#getnextsecondbar" class="tsd-kind-icon">get<wbr>Next<wbr>Second<wbr>Bar</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#increment" class="tsd-kind-icon">increment</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#isfinderpattern" class="tsd-kind-icon">is<wbr>Finder<wbr>Pattern</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#isnota1left" class="tsd-kind-icon">is<wbr>Not<wbr>A1left</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#ispartialrow" class="tsd-kind-icon">is<wbr>Partial<wbr>Row</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#isvalidsequence" class="tsd-kind-icon">is<wbr>Valid<wbr>Sequence</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#patternmatchvariance" class="tsd-kind-icon">pattern<wbr>Match<wbr>Variance</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#recordpattern" class="tsd-kind-icon">record<wbr>Pattern</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected tsd-is-static">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#recordpatterninreverse" class="tsd-kind-icon">record<wbr>Pattern<wbr>InReverse</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_oned_rss_expanded.rssexpandedreader.html#reversecounters" class="tsd-kind-icon">reverse<wbr>Counters</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

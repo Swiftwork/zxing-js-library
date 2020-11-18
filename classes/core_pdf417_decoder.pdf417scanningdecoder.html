@@ -1,0 +1,1241 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>PDF417ScanningDecoder | @zxing/library - v0.18.3</title>
+	<meta name="description" content="Documentation for @zxing/library - v0.18.3">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@zxing/library - v0.18.3</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/core_pdf417_decoder.html">core/pdf417/decoder</a>
+				</li>
+				<li>
+					<a href="core_pdf417_decoder.pdf417scanningdecoder.html">PDF417ScanningDecoder</a>
+				</li>
+			</ul>
+			<h1>Class PDF417ScanningDecoder</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<dl class="tsd-comment-tags">
+						<dt>author</dt>
+						<dd><p>Guenther Grau</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">PDF417ScanningDecoder</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-private"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#codeword_skew_size" class="tsd-kind-icon">CODEWORD_<wbr>SKEW_<wbr>SIZE</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#max_ec_codewords" class="tsd-kind-icon">MAX_<wbr>EC_<wbr>CODEWORDS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#max_errors" class="tsd-kind-icon">MAX_<wbr>ERRORS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#errorcorrection" class="tsd-kind-icon">error<wbr>Correction</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#adjustboundingbox" class="tsd-kind-icon">adjust<wbr>Bounding<wbr>Box</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#adjustcodewordcount" class="tsd-kind-icon">adjust<wbr>Codeword<wbr>Count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#adjustcodewordstartcolumn" class="tsd-kind-icon">adjust<wbr>Codeword<wbr>Start<wbr>Column</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#checkcodewordskew" class="tsd-kind-icon">check<wbr>Codeword<wbr>Skew</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#correcterrors" class="tsd-kind-icon">correct<wbr>Errors</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#createbarcodematrix" class="tsd-kind-icon">create<wbr>Barcode<wbr>Matrix</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#createdecoderresult" class="tsd-kind-icon">create<wbr>Decoder<wbr>Result</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#createdecoderresultfromambiguousvalues" class="tsd-kind-icon">create<wbr>Decoder<wbr>Result<wbr>From<wbr>Ambiguous<wbr>Values</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#decode" class="tsd-kind-icon">decode</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#decodecodewords" class="tsd-kind-icon">decode<wbr>Codewords</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#detectcodeword" class="tsd-kind-icon">detect<wbr>Codeword</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#getbarcodemetadata" class="tsd-kind-icon">get<wbr>Barcode<wbr>Metadata</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#getbitcountforcodeword" class="tsd-kind-icon">get<wbr>Bit<wbr>Count<wbr>For<wbr>Codeword</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#getcodewordbucketnumber" class="tsd-kind-icon">get<wbr>Codeword<wbr>Bucket<wbr>Number</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#getcodewordbucketnumber_int32array" class="tsd-kind-icon">get<wbr>Codeword<wbr>Bucket<wbr>Number_<wbr><wbr>Int32<wbr>Array</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#getcodewordbucketnumber_number" class="tsd-kind-icon">get<wbr>Codeword<wbr>Bucket<wbr>Number_<wbr>number</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#getmax" class="tsd-kind-icon">get<wbr>Max</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#getmodulebitcount" class="tsd-kind-icon">get<wbr>Module<wbr>Bit<wbr>Count</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#getnumberofeccodewords" class="tsd-kind-icon">get<wbr>Number<wbr>OfECCode<wbr>Words</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#getrowindicatorcolumn" class="tsd-kind-icon">get<wbr>Row<wbr>Indicator<wbr>Column</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#getstartcolumn" class="tsd-kind-icon">get<wbr>Start<wbr>Column</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#isvalidbarcodecolumn" class="tsd-kind-icon">is<wbr>Valid<wbr>Barcode<wbr>Column</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#merge" class="tsd-kind-icon">merge</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_pdf417_decoder.pdf417scanningdecoder.html#verifycodewordcount" class="tsd-kind-icon">verify<wbr>Codeword<wbr>Count</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-private">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">new PDF417<wbr>Scanning<wbr>Decoder<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_pdf417_decoder.pdf417scanningdecoder.html" class="tsd-signature-type">PDF417ScanningDecoder</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L67">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:67</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="core_pdf417_decoder.pdf417scanningdecoder.html" class="tsd-signature-type">PDF417ScanningDecoder</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="codeword_skew_size" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> CODEWORD_<wbr>SKEW_<wbr>SIZE</h3>
+					<div class="tsd-signature tsd-kind-icon">CODEWORD_<wbr>SKEW_<wbr>SIZE<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 2</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L63">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:63</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="max_ec_codewords" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> MAX_<wbr>EC_<wbr>CODEWORDS</h3>
+					<div class="tsd-signature tsd-kind-icon">MAX_<wbr>EC_<wbr>CODEWORDS<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 512</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L66">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:66</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="max_errors" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> MAX_<wbr>ERRORS</h3>
+					<div class="tsd-signature tsd-kind-icon">MAX_<wbr>ERRORS<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 3</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L65">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:65</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="errorcorrection" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> error<wbr>Correction</h3>
+					<div class="tsd-signature tsd-kind-icon">error<wbr>Correction<span class="tsd-signature-symbol">:</span> <a href="core_pdf417_decoder_ec.errorcorrection.html" class="tsd-signature-type">ErrorCorrection</a><span class="tsd-signature-symbol"> = new ErrorCorrection()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L67">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:67</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="adjustboundingbox" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> adjust<wbr>Bounding<wbr>Box</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">adjust<wbr>Bounding<wbr>Box<span class="tsd-signature-symbol">(</span>rowIndicatorColumn<span class="tsd-signature-symbol">: </span><a href="core_pdf417_decoder.detectionresultrowindicatorcolumn.html" class="tsd-signature-type">DetectionResultRowIndicatorColumn</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_pdf417_decoder.boundingbox.html" class="tsd-signature-type">BoundingBox</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L199">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:199</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>NotFoundException</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>rowIndicatorColumn: <a href="core_pdf417_decoder.detectionresultrowindicatorcolumn.html" class="tsd-signature-type">DetectionResultRowIndicatorColumn</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_pdf417_decoder.boundingbox.html" class="tsd-signature-type">BoundingBox</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="adjustcodewordcount" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> adjust<wbr>Codeword<wbr>Count</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">adjust<wbr>Codeword<wbr>Count<span class="tsd-signature-symbol">(</span>detectionResult<span class="tsd-signature-symbol">: </span><a href="core_pdf417_decoder.detectionresult.html" class="tsd-signature-type">DetectionResult</a>, barcodeMatrix<span class="tsd-signature-symbol">: </span><a href="core_pdf417_decoder.barcodevalue.html" class="tsd-signature-type">BarcodeValue</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L300">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:300</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>NotFoundException</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>detectionResult: <a href="core_pdf417_decoder.detectionresult.html" class="tsd-signature-type">DetectionResult</a></h5>
+								</li>
+								<li>
+									<h5>barcodeMatrix: <a href="core_pdf417_decoder.barcodevalue.html" class="tsd-signature-type">BarcodeValue</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="adjustcodewordstartcolumn" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> adjust<wbr>Codeword<wbr>Start<wbr>Column</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">adjust<wbr>Codeword<wbr>Start<wbr>Column<span class="tsd-signature-symbol">(</span>image<span class="tsd-signature-symbol">: </span><a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a>, minColumn<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, maxColumn<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, leftToRight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, codewordStartColumn<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, imageRow<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L574">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:574</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>image: <a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></h5>
+								</li>
+								<li>
+									<h5>minColumn: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>maxColumn: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>leftToRight: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5>codewordStartColumn: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>imageRow: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="checkcodewordskew" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> check<wbr>Codeword<wbr>Skew</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">check<wbr>Codeword<wbr>Skew<span class="tsd-signature-symbol">(</span>codewordSize<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, minCodewordWidth<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, maxCodewordWidth<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L597">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:597</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>codewordSize: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>minCodewordWidth: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>maxCodewordWidth: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="correcterrors" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> correct<wbr>Errors</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">correct<wbr>Errors<span class="tsd-signature-symbol">(</span>codewords<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span>, erasures<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span>, numECCodewords<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L631">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:631</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Given data and error-correction codewords received, possibly corrupted by errors, attempts to
+									correct the errors in-place.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>ChecksumException if error correction fails</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>codewords: <span class="tsd-signature-type">Int32Array</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>data and error correction codewords</p>
+									</div>
+								</li>
+								<li>
+									<h5>erasures: <span class="tsd-signature-type">Int32Array</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>positions of any known erasures</p>
+									</div>
+								</li>
+								<li>
+									<h5>numECCodewords: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>number of error correction codewords that are available in codewords</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="createbarcodematrix" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> create<wbr>Barcode<wbr>Matrix</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Barcode<wbr>Matrix<span class="tsd-signature-symbol">(</span>detectionResult<span class="tsd-signature-symbol">: </span><a href="core_pdf417_decoder.detectionresult.html" class="tsd-signature-type">DetectionResult</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_pdf417_decoder.barcodevalue.html" class="tsd-signature-type">BarcodeValue</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L408">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:408</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>detectionResult: <a href="core_pdf417_decoder.detectionresult.html" class="tsd-signature-type">DetectionResult</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_pdf417_decoder.barcodevalue.html" class="tsd-signature-type">BarcodeValue</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="createdecoderresult" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> create<wbr>Decoder<wbr>Result</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Decoder<wbr>Result<span class="tsd-signature-symbol">(</span>detectionResult<span class="tsd-signature-symbol">: </span><a href="core_pdf417_decoder.detectionresult.html" class="tsd-signature-type">DetectionResult</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_common.decoderresult.html" class="tsd-signature-type">DecoderResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L325">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:325</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>FormatException</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>ChecksumException</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>NotFoundException</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>detectionResult: <a href="core_pdf417_decoder.detectionresult.html" class="tsd-signature-type">DetectionResult</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_common.decoderresult.html" class="tsd-signature-type">DecoderResult</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="createdecoderresultfromambiguousvalues" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> create<wbr>Decoder<wbr>Result<wbr>From<wbr>Ambiguous<wbr>Values</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Decoder<wbr>Result<wbr>From<wbr>Ambiguous<wbr>Values<span class="tsd-signature-symbol">(</span>ecLevel<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, codewords<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span>, erasureArray<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span>, ambiguousIndexes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span>, ambiguousIndexValues<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_common.decoderresult.html" class="tsd-signature-type">DecoderResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L370">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:370</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This method deals with the fact, that the decoding process doesn&#39;t always yield a single most likely value. The
+										current error correction implementation doesn&#39;t deal with erasures very well, so it&#39;s better to provide a value
+										for these ambiguous codewords instead of treating it as an erasure. The problem is that we don&#39;t know which of
+										the ambiguous values to choose. We try decode using the first value, and if that fails, we use another of the
+										ambiguous values and try to decode again. This usually only happens on very hard to read and decode barcodes,
+									so decoding the normal barcodes is not affected by this.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>FormatException</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>ChecksumException</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ecLevel: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>codewords: <span class="tsd-signature-type">Int32Array</span></h5>
+								</li>
+								<li>
+									<h5>erasureArray: <span class="tsd-signature-type">Int32Array</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>contains the indexes of erasures</p>
+									</div>
+								</li>
+								<li>
+									<h5>ambiguousIndexes: <span class="tsd-signature-type">Int32Array</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>array with the indexes that have more than one most likely value</p>
+									</div>
+								</li>
+								<li>
+									<h5>ambiguousIndexValues: <span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>two dimensional array that contains the ambiguous values. The first dimension must
+										be the same length as the ambiguousIndexes array</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_common.decoderresult.html" class="tsd-signature-type">DecoderResult</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="decode" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> decode</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">decode<span class="tsd-signature-symbol">(</span>image<span class="tsd-signature-symbol">: </span><a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a>, imageTopLeft<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a>, imageBottomLeft<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a>, imageTopRight<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a>, imageBottomRight<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a>, minCodewordWidth<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, maxCodewordWidth<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_common.decoderresult.html" class="tsd-signature-type">DecoderResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L97">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:97</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>todo</dt>
+									<dd><p>don&#39;t pass in minCodewordWidth and maxCodewordWidth, pass in barcode columns for start and stop pattern</p>
+										<p>columns. That way width can be deducted from the pattern column.
+											This approach also allows to detect more details about the barcode, e.g. if a bar type (white or black) is wider
+										than it should be. This can happen if the scanner used a bad blackpoint.</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>NotFoundException</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>FormatException</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>ChecksumException</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>image: <a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></h5>
+								</li>
+								<li>
+									<h5>imageTopLeft: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a></h5>
+								</li>
+								<li>
+									<h5>imageBottomLeft: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a></h5>
+								</li>
+								<li>
+									<h5>imageTopRight: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a></h5>
+								</li>
+								<li>
+									<h5>imageBottomRight: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a></h5>
+								</li>
+								<li>
+									<h5>minCodewordWidth: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>maxCodewordWidth: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_common.decoderresult.html" class="tsd-signature-type">DecoderResult</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="decodecodewords" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> decode<wbr>Codewords</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">decode<wbr>Codewords<span class="tsd-signature-symbol">(</span>codewords<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span>, ecLevel<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, erasures<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_common.decoderresult.html" class="tsd-signature-type">DecoderResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L606">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:606</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>FormatException,</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>ChecksumException</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>codewords: <span class="tsd-signature-type">Int32Array</span></h5>
+								</li>
+								<li>
+									<h5>ecLevel: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>erasures: <span class="tsd-signature-type">Int32Array</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_common.decoderresult.html" class="tsd-signature-type">DecoderResult</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="detectcodeword" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> detect<wbr>Codeword</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">detect<wbr>Codeword<span class="tsd-signature-symbol">(</span>image<span class="tsd-signature-symbol">: </span><a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a>, minColumn<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, maxColumn<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, leftToRight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, startColumn<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, imageRow<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, minCodewordWidth<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, maxCodewordWidth<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_pdf417_decoder.codeword.html" class="tsd-signature-type">Codeword</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L483">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:483</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>image: <a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></h5>
+								</li>
+								<li>
+									<h5>minColumn: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>maxColumn: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>leftToRight: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5>startColumn: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>imageRow: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>minCodewordWidth: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>maxCodewordWidth: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_pdf417_decoder.codeword.html" class="tsd-signature-type">Codeword</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="getbarcodemetadata" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Barcode<wbr>Metadata</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Barcode<wbr>Metadata<span class="tsd-signature-symbol">(</span>leftRowIndicatorColumn<span class="tsd-signature-symbol">: </span><a href="core_pdf417_decoder.detectionresultrowindicatorcolumn.html" class="tsd-signature-type">DetectionResultRowIndicatorColumn</a>, rightRowIndicatorColumn<span class="tsd-signature-symbol">: </span><a href="core_pdf417_decoder.detectionresultrowindicatorcolumn.html" class="tsd-signature-type">DetectionResultRowIndicatorColumn</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_pdf417_decoder.barcodemetadata.html" class="tsd-signature-type">BarcodeMetadata</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L241">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:241</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leftRowIndicatorColumn: <a href="core_pdf417_decoder.detectionresultrowindicatorcolumn.html" class="tsd-signature-type">DetectionResultRowIndicatorColumn</a></h5>
+								</li>
+								<li>
+									<h5>rightRowIndicatorColumn: <a href="core_pdf417_decoder.detectionresultrowindicatorcolumn.html" class="tsd-signature-type">DetectionResultRowIndicatorColumn</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_pdf417_decoder.barcodemetadata.html" class="tsd-signature-type">BarcodeMetadata</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="getbitcountforcodeword" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Bit<wbr>Count<wbr>For<wbr>Codeword</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Bit<wbr>Count<wbr>For<wbr>Codeword<span class="tsd-signature-symbol">(</span>codeword<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L669">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:669</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>codeword: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Int32Array</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="getcodewordbucketnumber" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Codeword<wbr>Bucket<wbr>Number</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Codeword<wbr>Bucket<wbr>Number<span class="tsd-signature-symbol">(</span>codeword<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L687">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:687</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>codeword: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Int32Array</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="getcodewordbucketnumber_int32array" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Codeword<wbr>Bucket<wbr>Number_<wbr><wbr>Int32<wbr>Array</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Codeword<wbr>Bucket<wbr>Number_<wbr><wbr>Int32<wbr>Array<span class="tsd-signature-symbol">(</span>moduleBitCount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L698">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:698</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>moduleBitCount: <span class="tsd-signature-type">Int32Array</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="getcodewordbucketnumber_number" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Codeword<wbr>Bucket<wbr>Number_<wbr>number</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Codeword<wbr>Bucket<wbr>Number_<wbr>number<span class="tsd-signature-symbol">(</span>codeword<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L694">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:694</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>codeword: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="getmax" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Max</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Max<span class="tsd-signature-symbol">(</span>values<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L233">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:233</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>values: <span class="tsd-signature-type">Int32Array</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="getmodulebitcount" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Module<wbr>Bit<wbr>Count</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Module<wbr>Bit<wbr>Count<span class="tsd-signature-symbol">(</span>image<span class="tsd-signature-symbol">: </span><a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a>, minColumn<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, maxColumn<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, leftToRight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, startColumn<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, imageRow<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L541">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:541</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>image: <a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></h5>
+								</li>
+								<li>
+									<h5>minColumn: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>maxColumn: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>leftToRight: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5>startColumn: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>imageRow: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Int32Array</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="getnumberofeccodewords" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Number<wbr>OfECCode<wbr>Words</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Number<wbr>OfECCode<wbr>Words<span class="tsd-signature-symbol">(</span>barcodeECLevel<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L570">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:570</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>barcodeECLevel: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="getrowindicatorcolumn" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Row<wbr>Indicator<wbr>Column</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Row<wbr>Indicator<wbr>Column<span class="tsd-signature-symbol">(</span>image<span class="tsd-signature-symbol">: </span><a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a>, boundingBox<span class="tsd-signature-symbol">: </span><a href="core_pdf417_decoder.boundingbox.html" class="tsd-signature-type">BoundingBox</a>, startPoint<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a>, leftToRight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span>, minCodewordWidth<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, maxCodewordWidth<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_pdf417_decoder.detectionresultrowindicatorcolumn.html" class="tsd-signature-type">DetectionResultRowIndicatorColumn</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L262">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:262</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>image: <a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></h5>
+								</li>
+								<li>
+									<h5>boundingBox: <a href="core_pdf417_decoder.boundingbox.html" class="tsd-signature-type">BoundingBox</a></h5>
+								</li>
+								<li>
+									<h5>startPoint: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a></h5>
+								</li>
+								<li>
+									<h5>leftToRight: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+								<li>
+									<h5>minCodewordWidth: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>maxCodewordWidth: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_pdf417_decoder.detectionresultrowindicatorcolumn.html" class="tsd-signature-type">DetectionResultRowIndicatorColumn</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="getstartcolumn" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Start<wbr>Column</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Start<wbr>Column<span class="tsd-signature-symbol">(</span>detectionResult<span class="tsd-signature-symbol">: </span><a href="core_pdf417_decoder.detectionresult.html" class="tsd-signature-type">DetectionResult</a>, barcodeColumn<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, imageRow<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, leftToRight<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L444">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:444</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>detectionResult: <a href="core_pdf417_decoder.detectionresult.html" class="tsd-signature-type">DetectionResult</a></h5>
+								</li>
+								<li>
+									<h5>barcodeColumn: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>imageRow: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>leftToRight: <span class="tsd-signature-type">boolean</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="isvalidbarcodecolumn" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>Valid<wbr>Barcode<wbr>Column</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Valid<wbr>Barcode<wbr>Column<span class="tsd-signature-symbol">(</span>detectionResult<span class="tsd-signature-symbol">: </span><a href="core_pdf417_decoder.detectionresult.html" class="tsd-signature-type">DetectionResult</a>, barcodeColumn<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L440">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:440</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>detectionResult: <a href="core_pdf417_decoder.detectionresult.html" class="tsd-signature-type">DetectionResult</a></h5>
+								</li>
+								<li>
+									<h5>barcodeColumn: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="merge" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> merge</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">merge<span class="tsd-signature-symbol">(</span>leftRowIndicatorColumn<span class="tsd-signature-symbol">: </span><a href="core_pdf417_decoder.detectionresultrowindicatorcolumn.html" class="tsd-signature-type">DetectionResultRowIndicatorColumn</a>, rightRowIndicatorColumn<span class="tsd-signature-symbol">: </span><a href="core_pdf417_decoder.detectionresultrowindicatorcolumn.html" class="tsd-signature-type">DetectionResultRowIndicatorColumn</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_pdf417_decoder.detectionresult.html" class="tsd-signature-type">DetectionResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L179">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:179</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>NotFoundException</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>leftRowIndicatorColumn: <a href="core_pdf417_decoder.detectionresultrowindicatorcolumn.html" class="tsd-signature-type">DetectionResultRowIndicatorColumn</a></h5>
+								</li>
+								<li>
+									<h5>rightRowIndicatorColumn: <a href="core_pdf417_decoder.detectionresultrowindicatorcolumn.html" class="tsd-signature-type">DetectionResultRowIndicatorColumn</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_pdf417_decoder.detectionresult.html" class="tsd-signature-type">DetectionResult</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="tostring" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> to<wbr>String</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span>barcodeMatrix<span class="tsd-signature-symbol">: </span><a href="core_pdf417_decoder.barcodevalue.html" class="tsd-signature-type">BarcodeValue</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">String</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L702">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:702</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>barcodeMatrix: <a href="core_pdf417_decoder.barcodevalue.html" class="tsd-signature-type">BarcodeValue</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">String</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="verifycodewordcount" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> verify<wbr>Codeword<wbr>Count</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">verify<wbr>Codeword<wbr>Count<span class="tsd-signature-symbol">(</span>codewords<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span>, numECCodewords<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/pdf417/decoder/PDF417ScanningDecoder.ts#L646">src/core/pdf417/decoder/PDF417ScanningDecoder.ts:646</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Verify that all is OK with the codeword array.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>FormatException</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>codewords: <span class="tsd-signature-type">Int32Array</span></h5>
+								</li>
+								<li>
+									<h5>numECCodewords: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/core_pdf417_decoder.html">core/pdf417/decoder</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../enums/core_pdf417_decoder.mode.html" class="tsd-kind-icon">Mode</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_pdf417_decoder.barcodemetadata.html" class="tsd-kind-icon">Barcode<wbr>Metadata</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_pdf417_decoder.barcodevalue.html" class="tsd-kind-icon">Barcode<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_pdf417_decoder.boundingbox.html" class="tsd-kind-icon">Bounding<wbr>Box</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_pdf417_decoder.codeword.html" class="tsd-kind-icon">Codeword</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_pdf417_decoder.decodedbitstreamparser.html" class="tsd-kind-icon">Decoded<wbr>Bit<wbr>Stream<wbr>Parser</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_pdf417_decoder.detectionresult.html" class="tsd-kind-icon">Detection<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_pdf417_decoder.detectionresultcolumn.html" class="tsd-kind-icon">Detection<wbr>Result<wbr>Column</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_pdf417_decoder.detectionresultrowindicatorcolumn.html" class="tsd-kind-icon">Detection<wbr>Result<wbr>Row<wbr>Indicator<wbr>Column</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_pdf417_decoder.pdf417codeworddecoder.html" class="tsd-kind-icon">PDF417<wbr>Codeword<wbr>Decoder</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="core_pdf417_decoder.pdf417scanningdecoder.html" class="tsd-kind-icon">PDF417<wbr>Scanning<wbr>Decoder</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-private">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#codeword_skew_size" class="tsd-kind-icon">CODEWORD_<wbr>SKEW_<wbr>SIZE</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#max_ec_codewords" class="tsd-kind-icon">MAX_<wbr>EC_<wbr>CODEWORDS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#max_errors" class="tsd-kind-icon">MAX_<wbr>ERRORS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#errorcorrection" class="tsd-kind-icon">error<wbr>Correction</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#adjustboundingbox" class="tsd-kind-icon">adjust<wbr>Bounding<wbr>Box</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#adjustcodewordcount" class="tsd-kind-icon">adjust<wbr>Codeword<wbr>Count</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#adjustcodewordstartcolumn" class="tsd-kind-icon">adjust<wbr>Codeword<wbr>Start<wbr>Column</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#checkcodewordskew" class="tsd-kind-icon">check<wbr>Codeword<wbr>Skew</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#correcterrors" class="tsd-kind-icon">correct<wbr>Errors</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#createbarcodematrix" class="tsd-kind-icon">create<wbr>Barcode<wbr>Matrix</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#createdecoderresult" class="tsd-kind-icon">create<wbr>Decoder<wbr>Result</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#createdecoderresultfromambiguousvalues" class="tsd-kind-icon">create<wbr>Decoder<wbr>Result<wbr>From<wbr>Ambiguous<wbr>Values</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#decode" class="tsd-kind-icon">decode</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#decodecodewords" class="tsd-kind-icon">decode<wbr>Codewords</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#detectcodeword" class="tsd-kind-icon">detect<wbr>Codeword</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#getbarcodemetadata" class="tsd-kind-icon">get<wbr>Barcode<wbr>Metadata</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#getbitcountforcodeword" class="tsd-kind-icon">get<wbr>Bit<wbr>Count<wbr>For<wbr>Codeword</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#getcodewordbucketnumber" class="tsd-kind-icon">get<wbr>Codeword<wbr>Bucket<wbr>Number</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#getcodewordbucketnumber_int32array" class="tsd-kind-icon">get<wbr>Codeword<wbr>Bucket<wbr>Number_<wbr><wbr>Int32<wbr>Array</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#getcodewordbucketnumber_number" class="tsd-kind-icon">get<wbr>Codeword<wbr>Bucket<wbr>Number_<wbr>number</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#getmax" class="tsd-kind-icon">get<wbr>Max</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#getmodulebitcount" class="tsd-kind-icon">get<wbr>Module<wbr>Bit<wbr>Count</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#getnumberofeccodewords" class="tsd-kind-icon">get<wbr>Number<wbr>OfECCode<wbr>Words</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#getrowindicatorcolumn" class="tsd-kind-icon">get<wbr>Row<wbr>Indicator<wbr>Column</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#getstartcolumn" class="tsd-kind-icon">get<wbr>Start<wbr>Column</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#isvalidbarcodecolumn" class="tsd-kind-icon">is<wbr>Valid<wbr>Barcode<wbr>Column</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#merge" class="tsd-kind-icon">merge</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_pdf417_decoder.pdf417scanningdecoder.html#verifycodewordcount" class="tsd-kind-icon">verify<wbr>Codeword<wbr>Count</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/core_pdf417_decoder.html#biginteger" class="tsd-kind-icon">Big<wbr>Integer</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/core_pdf417_decoder.html#createbigint" class="tsd-kind-icon">create<wbr>Big<wbr>Int</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/core_pdf417_decoder.html#getbigintconstructor" class="tsd-kind-icon">get<wbr>Big<wbr>Int<wbr>Constructor</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../modules/core_pdf417_decoder.html#getexp900" class="tsd-kind-icon">getEXP900</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

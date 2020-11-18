@@ -1,0 +1,756 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>GeneralAppIdDecoder | @zxing/library - v0.18.3</title>
+	<meta name="description" content="Documentation for @zxing/library - v0.18.3">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@zxing/library - v0.18.3</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/core_oned_rss_expanded_decoders.html">core/oned/rss/expanded/decoders</a>
+				</li>
+				<li>
+					<a href="core_oned_rss_expanded_decoders.generalappiddecoder.html">GeneralAppIdDecoder</a>
+				</li>
+			</ul>
+			<h1>Class GeneralAppIdDecoder</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">GeneralAppIdDecoder</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#buffer" class="tsd-kind-icon">buffer</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#current" class="tsd-kind-icon">current</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#information" class="tsd-kind-icon">information</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#decodeallcodes" class="tsd-kind-icon">decode<wbr>All<wbr>Codes</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#decodealphanumeric" class="tsd-kind-icon">decode<wbr>Alphanumeric</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#decodegeneralpurposefield" class="tsd-kind-icon">decode<wbr>General<wbr>Purpose<wbr>Field</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#decodeisoiec646" class="tsd-kind-icon">decode<wbr>Iso<wbr>Iec646</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#decodenumeric" class="tsd-kind-icon">decode<wbr>Numeric</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#extractnumericvaluefrombitarray" class="tsd-kind-icon">extract<wbr>Numeric<wbr>Value<wbr>From<wbr>Bit<wbr>Array</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#isalphaor646tonumericlatch" class="tsd-kind-icon">is<wbr>Alpha<wbr>Or646<wbr>ToNumeric<wbr>Latch</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#isalphato646toalphalatch" class="tsd-kind-icon">is<wbr>Alpha<wbr>To646<wbr>ToAlpha<wbr>Latch</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#isnumerictoalphanumericlatch" class="tsd-kind-icon">is<wbr>Numeric<wbr>ToAlpha<wbr>Numeric<wbr>Latch</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#isstillalpha" class="tsd-kind-icon">is<wbr>Still<wbr>Alpha</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#isstillisoiec646" class="tsd-kind-icon">is<wbr>Still<wbr>Iso<wbr>Iec646</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#isstillnumeric" class="tsd-kind-icon">is<wbr>Still<wbr>Numeric</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#parsealphablock" class="tsd-kind-icon">parse<wbr>Alpha<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#parseblocks" class="tsd-kind-icon">parse<wbr>Blocks</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#parseisoiec646block" class="tsd-kind-icon">parse<wbr>Iso<wbr>Iec646<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#parsenumericblock" class="tsd-kind-icon">parse<wbr>Numeric<wbr>Block</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#extractnumericvaluefrombitarray-1" class="tsd-kind-icon">extract<wbr>Numeric<wbr>Value<wbr>From<wbr>Bit<wbr>Array</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>General<wbr>App<wbr>IdDecoder<span class="tsd-signature-symbol">(</span>information<span class="tsd-signature-symbol">: </span><a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_oned_rss_expanded_decoders.generalappiddecoder.html" class="tsd-signature-type">GeneralAppIdDecoder</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts#L16">src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts:16</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>information: <a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_oned_rss_expanded_decoders.generalappiddecoder.html" class="tsd-signature-type">GeneralAppIdDecoder</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="buffer" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> buffer</h3>
+					<div class="tsd-signature tsd-kind-icon">buffer<span class="tsd-signature-symbol">:</span> <a href="core_util.stringbuilder.html" class="tsd-signature-type">StringBuilder</a><span class="tsd-signature-symbol"> = new StringBuilder()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts#L16">src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts:16</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="current" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> current</h3>
+					<div class="tsd-signature tsd-kind-icon">current<span class="tsd-signature-symbol">:</span> <a href="core_oned_rss_expanded_decoders.currentparsingstate.html" class="tsd-signature-type">CurrentParsingState</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts#L15">src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts:15</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="information" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagReadonly">Readonly</span> information</h3>
+					<div class="tsd-signature tsd-kind-icon">information<span class="tsd-signature-symbol">:</span> <a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts#L14">src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts:14</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="decodeallcodes" class="tsd-anchor"></a>
+					<h3>decode<wbr>All<wbr>Codes</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">decode<wbr>All<wbr>Codes<span class="tsd-signature-symbol">(</span>buff<span class="tsd-signature-symbol">: </span><a href="core_util.stringbuilder.html" class="tsd-signature-type">StringBuilder</a>, initialPosition<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts#L22">src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts:22</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>buff: <a href="core_util.stringbuilder.html" class="tsd-signature-type">StringBuilder</a></h5>
+								</li>
+								<li>
+									<h5>initialPosition: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="decodealphanumeric" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> decode<wbr>Alphanumeric</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">decode<wbr>Alphanumeric<span class="tsd-signature-symbol">(</span>pos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_oned_rss_expanded_decoders.decodedchar.html" class="tsd-signature-type">DecodedChar</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts#L360">src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts:360</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pos: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_oned_rss_expanded_decoders.decodedchar.html" class="tsd-signature-type">DecodedChar</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="decodegeneralpurposefield" class="tsd-anchor"></a>
+					<h3>decode<wbr>General<wbr>Purpose<wbr>Field</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">decode<wbr>General<wbr>Purpose<wbr>Field<span class="tsd-signature-symbol">(</span>pos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, remaining<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_oned_rss_expanded_decoders.decodedinformation.html" class="tsd-signature-type">DecodedInformation</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts#L93">src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts:93</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pos: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>remaining: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_oned_rss_expanded_decoders.decodedinformation.html" class="tsd-signature-type">DecodedInformation</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="decodeisoiec646" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> decode<wbr>Iso<wbr>Iec646</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">decode<wbr>Iso<wbr>Iec646<span class="tsd-signature-symbol">(</span>pos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_oned_rss_expanded_decoders.decodedchar.html" class="tsd-signature-type">DecodedChar</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts#L249">src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts:249</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pos: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_oned_rss_expanded_decoders.decodedchar.html" class="tsd-signature-type">DecodedChar</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="decodenumeric" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> decode<wbr>Numeric</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">decode<wbr>Numeric<span class="tsd-signature-symbol">(</span>pos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_oned_rss_expanded_decoders.decodednumeric.html" class="tsd-signature-type">DecodedNumeric</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts#L62">src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts:62</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pos: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_oned_rss_expanded_decoders.decodednumeric.html" class="tsd-signature-type">DecodedNumeric</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="extractnumericvaluefrombitarray" class="tsd-anchor"></a>
+					<h3>extract<wbr>Numeric<wbr>Value<wbr>From<wbr>Bit<wbr>Array</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">extract<wbr>Numeric<wbr>Value<wbr>From<wbr>Bit<wbr>Array<span class="tsd-signature-symbol">(</span>pos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, bits<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts#L78">src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts:78</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pos: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>bits: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="isalphaor646tonumericlatch" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>Alpha<wbr>Or646<wbr>ToNumeric<wbr>Latch</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Alpha<wbr>Or646<wbr>ToNumeric<wbr>Latch<span class="tsd-signature-symbol">(</span>pos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts#L417">src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts:417</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pos: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="isalphato646toalphalatch" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>Alpha<wbr>To646<wbr>ToAlpha<wbr>Latch</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Alpha<wbr>To646<wbr>ToAlpha<wbr>Latch<span class="tsd-signature-symbol">(</span>pos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts#L399">src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts:399</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pos: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="isnumerictoalphanumericlatch" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>Numeric<wbr>ToAlpha<wbr>Numeric<wbr>Latch</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Numeric<wbr>ToAlpha<wbr>Numeric<wbr>Latch<span class="tsd-signature-symbol">(</span>pos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts#L431">src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts:431</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pos: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="isstillalpha" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>Still<wbr>Alpha</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Still<wbr>Alpha<span class="tsd-signature-symbol">(</span>pos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts#L341">src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts:341</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pos: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="isstillisoiec646" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>Still<wbr>Iso<wbr>Iec646</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Still<wbr>Iso<wbr>Iec646<span class="tsd-signature-symbol">(</span>pos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts#L221">src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts:221</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pos: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="isstillnumeric" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>Still<wbr>Numeric</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Still<wbr>Numeric<span class="tsd-signature-symbol">(</span>pos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts#L46">src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts:46</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pos: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="parsealphablock" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> parse<wbr>Alpha<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">parse<wbr>Alpha<wbr>Block<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_oned_rss_expanded_decoders.blockparsedresult.html" class="tsd-signature-type">BlockParsedResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts#L193">src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts:193</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="core_oned_rss_expanded_decoders.blockparsedresult.html" class="tsd-signature-type">BlockParsedResult</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="parseblocks" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> parse<wbr>Blocks</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">parse<wbr>Blocks<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_oned_rss_expanded_decoders.decodedinformation.html" class="tsd-signature-type">DecodedInformation</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts#L110">src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts:110</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="core_oned_rss_expanded_decoders.decodedinformation.html" class="tsd-signature-type">DecodedInformation</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="parseisoiec646block" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> parse<wbr>Iso<wbr>Iec646<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">parse<wbr>Iso<wbr>Iec646<wbr>Block<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_oned_rss_expanded_decoders.blockparsedresult.html" class="tsd-signature-type">BlockParsedResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts#L166">src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts:166</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="core_oned_rss_expanded_decoders.blockparsedresult.html" class="tsd-signature-type">BlockParsedResult</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="parsenumericblock" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> parse<wbr>Numeric<wbr>Block</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">parse<wbr>Numeric<wbr>Block<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_oned_rss_expanded_decoders.blockparsedresult.html" class="tsd-signature-type">BlockParsedResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts#L136">src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts:136</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="core_oned_rss_expanded_decoders.blockparsedresult.html" class="tsd-signature-type">BlockParsedResult</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="extractnumericvaluefrombitarray-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> extract<wbr>Numeric<wbr>Value<wbr>From<wbr>Bit<wbr>Array</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">extract<wbr>Numeric<wbr>Value<wbr>From<wbr>Bit<wbr>Array<span class="tsd-signature-symbol">(</span>information<span class="tsd-signature-symbol">: </span><a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a>, pos<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, bits<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts#L82">src/core/oned/rss/expanded/decoders/GeneralAppIdDecoder.ts:82</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>information: <a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a></h5>
+								</li>
+								<li>
+									<h5>pos: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>bits: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/core_oned_rss_expanded_decoders.html">core/oned/rss/expanded/decoders</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../enums/core_oned_rss_expanded_decoders.state.html" class="tsd-kind-icon">State</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_oned_rss_expanded_decoders.ai013103decoder.html" class="tsd-kind-icon">AI013103decoder</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_oned_rss_expanded_decoders.ai01320xdecoder.html" class="tsd-kind-icon">AI01320x<wbr>Decoder</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_oned_rss_expanded_decoders.ai01392xdecoder.html" class="tsd-kind-icon">AI01392x<wbr>Decoder</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_oned_rss_expanded_decoders.ai01393xdecoder.html" class="tsd-kind-icon">AI01393x<wbr>Decoder</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_oned_rss_expanded_decoders.ai013x0x1xdecoder.html" class="tsd-kind-icon">AI013x0x1x<wbr>Decoder</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_oned_rss_expanded_decoders.ai013x0xdecoder.html" class="tsd-kind-icon">AI013x0x<wbr>Decoder</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_oned_rss_expanded_decoders.ai01andotherais.html" class="tsd-kind-icon">AI01<wbr>And<wbr>OtherAIs</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_oned_rss_expanded_decoders.ai01decoder.html" class="tsd-kind-icon">AI01decoder</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_oned_rss_expanded_decoders.ai01weightdecoder.html" class="tsd-kind-icon">AI01weight<wbr>Decoder</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_oned_rss_expanded_decoders.abstractexpandeddecoder.html" class="tsd-kind-icon">Abstract<wbr>Expanded<wbr>Decoder</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_oned_rss_expanded_decoders.anyaidecoder.html" class="tsd-kind-icon">AnyAIDecoder</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_oned_rss_expanded_decoders.blockparsedresult.html" class="tsd-kind-icon">Block<wbr>Parsed<wbr>Result</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_oned_rss_expanded_decoders.currentparsingstate.html" class="tsd-kind-icon">Current<wbr>Parsing<wbr>State</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_oned_rss_expanded_decoders.decodedchar.html" class="tsd-kind-icon">Decoded<wbr>Char</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_oned_rss_expanded_decoders.decodedinformation.html" class="tsd-kind-icon">Decoded<wbr>Information</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_oned_rss_expanded_decoders.decodednumeric.html" class="tsd-kind-icon">Decoded<wbr>Numeric</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_oned_rss_expanded_decoders.decodedobject.html" class="tsd-kind-icon">Decoded<wbr>Object</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_oned_rss_expanded_decoders.fieldparser.html" class="tsd-kind-icon">Field<wbr>Parser</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="core_oned_rss_expanded_decoders.generalappiddecoder.html" class="tsd-kind-icon">General<wbr>App<wbr>IdDecoder</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#buffer" class="tsd-kind-icon">buffer</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#current" class="tsd-kind-icon">current</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#information" class="tsd-kind-icon">information</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#decodeallcodes" class="tsd-kind-icon">decode<wbr>All<wbr>Codes</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#decodealphanumeric" class="tsd-kind-icon">decode<wbr>Alphanumeric</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#decodegeneralpurposefield" class="tsd-kind-icon">decode<wbr>General<wbr>Purpose<wbr>Field</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#decodeisoiec646" class="tsd-kind-icon">decode<wbr>Iso<wbr>Iec646</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#decodenumeric" class="tsd-kind-icon">decode<wbr>Numeric</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#extractnumericvaluefrombitarray" class="tsd-kind-icon">extract<wbr>Numeric<wbr>Value<wbr>From<wbr>Bit<wbr>Array</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#isalphaor646tonumericlatch" class="tsd-kind-icon">is<wbr>Alpha<wbr>Or646<wbr>ToNumeric<wbr>Latch</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#isalphato646toalphalatch" class="tsd-kind-icon">is<wbr>Alpha<wbr>To646<wbr>ToAlpha<wbr>Latch</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#isnumerictoalphanumericlatch" class="tsd-kind-icon">is<wbr>Numeric<wbr>ToAlpha<wbr>Numeric<wbr>Latch</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#isstillalpha" class="tsd-kind-icon">is<wbr>Still<wbr>Alpha</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#isstillisoiec646" class="tsd-kind-icon">is<wbr>Still<wbr>Iso<wbr>Iec646</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#isstillnumeric" class="tsd-kind-icon">is<wbr>Still<wbr>Numeric</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#parsealphablock" class="tsd-kind-icon">parse<wbr>Alpha<wbr>Block</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#parseblocks" class="tsd-kind-icon">parse<wbr>Blocks</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#parseisoiec646block" class="tsd-kind-icon">parse<wbr>Iso<wbr>Iec646<wbr>Block</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#parsenumericblock" class="tsd-kind-icon">parse<wbr>Numeric<wbr>Block</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="core_oned_rss_expanded_decoders.generalappiddecoder.html#extractnumericvaluefrombitarray-1" class="tsd-kind-icon">extract<wbr>Numeric<wbr>Value<wbr>From<wbr>Bit<wbr>Array</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/core_oned_rss_expanded_decoders.html#createdecoder" class="tsd-kind-icon">create<wbr>Decoder</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/core_oned_rss_expanded_decoders.html#createdecoder-1" class="tsd-kind-icon">create<wbr>Decoder</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,718 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Detector | @zxing/library - v0.18.3</title>
+	<meta name="description" content="Documentation for @zxing/library - v0.18.3">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@zxing/library - v0.18.3</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/core_qrcode_detector.html">core/qrcode/detector</a>
+				</li>
+				<li>
+					<a href="core_qrcode_detector.detector.html">Detector</a>
+				</li>
+			</ul>
+			<h1>Class Detector</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Encapsulates logic that can detect a QR Code in an image, even if the QR Code
+						is rotated or skewed, or partially obscured.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>author</dt>
+						<dd><p>Sean Owen</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">Detector</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="core_qrcode_detector.detector.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_qrcode_detector.detector.html#image" class="tsd-kind-icon">image</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_qrcode_detector.detector.html#resultpointcallback" class="tsd-kind-icon">result<wbr>Point<wbr>Callback</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="core_qrcode_detector.detector.html#calculatemodulesize" class="tsd-kind-icon">calculate<wbr>Module<wbr>Size</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_qrcode_detector.detector.html#calculatemodulesizeoneway" class="tsd-kind-icon">calculate<wbr>Module<wbr>Size<wbr>One<wbr>Way</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core_qrcode_detector.detector.html#detect" class="tsd-kind-icon">detect</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="core_qrcode_detector.detector.html#findalignmentinregion" class="tsd-kind-icon">find<wbr>Alignment<wbr>InRegion</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="core_qrcode_detector.detector.html#getimage" class="tsd-kind-icon">get<wbr>Image</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="core_qrcode_detector.detector.html#getresultpointcallback" class="tsd-kind-icon">get<wbr>Result<wbr>Point<wbr>Callback</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><a href="core_qrcode_detector.detector.html#processfinderpatterninfo" class="tsd-kind-icon">process<wbr>Finder<wbr>Pattern<wbr>Info</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_qrcode_detector.detector.html#sizeofblackwhiteblackrun" class="tsd-kind-icon">size<wbr>OfBlack<wbr>White<wbr>Black<wbr>Run</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_qrcode_detector.detector.html#sizeofblackwhiteblackrunbothways" class="tsd-kind-icon">size<wbr>OfBlack<wbr>White<wbr>Black<wbr>Run<wbr>Both<wbr>Ways</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_qrcode_detector.detector.html#computedimension" class="tsd-kind-icon">compute<wbr>Dimension</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_qrcode_detector.detector.html#createtransform" class="tsd-kind-icon">create<wbr>Transform</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_qrcode_detector.detector.html#samplegrid" class="tsd-kind-icon">sample<wbr>Grid</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Detector<span class="tsd-signature-symbol">(</span>image<span class="tsd-signature-symbol">: </span><a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_qrcode_detector.detector.html" class="tsd-signature-type">Detector</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/Detector.ts#L47">src/core/qrcode/detector/Detector.ts:47</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>image: <a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_qrcode_detector.detector.html" class="tsd-signature-type">Detector</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="image" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> image</h3>
+					<div class="tsd-signature tsd-kind-icon">image<span class="tsd-signature-symbol">:</span> <a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/Detector.ts#L49">src/core/qrcode/detector/Detector.ts:49</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="resultpointcallback" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> result<wbr>Point<wbr>Callback</h3>
+					<div class="tsd-signature tsd-kind-icon">result<wbr>Point<wbr>Callback<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.resultpointcallback.html" class="tsd-signature-type">ResultPointCallback</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/Detector.ts#L47">src/core/qrcode/detector/Detector.ts:47</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="calculatemodulesize" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> calculate<wbr>Module<wbr>Size</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">calculate<wbr>Module<wbr>Size<span class="tsd-signature-symbol">(</span>topLeft<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a>, topRight<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a>, bottomLeft<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/Detector.ts#L233">src/core/qrcode/detector/Detector.ts:233</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Computes an average estimated module size based on estimated derived from the positions
+									of the three finder patterns.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>topLeft: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>detected top-left finder pattern center</p>
+									</div>
+								</li>
+								<li>
+									<h5>topRight: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>detected top-right finder pattern center</p>
+									</div>
+								</li>
+								<li>
+									<h5>bottomLeft: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>detected bottom-left finder pattern center</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>estimated module size</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="calculatemodulesizeoneway" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> calculate<wbr>Module<wbr>Size<wbr>One<wbr>Way</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">calculate<wbr>Module<wbr>Size<wbr>One<wbr>Way<span class="tsd-signature-symbol">(</span>pattern<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a>, otherPattern<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/Detector.ts#L246">src/core/qrcode/detector/Detector.ts:246</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Estimates module size based on two finder patterns -- it uses
+										{@link #sizeOfBlackWhiteBlackRunBothWays(int, int, int, int)} to figure the
+									width of each, measuring along the axis between their centers.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>pattern: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a></h5>
+								</li>
+								<li>
+									<h5>otherPattern: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="detect" class="tsd-anchor"></a>
+					<h3>detect</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">detect<span class="tsd-signature-symbol">(</span>hints<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../enums/core.decodehinttype.html" class="tsd-signature-type">DecodeHintType</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_common.detectorresult.html" class="tsd-signature-type">DetectorResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/Detector.ts#L78">src/core/qrcode/detector/Detector.ts:78</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Detects a QR Code in an image.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>NotFoundException if QR Code cannot be found</p>
+									</dd>
+									<dt>throws</dt>
+									<dd><p>FormatException if a QR Code cannot be decoded</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>hints: <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><a href="../enums/core.decodehinttype.html" class="tsd-signature-type">DecodeHintType</a><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>optional hints to detector</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_common.detectorresult.html" class="tsd-signature-type">DetectorResult</a></h4>
+							<p><a href="core_common.detectorresult.html">DetectorResult</a> encapsulating results of detecting a QR Code</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="findalignmentinregion" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> find<wbr>Alignment<wbr>InRegion</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Alignment<wbr>InRegion<span class="tsd-signature-symbol">(</span>overallEstModuleSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, estAlignmentX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, estAlignmentY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, allowanceFactor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_qrcode_detector.alignmentpattern.html" class="tsd-signature-type">AlignmentPattern</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/Detector.ts#L378">src/core/qrcode/detector/Detector.ts:378</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Attempts to locate an alignment pattern in a limited region of the image, which is
+									guessed to contain it. This method uses <a href="core_qrcode_detector.alignmentpattern.html">AlignmentPattern</a>.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>NotFoundException if an unexpected error occurs during detection</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>overallEstModuleSize: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>estimated module size so far</p>
+									</div>
+								</li>
+								<li>
+									<h5>estAlignmentX: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>x coordinate of center of area probably containing alignment pattern</p>
+									</div>
+								</li>
+								<li>
+									<h5>estAlignmentY: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>y coordinate of above</p>
+									</div>
+								</li>
+								<li>
+									<h5>allowanceFactor: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>number of pixels in all directions to search from the center</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_qrcode_detector.alignmentpattern.html" class="tsd-signature-type">AlignmentPattern</a></h4>
+							<p><a href="core_qrcode_detector.alignmentpattern.html">AlignmentPattern</a> if found, or null otherwise</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="getimage" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Image</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Image<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/Detector.ts#L51">src/core/qrcode/detector/Detector.ts:51</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="getresultpointcallback" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> get<wbr>Result<wbr>Point<wbr>Callback</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Result<wbr>Point<wbr>Callback<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/core.resultpointcallback.html" class="tsd-signature-type">ResultPointCallback</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/Detector.ts#L55">src/core/qrcode/detector/Detector.ts:55</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="../interfaces/core.resultpointcallback.html" class="tsd-signature-type">ResultPointCallback</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+					<a name="processfinderpatterninfo" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> process<wbr>Finder<wbr>Pattern<wbr>Info</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+						<li class="tsd-signature tsd-kind-icon">process<wbr>Finder<wbr>Pattern<wbr>Info<span class="tsd-signature-symbol">(</span>info<span class="tsd-signature-symbol">: </span><a href="core_qrcode_detector.finderpatterninfo.html" class="tsd-signature-type">FinderPatternInfo</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_common.detectorresult.html" class="tsd-signature-type">DetectorResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/Detector.ts#L89">src/core/qrcode/detector/Detector.ts:89</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>info: <a href="core_qrcode_detector.finderpatterninfo.html" class="tsd-signature-type">FinderPatternInfo</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_common.detectorresult.html" class="tsd-signature-type">DetectorResult</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="sizeofblackwhiteblackrun" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> size<wbr>OfBlack<wbr>White<wbr>Black<wbr>Run</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">size<wbr>OfBlack<wbr>White<wbr>Black<wbr>Run<span class="tsd-signature-symbol">(</span>fromX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, fromY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, toX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, toY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/Detector.ts#L311">src/core/qrcode/detector/Detector.ts:311</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This method traces a line from a point in the image, in the direction towards another point.
+										It begins in a black region, and keeps going until it finds white, then black, then white again.
+									It reports the distance from the start to this point.</p>
+								</div>
+								<p>This is used when figuring out how wide a finder pattern is, when the finder pattern
+								may be skewed or rotated.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fromX: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>fromY: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>toX: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>toY: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="sizeofblackwhiteblackrunbothways" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> size<wbr>OfBlack<wbr>White<wbr>Black<wbr>Run<wbr>Both<wbr>Ways</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">size<wbr>OfBlack<wbr>White<wbr>Black<wbr>Run<wbr>Both<wbr>Ways<span class="tsd-signature-symbol">(</span>fromX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, fromY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, toX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, toY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/Detector.ts#L271">src/core/qrcode/detector/Detector.ts:271</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>See {@link #sizeOfBlackWhiteBlackRun(int, int, int, int)}; computes the total width of
+										a finder pattern by looking for a black-white-black run from the center in the direction
+									of another point (another finder pattern center), and in the opposite direction too.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fromX: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>fromY: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>toX: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>toY: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="computedimension" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> compute<wbr>Dimension</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">compute<wbr>Dimension<span class="tsd-signature-symbol">(</span>topLeft<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a>, topRight<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a>, bottomLeft<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a>, moduleSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/Detector.ts#L203">src/core/qrcode/detector/Detector.ts:203</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Computes the dimension (number of modules on a size) of the QR Code based on the position
+									of the finder patterns and estimated module size.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>topLeft: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a></h5>
+								</li>
+								<li>
+									<h5>topRight: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a></h5>
+								</li>
+								<li>
+									<h5>bottomLeft: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a></h5>
+								</li>
+								<li>
+									<h5>moduleSize: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="createtransform" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> create<wbr>Transform</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Transform<span class="tsd-signature-symbol">(</span>topLeft<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a>, topRight<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a>, bottomLeft<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a>, alignmentPattern<span class="tsd-signature-symbol">: </span><a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a>, dimension<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_common.perspectivetransform.html" class="tsd-signature-type">PerspectiveTransform</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/Detector.ts#L149">src/core/qrcode/detector/Detector.ts:149</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>topLeft: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a></h5>
+								</li>
+								<li>
+									<h5>topRight: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a></h5>
+								</li>
+								<li>
+									<h5>bottomLeft: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a></h5>
+								</li>
+								<li>
+									<h5>alignmentPattern: <a href="core.resultpoint.html" class="tsd-signature-type">ResultPoint</a></h5>
+								</li>
+								<li>
+									<h5>dimension: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_common.perspectivetransform.html" class="tsd-signature-type">PerspectiveTransform</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="samplegrid" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> sample<wbr>Grid</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">sample<wbr>Grid<span class="tsd-signature-symbol">(</span>image<span class="tsd-signature-symbol">: </span><a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a>, transform<span class="tsd-signature-symbol">: </span><a href="core_common.perspectivetransform.html" class="tsd-signature-type">PerspectiveTransform</a>, dimension<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/Detector.ts#L191">src/core/qrcode/detector/Detector.ts:191</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>image: <a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></h5>
+								</li>
+								<li>
+									<h5>transform: <a href="core_common.perspectivetransform.html" class="tsd-signature-type">PerspectiveTransform</a></h5>
+								</li>
+								<li>
+									<h5>dimension: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/core_qrcode_detector.html">core/qrcode/detector</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_qrcode_detector.alignmentpattern.html" class="tsd-kind-icon">Alignment<wbr>Pattern</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_qrcode_detector.alignmentpatternfinder.html" class="tsd-kind-icon">Alignment<wbr>Pattern<wbr>Finder</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="core_qrcode_detector.detector.html" class="tsd-kind-icon">Detector</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="core_qrcode_detector.detector.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_qrcode_detector.detector.html#image" class="tsd-kind-icon">image</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_qrcode_detector.detector.html#resultpointcallback" class="tsd-kind-icon">result<wbr>Point<wbr>Callback</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="core_qrcode_detector.detector.html#calculatemodulesize" class="tsd-kind-icon">calculate<wbr>Module<wbr>Size</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_qrcode_detector.detector.html#calculatemodulesizeoneway" class="tsd-kind-icon">calculate<wbr>Module<wbr>Size<wbr>One<wbr>Way</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="core_qrcode_detector.detector.html#detect" class="tsd-kind-icon">detect</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="core_qrcode_detector.detector.html#findalignmentinregion" class="tsd-kind-icon">find<wbr>Alignment<wbr>InRegion</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="core_qrcode_detector.detector.html#getimage" class="tsd-kind-icon">get<wbr>Image</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="core_qrcode_detector.detector.html#getresultpointcallback" class="tsd-kind-icon">get<wbr>Result<wbr>Point<wbr>Callback</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-protected">
+								<a href="core_qrcode_detector.detector.html#processfinderpatterninfo" class="tsd-kind-icon">process<wbr>Finder<wbr>Pattern<wbr>Info</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_qrcode_detector.detector.html#sizeofblackwhiteblackrun" class="tsd-kind-icon">size<wbr>OfBlack<wbr>White<wbr>Black<wbr>Run</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_qrcode_detector.detector.html#sizeofblackwhiteblackrunbothways" class="tsd-kind-icon">size<wbr>OfBlack<wbr>White<wbr>Black<wbr>Run<wbr>Both<wbr>Ways</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_qrcode_detector.detector.html#computedimension" class="tsd-kind-icon">compute<wbr>Dimension</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_qrcode_detector.detector.html#createtransform" class="tsd-kind-icon">create<wbr>Transform</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_qrcode_detector.detector.html#samplegrid" class="tsd-kind-icon">sample<wbr>Grid</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_qrcode_detector.finderpattern.html" class="tsd-kind-icon">Finder<wbr>Pattern</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_qrcode_detector.finderpatternfinder.html" class="tsd-kind-icon">Finder<wbr>Pattern<wbr>Finder</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_qrcode_detector.finderpatterninfo.html" class="tsd-kind-icon">Finder<wbr>Pattern<wbr>Info</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

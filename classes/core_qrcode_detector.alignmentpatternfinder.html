@@ -1,0 +1,648 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>AlignmentPatternFinder | @zxing/library - v0.18.3</title>
+	<meta name="description" content="Documentation for @zxing/library - v0.18.3">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@zxing/library - v0.18.3</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/core_qrcode_detector.html">core/qrcode/detector</a>
+				</li>
+				<li>
+					<a href="core_qrcode_detector.alignmentpatternfinder.html">AlignmentPatternFinder</a>
+				</li>
+			</ul>
+			<h1>Class AlignmentPatternFinder</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>This class attempts to find alignment patterns in a QR Code. Alignment patterns look like finder
+						patterns but are smaller and appear at regular intervals throughout the image.</p>
+					</div>
+					<p>At the moment this only looks for the bottom-right alignment pattern.</p>
+					<p>This is mostly a simplified copy of <a href="core_qrcode_detector.finderpatternfinder.html">FinderPatternFinder</a>. It is copied,
+						pasted and stripped down here for maximum performance but does unfortunately duplicate
+					some code.</p>
+					<p>This class is thread-safe but not reentrant. Each thread must allocate its own object.</p>
+					<dl class="tsd-comment-tags">
+						<dt>author</dt>
+						<dd><p>Sean Owen</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">AlignmentPatternFinder</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="core_qrcode_detector.alignmentpatternfinder.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_qrcode_detector.alignmentpatternfinder.html#crosscheckstatecount" class="tsd-kind-icon">cross<wbr>Check<wbr>State<wbr>Count</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_qrcode_detector.alignmentpatternfinder.html#height" class="tsd-kind-icon">height</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_qrcode_detector.alignmentpatternfinder.html#image" class="tsd-kind-icon">image</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_qrcode_detector.alignmentpatternfinder.html#modulesize" class="tsd-kind-icon">module<wbr>Size</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_qrcode_detector.alignmentpatternfinder.html#possiblecenters" class="tsd-kind-icon">possible<wbr>Centers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_qrcode_detector.alignmentpatternfinder.html#resultpointcallback" class="tsd-kind-icon">result<wbr>Point<wbr>Callback</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_qrcode_detector.alignmentpatternfinder.html#startx" class="tsd-kind-icon">startX</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_qrcode_detector.alignmentpatternfinder.html#starty" class="tsd-kind-icon">startY</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_qrcode_detector.alignmentpatternfinder.html#width" class="tsd-kind-icon">width</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_qrcode_detector.alignmentpatternfinder.html#crosscheckvertical" class="tsd-kind-icon">cross<wbr>Check<wbr>Vertical</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core_qrcode_detector.alignmentpatternfinder.html#find" class="tsd-kind-icon">find</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_qrcode_detector.alignmentpatternfinder.html#foundpatterncross" class="tsd-kind-icon">found<wbr>Pattern<wbr>Cross</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_qrcode_detector.alignmentpatternfinder.html#handlepossiblecenter" class="tsd-kind-icon">handle<wbr>Possible<wbr>Center</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_qrcode_detector.alignmentpatternfinder.html#centerfromend" class="tsd-kind-icon">center<wbr>From<wbr>End</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Alignment<wbr>Pattern<wbr>Finder<span class="tsd-signature-symbol">(</span>image<span class="tsd-signature-symbol">: </span><a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a>, startX<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, startY<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, width<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, moduleSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, resultPointCallback<span class="tsd-signature-symbol">: </span><a href="../interfaces/core.resultpointcallback.html" class="tsd-signature-type">ResultPointCallback</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_qrcode_detector.alignmentpatternfinder.html" class="tsd-signature-type">AlignmentPatternFinder</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/AlignmentPatternFinder.ts#L45">src/core/qrcode/detector/AlignmentPatternFinder.ts:45</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a finder that will look in a portion of the whole image.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>image: <a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>image to search</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>startX: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>left column from which to start searching</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>startY: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>top row from which to start searching</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>width: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>width of region to search</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>height: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>height of region to search</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>moduleSize: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>estimated module size so far</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>resultPointCallback: <a href="../interfaces/core.resultpointcallback.html" class="tsd-signature-type">ResultPointCallback</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_qrcode_detector.alignmentpatternfinder.html" class="tsd-signature-type">AlignmentPatternFinder</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="crosscheckstatecount" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> cross<wbr>Check<wbr>State<wbr>Count</h3>
+					<div class="tsd-signature tsd-kind-icon">cross<wbr>Check<wbr>State<wbr>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Int32Array</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/AlignmentPatternFinder.ts#L45">src/core/qrcode/detector/AlignmentPatternFinder.ts:45</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="height" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> height</h3>
+					<div class="tsd-signature tsd-kind-icon">height<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/AlignmentPatternFinder.ts#L61">src/core/qrcode/detector/AlignmentPatternFinder.ts:61</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>height of region to search</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="image" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> image</h3>
+					<div class="tsd-signature tsd-kind-icon">image<span class="tsd-signature-symbol">:</span> <a href="core_common.bitmatrix.html" class="tsd-signature-type">BitMatrix</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/AlignmentPatternFinder.ts#L57">src/core/qrcode/detector/AlignmentPatternFinder.ts:57</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>image to search</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="modulesize" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> module<wbr>Size</h3>
+					<div class="tsd-signature tsd-kind-icon">module<wbr>Size<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/AlignmentPatternFinder.ts#L62">src/core/qrcode/detector/AlignmentPatternFinder.ts:62</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>estimated module size so far</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="possiblecenters" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> possible<wbr>Centers</h3>
+					<div class="tsd-signature tsd-kind-icon">possible<wbr>Centers<span class="tsd-signature-symbol">:</span> <a href="core_qrcode_detector.alignmentpattern.html" class="tsd-signature-type">AlignmentPattern</a><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/AlignmentPatternFinder.ts#L44">src/core/qrcode/detector/AlignmentPatternFinder.ts:44</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="resultpointcallback" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> result<wbr>Point<wbr>Callback</h3>
+					<div class="tsd-signature tsd-kind-icon">result<wbr>Point<wbr>Callback<span class="tsd-signature-symbol">:</span> <a href="../interfaces/core.resultpointcallback.html" class="tsd-signature-type">ResultPointCallback</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/AlignmentPatternFinder.ts#L63">src/core/qrcode/detector/AlignmentPatternFinder.ts:63</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="startx" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> startX</h3>
+					<div class="tsd-signature tsd-kind-icon">startX<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/AlignmentPatternFinder.ts#L58">src/core/qrcode/detector/AlignmentPatternFinder.ts:58</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>left column from which to start searching</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="starty" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> startY</h3>
+					<div class="tsd-signature tsd-kind-icon">startY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/AlignmentPatternFinder.ts#L59">src/core/qrcode/detector/AlignmentPatternFinder.ts:59</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>top row from which to start searching</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="width" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> width</h3>
+					<div class="tsd-signature tsd-kind-icon">width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/AlignmentPatternFinder.ts#L60">src/core/qrcode/detector/AlignmentPatternFinder.ts:60</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>width of region to search</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="crosscheckvertical" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> cross<wbr>Check<wbr>Vertical</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">cross<wbr>Check<wbr>Vertical<span class="tsd-signature-symbol">(</span>startI<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, centerJ<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, maxCount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, originalStateCountTotal<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/AlignmentPatternFinder.ts#L184">src/core/qrcode/detector/AlignmentPatternFinder.ts:184</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>After a horizontal scan finds a potential alignment pattern, this method
+										"cross-checks" by scanning down vertically through the center of the possible
+									alignment pattern to see if the same proportion is detected.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>startI: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>row where an alignment pattern was detected</p>
+									</div>
+								</li>
+								<li>
+									<h5>centerJ: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>center of the section that appears to cross an alignment pattern</p>
+									</div>
+								</li>
+								<li>
+									<h5>maxCount: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>maximum reasonable number of modules that should be
+										observed in any reading state, based on the results of the horizontal scan</p>
+									</div>
+								</li>
+								<li>
+									<h5>originalStateCountTotal: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>vertical center of alignment pattern, or {@link Float#NaN} if not found</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="find" class="tsd-anchor"></a>
+					<h3>find</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">find<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_qrcode_detector.alignmentpattern.html" class="tsd-signature-type">AlignmentPattern</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/AlignmentPatternFinder.ts#L76">src/core/qrcode/detector/AlignmentPatternFinder.ts:76</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This method attempts to find the bottom-right alignment pattern in the image. It is a bit messy since
+									it's pretty performance-critical and so is written to be fast foremost.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>NotFoundException if not found</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="core_qrcode_detector.alignmentpattern.html" class="tsd-signature-type">AlignmentPattern</a></h4>
+							<p><a href="core_qrcode_detector.alignmentpattern.html">AlignmentPattern</a> if found</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="foundpatterncross" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> found<wbr>Pattern<wbr>Cross</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">found<wbr>Pattern<wbr>Cross<span class="tsd-signature-symbol">(</span>stateCount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/AlignmentPatternFinder.ts#L162">src/core/qrcode/detector/AlignmentPatternFinder.ts:162</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>stateCount: <span class="tsd-signature-type">Int32Array</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>count of black/white/black pixels just read</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>true iff the proportions of the counts is close enough to the 1/1/1 ratios
+							used by alignment patterns to be considered a match</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="handlepossiblecenter" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> handle<wbr>Possible<wbr>Center</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">handle<wbr>Possible<wbr>Center<span class="tsd-signature-symbol">(</span>stateCount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span>, i<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, j<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_qrcode_detector.alignmentpattern.html" class="tsd-signature-type">AlignmentPattern</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/AlignmentPatternFinder.ts#L248">src/core/qrcode/detector/AlignmentPatternFinder.ts:248</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This is called when a horizontal scan finds a possible alignment pattern. It will
+										cross check with a vertical scan, and if successful, will see if this pattern had been
+										found on a previous horizontal scan. If so, we consider it confirmed and conclude we have
+									found the alignment pattern.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>stateCount: <span class="tsd-signature-type">Int32Array</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>reading state module counts from horizontal scan</p>
+									</div>
+								</li>
+								<li>
+									<h5>i: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>row where alignment pattern may be found</p>
+									</div>
+								</li>
+								<li>
+									<h5>j: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>end of possible alignment pattern in row</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_qrcode_detector.alignmentpattern.html" class="tsd-signature-type">AlignmentPattern</a></h4>
+							<p><a href="core_qrcode_detector.alignmentpattern.html">AlignmentPattern</a> if we have found the same pattern twice, or null if not</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="centerfromend" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> center<wbr>From<wbr>End</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">center<wbr>From<wbr>End<span class="tsd-signature-symbol">(</span>stateCount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Int32Array</span>, end<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/detector/AlignmentPatternFinder.ts#L153">src/core/qrcode/detector/AlignmentPatternFinder.ts:153</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Given a count of black/white/black pixels just seen and an end position,
+									figures the location of the center of this black/white/black run.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>stateCount: <span class="tsd-signature-type">Int32Array</span></h5>
+								</li>
+								<li>
+									<h5>end: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/core_qrcode_detector.html">core/qrcode/detector</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_qrcode_detector.alignmentpattern.html" class="tsd-kind-icon">Alignment<wbr>Pattern</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="core_qrcode_detector.alignmentpatternfinder.html" class="tsd-kind-icon">Alignment<wbr>Pattern<wbr>Finder</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="core_qrcode_detector.alignmentpatternfinder.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_qrcode_detector.alignmentpatternfinder.html#crosscheckstatecount" class="tsd-kind-icon">cross<wbr>Check<wbr>State<wbr>Count</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_qrcode_detector.alignmentpatternfinder.html#height" class="tsd-kind-icon">height</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_qrcode_detector.alignmentpatternfinder.html#image" class="tsd-kind-icon">image</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_qrcode_detector.alignmentpatternfinder.html#modulesize" class="tsd-kind-icon">module<wbr>Size</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_qrcode_detector.alignmentpatternfinder.html#possiblecenters" class="tsd-kind-icon">possible<wbr>Centers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_qrcode_detector.alignmentpatternfinder.html#resultpointcallback" class="tsd-kind-icon">result<wbr>Point<wbr>Callback</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_qrcode_detector.alignmentpatternfinder.html#startx" class="tsd-kind-icon">startX</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_qrcode_detector.alignmentpatternfinder.html#starty" class="tsd-kind-icon">startY</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_qrcode_detector.alignmentpatternfinder.html#width" class="tsd-kind-icon">width</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_qrcode_detector.alignmentpatternfinder.html#crosscheckvertical" class="tsd-kind-icon">cross<wbr>Check<wbr>Vertical</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="core_qrcode_detector.alignmentpatternfinder.html#find" class="tsd-kind-icon">find</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_qrcode_detector.alignmentpatternfinder.html#foundpatterncross" class="tsd-kind-icon">found<wbr>Pattern<wbr>Cross</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_qrcode_detector.alignmentpatternfinder.html#handlepossiblecenter" class="tsd-kind-icon">handle<wbr>Possible<wbr>Center</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_qrcode_detector.alignmentpatternfinder.html#centerfromend" class="tsd-kind-icon">center<wbr>From<wbr>End</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_qrcode_detector.detector.html" class="tsd-kind-icon">Detector</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_qrcode_detector.finderpattern.html" class="tsd-kind-icon">Finder<wbr>Pattern</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_qrcode_detector.finderpatternfinder.html" class="tsd-kind-icon">Finder<wbr>Pattern<wbr>Finder</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_qrcode_detector.finderpatterninfo.html" class="tsd-kind-icon">Finder<wbr>Pattern<wbr>Info</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,475 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>HighLevelEncoder | @zxing/library - v0.18.3</title>
+	<meta name="description" content="Documentation for @zxing/library - v0.18.3">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@zxing/library - v0.18.3</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/core_aztec_encoder.html">core/aztec/encoder</a>
+				</li>
+				<li>
+					<a href="core_aztec_encoder.highlevelencoder.html">HighLevelEncoder</a>
+				</li>
+			</ul>
+			<h1>Class HighLevelEncoder</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>This produces nearly optimal encodings of text into the first-level of
+						encoding used by Aztec code.</p>
+					</div>
+					<p>It uses a dynamic algorithm.  For each prefix of the string, it determines
+						a set of encodings that could lead to this prefix.  We repeatedly add a
+						character and generate a new set of optimal encodings until we have read
+					through the entire input.</p>
+					<dl class="tsd-comment-tags">
+						<dt>author</dt>
+						<dd><p>Frank Yellin</p>
+						</dd>
+						<dt>author</dt>
+						<dd><p>Rustam Abdullaev</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">HighLevelEncoder</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="core_aztec_encoder.highlevelencoder.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="core_aztec_encoder.highlevelencoder.html#text" class="tsd-kind-icon">text</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core_aztec_encoder.highlevelencoder.html#encode" class="tsd-kind-icon">encode</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_aztec_encoder.highlevelencoder.html#updatestateforchar" class="tsd-kind-icon">update<wbr>State<wbr>For<wbr>Char</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_aztec_encoder.highlevelencoder.html#updatestatelistforchar" class="tsd-kind-icon">update<wbr>State<wbr>List<wbr>For<wbr>Char</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_aztec_encoder.highlevelencoder.html#simplifystates" class="tsd-kind-icon">simplify<wbr>States</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_aztec_encoder.highlevelencoder.html#updatestateforpair" class="tsd-kind-icon">update<wbr>State<wbr>For<wbr>Pair</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_aztec_encoder.highlevelencoder.html#updatestatelistforpair" class="tsd-kind-icon">update<wbr>State<wbr>List<wbr>For<wbr>Pair</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>High<wbr>Level<wbr>Encoder<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_aztec_encoder.highlevelencoder.html" class="tsd-signature-type">HighLevelEncoder</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/encoder/HighLevelEncoder.ts#L61">src/core/aztec/encoder/HighLevelEncoder.ts:61</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>text: <span class="tsd-signature-type">Uint8Array</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_aztec_encoder.highlevelencoder.html" class="tsd-signature-type">HighLevelEncoder</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="text" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> text</h3>
+					<div class="tsd-signature tsd-kind-icon">text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Uint8Array</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/encoder/HighLevelEncoder.ts#L61">src/core/aztec/encoder/HighLevelEncoder.ts:61</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="encode" class="tsd-anchor"></a>
+					<h3>encode</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">encode<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/encoder/HighLevelEncoder.ts#L70">src/core/aztec/encoder/HighLevelEncoder.ts:70</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a></h4>
+							<p>text represented by this encoder encoded as a <a href="core_common.bitarray.html">BitArray</a></p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="updatestateforchar" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> update<wbr>State<wbr>For<wbr>Char</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>State<wbr>For<wbr>Char<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="core_aztec_encoder.state.html" class="tsd-signature-type">State</a>, index<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, result<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#collection" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><a href="core_aztec_encoder.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/encoder/HighLevelEncoder.ts#L136">src/core/aztec/encoder/HighLevelEncoder.ts:136</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>state: <a href="core_aztec_encoder.state.html" class="tsd-signature-type">State</a></h5>
+								</li>
+								<li>
+									<h5>index: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>result: <a href="../modules/reflection-6167.reflection-1.html#collection" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><a href="core_aztec_encoder.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="updatestatelistforchar" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> update<wbr>State<wbr>List<wbr>For<wbr>Char</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>State<wbr>List<wbr>For<wbr>Char<span class="tsd-signature-symbol">(</span>states<span class="tsd-signature-symbol">: </span><a href="core_aztec_encoder.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">[]</span>, index<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#collection" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><a href="core_aztec_encoder.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/encoder/HighLevelEncoder.ts#L122">src/core/aztec/encoder/HighLevelEncoder.ts:122</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>states: <a href="core_aztec_encoder.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>index: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/reflection-6167.reflection-1.html#collection" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><a href="core_aztec_encoder.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="simplifystates" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> simplify<wbr>States</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">simplify<wbr>States<span class="tsd-signature-symbol">(</span>states<span class="tsd-signature-symbol">: </span><a href="core_aztec_encoder.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#collection" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><a href="core_aztec_encoder.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/encoder/HighLevelEncoder.ts#L237">src/core/aztec/encoder/HighLevelEncoder.ts:237</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>states: <a href="core_aztec_encoder.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/reflection-6167.reflection-1.html#collection" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><a href="core_aztec_encoder.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="updatestateforpair" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> update<wbr>State<wbr>For<wbr>Pair</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>State<wbr>For<wbr>Pair<span class="tsd-signature-symbol">(</span>state<span class="tsd-signature-symbol">: </span><a href="core_aztec_encoder.state.html" class="tsd-signature-type">State</a>, index<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, pairCode<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, result<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#collection" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><a href="core_aztec_encoder.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/encoder/HighLevelEncoder.ts#L206">src/core/aztec/encoder/HighLevelEncoder.ts:206</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>state: <a href="core_aztec_encoder.state.html" class="tsd-signature-type">State</a></h5>
+								</li>
+								<li>
+									<h5>index: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>pairCode: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>result: <a href="../modules/reflection-6167.reflection-1.html#collection" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><a href="core_aztec_encoder.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="updatestatelistforpair" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> update<wbr>State<wbr>List<wbr>For<wbr>Pair</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">update<wbr>State<wbr>List<wbr>For<wbr>Pair<span class="tsd-signature-symbol">(</span>states<span class="tsd-signature-symbol">: </span><a href="core_aztec_encoder.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">[]</span>, index<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, pairCode<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#collection" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><a href="core_aztec_encoder.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/aztec/encoder/HighLevelEncoder.ts#L194">src/core/aztec/encoder/HighLevelEncoder.ts:194</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>states: <a href="core_aztec_encoder.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>index: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+								<li>
+									<h5>pairCode: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/reflection-6167.reflection-1.html#collection" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><a href="core_aztec_encoder.state.html" class="tsd-signature-type">State</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/core_aztec_encoder.html">core/aztec/encoder</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_aztec_encoder.azteccode.html" class="tsd-kind-icon">Aztec<wbr>Code</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_aztec_encoder.binaryshifttoken.html" class="tsd-kind-icon">Binary<wbr>Shift<wbr>Token</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_aztec_encoder.encoder.html" class="tsd-kind-icon">Encoder</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="core_aztec_encoder.highlevelencoder.html" class="tsd-kind-icon">High<wbr>Level<wbr>Encoder</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="core_aztec_encoder.highlevelencoder.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="core_aztec_encoder.highlevelencoder.html#text" class="tsd-kind-icon">text</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="core_aztec_encoder.highlevelencoder.html#encode" class="tsd-kind-icon">encode</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_aztec_encoder.highlevelencoder.html#updatestateforchar" class="tsd-kind-icon">update<wbr>State<wbr>For<wbr>Char</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="core_aztec_encoder.highlevelencoder.html#updatestatelistforchar" class="tsd-kind-icon">update<wbr>State<wbr>List<wbr>For<wbr>Char</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_aztec_encoder.highlevelencoder.html#simplifystates" class="tsd-kind-icon">simplify<wbr>States</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_aztec_encoder.highlevelencoder.html#updatestateforpair" class="tsd-kind-icon">update<wbr>State<wbr>For<wbr>Pair</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_aztec_encoder.highlevelencoder.html#updatestatelistforpair" class="tsd-kind-icon">update<wbr>State<wbr>List<wbr>For<wbr>Pair</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_aztec_encoder.simpletoken.html" class="tsd-kind-icon">Simple<wbr>Token</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_aztec_encoder.state.html" class="tsd-kind-icon">State</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_aztec_encoder.token.html" class="tsd-kind-icon">Token</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/core_aztec_encoder.html#char_map" class="tsd-kind-icon">CHAR_<wbr>MAP</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/core_aztec_encoder.html#empty_token" class="tsd-kind-icon">EMPTY_<wbr>TOKEN</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/core_aztec_encoder.html#latch_table" class="tsd-kind-icon">LATCH_<wbr>TABLE</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/core_aztec_encoder.html#mode_digit" class="tsd-kind-icon">MODE_<wbr>DIGIT</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/core_aztec_encoder.html#mode_lower" class="tsd-kind-icon">MODE_<wbr>LOWER</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/core_aztec_encoder.html#mode_mixed" class="tsd-kind-icon">MODE_<wbr>MIXED</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/core_aztec_encoder.html#mode_names" class="tsd-kind-icon">MODE_<wbr>NAMES</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/core_aztec_encoder.html#mode_punct" class="tsd-kind-icon">MODE_<wbr>PUNCT</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/core_aztec_encoder.html#mode_upper" class="tsd-kind-icon">MODE_<wbr>UPPER</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-parent-kind-module">
+						<a href="../modules/core_aztec_encoder.html#shift_table" class="tsd-kind-icon">SHIFT_<wbr>TABLE</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/core_aztec_encoder.html#add" class="tsd-kind-icon">add</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/core_aztec_encoder.html#addbinaryshift" class="tsd-kind-icon">add<wbr>Binary<wbr>Shift</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/core_aztec_encoder.html#static_char_map" class="tsd-kind-icon">static_<wbr>CHAR_<wbr>MAP</a>
+					</li>
+					<li class=" tsd-kind-function tsd-parent-kind-module">
+						<a href="../modules/core_aztec_encoder.html#static_shift_table" class="tsd-kind-icon">static_<wbr>SHIFT_<wbr>TABLE</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

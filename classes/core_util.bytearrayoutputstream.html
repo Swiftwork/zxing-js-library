@@ -1,0 +1,972 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ByteArrayOutputStream | @zxing/library - v0.18.3</title>
+	<meta name="description" content="Documentation for @zxing/library - v0.18.3">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@zxing/library - v0.18.3</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/core_util.html">core/util</a>
+				</li>
+				<li>
+					<a href="core_util.bytearrayoutputstream.html">ByteArrayOutputStream</a>
+				</li>
+			</ul>
+			<h1>Class ByteArrayOutputStream</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>This class implements an output stream in which the data is
+							written into a byte array. The buffer automatically grows as data
+							is written to it.
+							The data can be retrieved using <code>toByteArray()</code> and
+						<code>toString()</code>.</p>
+						<p>
+							Closing a <tt>ByteArrayOutputStream</tt> has no effect. The methods in
+							this class can be called after the stream has been closed without
+							generating an <tt>IOException</tt>.
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>author</dt>
+						<dd><p>Arthur van Hoff</p>
+						</dd>
+						<dt>since</dt>
+						<dd><p>JDK1.0</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="core_util.outputstream.html" class="tsd-signature-type">OutputStream</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">ByteArrayOutputStream</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="core_util.bytearrayoutputstream.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-private-protected">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="core_util.bytearrayoutputstream.html#buf" class="tsd-kind-icon">buf</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><a href="core_util.bytearrayoutputstream.html#count" class="tsd-kind-icon">count</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="core_util.bytearrayoutputstream.html#close" class="tsd-kind-icon">close</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_util.bytearrayoutputstream.html#ensurecapacity" class="tsd-kind-icon">ensure<wbr>Capacity</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="core_util.bytearrayoutputstream.html#flush" class="tsd-kind-icon">flush</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="core_util.bytearrayoutputstream.html#grow" class="tsd-kind-icon">grow</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core_util.bytearrayoutputstream.html#reset" class="tsd-kind-icon">reset</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core_util.bytearrayoutputstream.html#size" class="tsd-kind-icon">size</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core_util.bytearrayoutputstream.html#tobytearray" class="tsd-kind-icon">to<wbr>Byte<wbr>Array</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core_util.bytearrayoutputstream.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core_util.bytearrayoutputstream.html#tostring_number" class="tsd-kind-icon">to<wbr>String_<wbr>number</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core_util.bytearrayoutputstream.html#tostring_string" class="tsd-kind-icon">to<wbr>String_<wbr>string</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core_util.bytearrayoutputstream.html#tostring_void" class="tsd-kind-icon">to<wbr>String_<wbr>void</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="core_util.bytearrayoutputstream.html#write" class="tsd-kind-icon">write</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="core_util.bytearrayoutputstream.html#writebytes" class="tsd-kind-icon">write<wbr>Bytes</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="core_util.bytearrayoutputstream.html#writebytesoffset" class="tsd-kind-icon">write<wbr>Bytes<wbr>Offset</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="core_util.bytearrayoutputstream.html#writeto" class="tsd-kind-icon">write<wbr>To</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Byte<wbr>Array<wbr>Output<wbr>Stream<span class="tsd-signature-symbol">(</span>size<span class="tsd-signature-symbol">?: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_util.bytearrayoutputstream.html" class="tsd-signature-type">ByteArrayOutputStream</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/util/ByteArrayOutputStream.ts#L66">src/core/util/ByteArrayOutputStream.ts:66</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a new byte array output stream, with a buffer capacity of
+									the specified size, in bytes.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>exception</dt>
+									<dd><p>IllegalArgumentException if size is negative.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> size: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 32</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>the initial size.</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_util.bytearrayoutputstream.html" class="tsd-signature-type">ByteArrayOutputStream</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private-protected">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="buf" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> buf</h3>
+					<div class="tsd-signature tsd-kind-icon">buf<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Uint8Array</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/util/ByteArrayOutputStream.ts#L61">src/core/util/ByteArrayOutputStream.ts:61</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The buffer where data is stored.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+					<a name="count" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagProtected">Protected</span> count</h3>
+					<div class="tsd-signature tsd-kind-icon">count<span class="tsd-signature-symbol">:</span> <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol"> = 0</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/util/ByteArrayOutputStream.ts#L66">src/core/util/ByteArrayOutputStream.ts:66</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The number of valid bytes in the buffer.</p>
+						</div>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+					<a name="close" class="tsd-anchor"></a>
+					<h3>close</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">close<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Overrides <a href="core_util.outputstream.html">OutputStream</a>.<a href="core_util.outputstream.html#close">close</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/util/ByteArrayOutputStream.ts#L290">src/core/util/ByteArrayOutputStream.ts:290</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Closing a <tt>ByteArrayOutputStream</tt> has no effect. The methods in
+										this class can be called after the stream has been closed without
+									generating an <tt>IOException</tt>.</p>
+									<p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>IOException</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="ensurecapacity" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> ensure<wbr>Capacity</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">ensure<wbr>Capacity<span class="tsd-signature-symbol">(</span>minCapacity<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/util/ByteArrayOutputStream.ts#L102">src/core/util/ByteArrayOutputStream.ts:102</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Increases the capacity if necessary to ensure that it can hold
+										at least the number of elements specified by the minimum
+									capacity argument.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>throws</dt>
+									<dd><p>OutOfMemoryError if {@code minCapacity &lt; 0}.  This is
+											interpreted as a request for the unsatisfiably large capacity
+										{@code (long) Integer.MAX_VALUE + (minCapacity - Integer.MAX_VALUE)}.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>minCapacity: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the desired minimum capacity</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+					<a name="flush" class="tsd-anchor"></a>
+					<h3>flush</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+						<li class="tsd-signature tsd-kind-icon">flush<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<p>Inherited from <a href="core_util.outputstream.html">OutputStream</a>.<a href="core_util.outputstream.html#flush">flush</a></p>
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/util/OutputStream.ts#L141">src/core/util/OutputStream.ts:141</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Flushes this output stream and forces any buffered output bytes
+										to be written out. The general contract of <code>flush</code> is
+										that calling it is an indication that, if any bytes previously
+										written have been buffered by the implementation of the output
+										stream, such bytes should immediately be written to their
+									intended destination.</p>
+									<p>
+										If the intended destination of this stream is an abstraction provided by
+										the underlying operating system, for example a file, then flushing the
+										stream guarantees only that bytes previously written to the stream are
+										passed to the operating system for writing; it does not guarantee that
+										they are actually written to a physical device such as a disk drive.
+										<p>
+											The <code>flush</code> method of <code>OutputStream</code> does nothing.
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>exception</dt>
+									<dd><p>IOException  if an I/O error occurs.</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="grow" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> grow</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">grow<span class="tsd-signature-symbol">(</span>minCapacity<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/util/ByteArrayOutputStream.ts#L114">src/core/util/ByteArrayOutputStream.ts:114</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Increases the capacity to ensure that it can hold at least the
+									number of elements specified by the minimum capacity argument.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>minCapacity: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the desired minimum capacity</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="reset" class="tsd-anchor"></a>
+					<h3>reset</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">reset<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/util/ByteArrayOutputStream.ts#L177">src/core/util/ByteArrayOutputStream.ts:177</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Resets the <code>count</code> field of this byte array output
+										stream to zero, so that all currently accumulated output in the
+										output stream is discarded. The output stream can be used again,
+									reusing the already allocated buffer space.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p>java.io.ByteArrayInputStream#count</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="size" class="tsd-anchor"></a>
+					<h3>size</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">size<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/util/ByteArrayOutputStream.ts#L200">src/core/util/ByteArrayOutputStream.ts:200</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Returns the current size of the buffer.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p>java.io.ByteArrayOutputStream#count</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h4>
+							<p>the value of the <code>count</code> field, which is the number
+							of valid bytes in this output stream.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="tobytearray" class="tsd-anchor"></a>
+					<h3>to<wbr>Byte<wbr>Array</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Byte<wbr>Array<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/util/ByteArrayOutputStream.ts#L189">src/core/util/ByteArrayOutputStream.ts:189</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a newly allocated byte array. Its size is the current
+										size of this output stream and the valid contents of the buffer
+									have been copied into it.</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>see</dt>
+									<dd><p>java.io.ByteArrayOutputStream#size()</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Uint8Array</span></h4>
+							<p>the current contents of this output stream, as a byte array.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="tostring" class="tsd-anchor"></a>
+					<h3>to<wbr>String</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span>param<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/util/ByteArrayOutputStream.ts#L204">src/core/util/ByteArrayOutputStream.ts:204</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> param: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="tostring_number" class="tsd-anchor"></a>
+					<h3>to<wbr>String_<wbr>number</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>String_<wbr>number<span class="tsd-signature-symbol">(</span>hibyte<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/util/ByteArrayOutputStream.ts#L278">src/core/util/ByteArrayOutputStream.ts:278</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a newly allocated string. Its size is the current size of
+										the output stream and the valid contents of the buffer have been
+										copied into it. Each character <i>c</i> in the resulting string is
+										constructed from the corresponding element <i>b</i> in the byte
+									array such that:</p>
+									<blockquote><pre>
+    c == (char)(((hibyte &amp; 0xff) &lt;&lt; 8) | (b &amp; 0xff))
+</pre></blockquote>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>deprecated</dt>
+									<dd><p>This method does not properly convert bytes into characters.
+											As of JDK&nbsp;1.1, the preferred way to do this is via the
+											<code>toString(String enc)</code> method, which takes an encoding-name
+											argument, or the <code>toString()</code> method, which uses the
+										platform&#39;s default character encoding.</p>
+									</dd>
+									<dt>see</dt>
+									<dd><p>java.io.ByteArrayOutputStream#size()</p>
+									</dd>
+									<dt>see</dt>
+									<dd><p>java.io.ByteArrayOutputStream#toString(String)</p>
+									</dd>
+									<dt>see</dt>
+									<dd><p>java.io.ByteArrayOutputStream#toString()</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>hibyte: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the high byte of each resulting Unicode character.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>the current contents of the output stream, as a string.</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="tostring_string" class="tsd-anchor"></a>
+					<h3>to<wbr>String_<wbr>string</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>String_<wbr>string<span class="tsd-signature-symbol">(</span>charsetName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/util/ByteArrayOutputStream.ts#L251">src/core/util/ByteArrayOutputStream.ts:251</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Converts the buffer&#39;s contents into a string by decoding the bytes using
+										the specified {@link java.nio.charset.Charset charsetName}. The length of
+										the new <tt>String</tt> is a function of the charset, and hence may not be
+									equal to the length of the byte array.</p>
+								</div>
+								<p> This method always replaces malformed-input and unmappable-character
+									sequences with this charset's default replacement string. The {@link
+									java.nio.charset.CharsetDecoder} class should be used when more control
+									over the decoding process is required.
+									<dl class="tsd-comment-tags">
+										<dt>exception</dt>
+										<dd><p>UnsupportedEncodingException
+											If the named charset is not supported</p>
+										</dd>
+										<dt>since</dt>
+										<dd><p>JDK1.1</p>
+										</dd>
+									</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>charsetName: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>the name of a supported
+											{@linkplain java.nio.charset.Charset </code>charset<code>}</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+
+        <p>String decoded from the buffer&#39;s contents.</p>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+    <a name="tostring_void" class="tsd-anchor"></a>
+        <h3>to<wbr>String_<wbr>void</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+        <li class="tsd-signature tsd-kind-icon">to<wbr>String_<wbr>void<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <ul>
+                    <li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/util/ByteArrayOutputStream.ts#L229">src/core/util/ByteArrayOutputStream.ts:229</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Converts the buffer&#39;s contents into a string decoding bytes using the
+platform&#39;s default character set. The length of the new <tt>String</tt>
+is a function of the character set, and hence may not be equal to the
+size of the buffer.</p>
+
+                </div>
+                <p> This method always replaces malformed-input and unmappable-character
+sequences with the default replacement string for the platform's
+default character set. The {@linkplain java.nio.charset.CharsetDecoder}
+class should be used when more control over the decoding process is
+required.
+
+                <dl class="tsd-comment-tags">
+                        <dt>since</dt>
+                        <dd><p>JDK1.1</p>
+</dd>
+                </dl>
+        </div>
+
+
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+
+        <p>String decoded from the buffer&#39;s contents.</p>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+    <a name="write" class="tsd-anchor"></a>
+        <h3>write</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+        <li class="tsd-signature tsd-kind-icon">write<span class="tsd-signature-symbol">(</span>b<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <p>Overrides <a href="core_util.outputstream.html">OutputStream</a>.<a href="core_util.outputstream.html#write">write</a></p>
+        <ul>
+                    <li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/util/ByteArrayOutputStream.ts#L133">src/core/util/ByteArrayOutputStream.ts:133</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Writes the specified byte to this byte array output stream.</p>
+
+                </div>
+        </div>
+
+
+    <h4 class="tsd-parameters-title">Parameters</h4>
+    <ul class="tsd-parameters">
+            <li>
+                <h5>b: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+
+                        <div class="tsd-comment tsd-typography">
+                <p>the byte to be written.</p>
+
+        </div>
+
+            </li>
+    </ul>
+
+    <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+
+
+        </li>
+</ul>
+    
+
+</section>
+                <section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+    <a name="writebytes" class="tsd-anchor"></a>
+        <h3>write<wbr>Bytes</h3>
+
+        <ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+        <li class="tsd-signature tsd-kind-icon">write<wbr>Bytes<span class="tsd-signature-symbol">(</span>b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+</ul>
+
+<ul class="tsd-descriptions">
+        <li class="tsd-description">
+                <aside class="tsd-sources">
+        <p>Inherited from <a href="core_util.outputstream.html">OutputStream</a>.<a href="core_util.outputstream.html#writebytes">writeBytes</a></p>
+        <ul>
+                    <li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/util/OutputStream.ts#L77">src/core/util/OutputStream.ts:77</a></li>
+        </ul>
+</aside>
+        <div class="tsd-comment tsd-typography">
+                <div class="lead">
+                    <p>Writes <code>b.length</code> bytes from the specified byte array
+											to this output stream. The general contract for <code>write(b)</code>
+											is that it should have exactly the same effect as the call
+										<code>write(b, 0, b.length)</code>.</p>
+									</div>
+									<dl class="tsd-comment-tags">
+										<dt>exception</dt>
+										<dd><p>IOException  if an I/O error occurs.</p>
+										</dd>
+										<dt>see</dt>
+										<dd><p>java.io.OutputStream#write(byte[], int, int)</p>
+										</dd>
+									</dl>
+		</div>
+		<h4 class="tsd-parameters-title">Parameters</h4>
+		<ul class="tsd-parameters">
+			<li>
+				<h5>b: <span class="tsd-signature-type">Uint8Array</span></h5>
+				<div class="tsd-comment tsd-typography">
+					<p>the data.</p>
+				</div>
+			</li>
+		</ul>
+		<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+		</li>
+		</ul>
+		</section>
+		<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+			<a name="writebytesoffset" class="tsd-anchor"></a>
+			<h3>write<wbr>Bytes<wbr>Offset</h3>
+			<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+				<li class="tsd-signature tsd-kind-icon">write<wbr>Bytes<wbr>Offset<span class="tsd-signature-symbol">(</span>b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span>, off<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a>, len<span class="tsd-signature-symbol">: </span><a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+			</ul>
+			<ul class="tsd-descriptions">
+				<li class="tsd-description">
+					<aside class="tsd-sources">
+						<p>Overrides <a href="core_util.outputstream.html">OutputStream</a>.<a href="core_util.outputstream.html#writebytesoffset">writeBytesOffset</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/util/ByteArrayOutputStream.ts#L147">src/core/util/ByteArrayOutputStream.ts:147</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Writes <code>len</code> bytes from the specified byte array
+							starting at offset <code>off</code> to this byte array output stream.</p>
+						</div>
+					</div>
+					<h4 class="tsd-parameters-title">Parameters</h4>
+					<ul class="tsd-parameters">
+						<li>
+							<h5>b: <span class="tsd-signature-type">Uint8Array</span></h5>
+							<div class="tsd-comment tsd-typography">
+								<p>the data.</p>
+							</div>
+						</li>
+						<li>
+							<h5>off: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+							<div class="tsd-comment tsd-typography">
+								<p>the start offset in the data.</p>
+							</div>
+						</li>
+						<li>
+							<h5>len: <a href="../modules/reflection-6167.reflection-1.html#int" class="tsd-signature-type">int</a></h5>
+							<div class="tsd-comment tsd-typography">
+								<p>the number of bytes to write.</p>
+							</div>
+						</li>
+					</ul>
+					<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+				</li>
+			</ul>
+		</section>
+		<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+			<a name="writeto" class="tsd-anchor"></a>
+			<h3>write<wbr>To</h3>
+			<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+				<li class="tsd-signature tsd-kind-icon">write<wbr>To<span class="tsd-signature-symbol">(</span>out<span class="tsd-signature-symbol">: </span><a href="core_util.outputstream.html" class="tsd-signature-type">OutputStream</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+			</ul>
+			<ul class="tsd-descriptions">
+				<li class="tsd-description">
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/util/ByteArrayOutputStream.ts#L165">src/core/util/ByteArrayOutputStream.ts:165</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Writes the complete contents of this byte array output stream to
+								the specified output stream argument, as if by calling the output
+							stream&#39;s write method using <code>out.write(buf, 0, count)</code>.</p>
+						</div>
+						<dl class="tsd-comment-tags">
+							<dt>exception</dt>
+							<dd><p>IOException  if an I/O error occurs.</p>
+							</dd>
+						</dl>
+					</div>
+					<h4 class="tsd-parameters-title">Parameters</h4>
+					<ul class="tsd-parameters">
+						<li>
+							<h5>out: <a href="core_util.outputstream.html" class="tsd-signature-type">OutputStream</a></h5>
+							<div class="tsd-comment tsd-typography">
+								<p>the output stream to which to write the data.</p>
+							</div>
+						</li>
+					</ul>
+					<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+				</li>
+			</ul>
+		</section>
+		</section>
+	</div>
+	<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+		<nav class="tsd-navigation primary">
+			<ul>
+				<li class="globals  ">
+					<a href="../globals.html"><em>Globals</em></a>
+				</li>
+				<li class="current tsd-kind-module">
+					<a href="../modules/core_util.html">core/util</a>
+				</li>
+			</ul>
+		</nav>
+		<nav class="tsd-navigation secondary menu-sticky">
+			<ul class="before-current">
+				<li class=" tsd-kind-class tsd-parent-kind-module">
+					<a href="core_util.arrays.html" class="tsd-kind-icon">Arrays</a>
+				</li>
+			</ul>
+			<ul class="current">
+				<li class="current tsd-kind-class tsd-parent-kind-module">
+					<a href="core_util.bytearrayoutputstream.html" class="tsd-kind-icon">Byte<wbr>Array<wbr>Output<wbr>Stream</a>
+					<ul>
+						<li class=" tsd-kind-constructor tsd-parent-kind-class">
+							<a href="core_util.bytearrayoutputstream.html#constructor" class="tsd-kind-icon">constructor</a>
+						</li>
+						<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+							<a href="core_util.bytearrayoutputstream.html#buf" class="tsd-kind-icon">buf</a>
+						</li>
+						<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-protected">
+							<a href="core_util.bytearrayoutputstream.html#count" class="tsd-kind-icon">count</a>
+						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+							<a href="core_util.bytearrayoutputstream.html#close" class="tsd-kind-icon">close</a>
+						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+							<a href="core_util.bytearrayoutputstream.html#ensurecapacity" class="tsd-kind-icon">ensure<wbr>Capacity</a>
+						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+							<a href="core_util.bytearrayoutputstream.html#flush" class="tsd-kind-icon">flush</a>
+						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+							<a href="core_util.bytearrayoutputstream.html#grow" class="tsd-kind-icon">grow</a>
+						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class">
+							<a href="core_util.bytearrayoutputstream.html#reset" class="tsd-kind-icon">reset</a>
+						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class">
+							<a href="core_util.bytearrayoutputstream.html#size" class="tsd-kind-icon">size</a>
+						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class">
+							<a href="core_util.bytearrayoutputstream.html#tobytearray" class="tsd-kind-icon">to<wbr>Byte<wbr>Array</a>
+						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class">
+							<a href="core_util.bytearrayoutputstream.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
+						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class">
+							<a href="core_util.bytearrayoutputstream.html#tostring_number" class="tsd-kind-icon">to<wbr>String_<wbr>number</a>
+						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class">
+							<a href="core_util.bytearrayoutputstream.html#tostring_string" class="tsd-kind-icon">to<wbr>String_<wbr>string</a>
+						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class">
+							<a href="core_util.bytearrayoutputstream.html#tostring_void" class="tsd-kind-icon">to<wbr>String_<wbr>void</a>
+						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+							<a href="core_util.bytearrayoutputstream.html#write" class="tsd-kind-icon">write</a>
+						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+							<a href="core_util.bytearrayoutputstream.html#writebytes" class="tsd-kind-icon">write<wbr>Bytes</a>
+						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+							<a href="core_util.bytearrayoutputstream.html#writebytesoffset" class="tsd-kind-icon">write<wbr>Bytes<wbr>Offset</a>
+						</li>
+						<li class=" tsd-kind-method tsd-parent-kind-class">
+							<a href="core_util.bytearrayoutputstream.html#writeto" class="tsd-kind-icon">write<wbr>To</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="after-current">
+				<li class=" tsd-kind-class tsd-parent-kind-module">
+					<a href="core_util.charset.html" class="tsd-kind-icon">Charset</a>
+				</li>
+				<li class=" tsd-kind-class tsd-parent-kind-module">
+					<a href="core_util.collections.html" class="tsd-kind-icon">Collections</a>
+				</li>
+				<li class=" tsd-kind-class tsd-parent-kind-module">
+					<a href="core_util.float.html" class="tsd-kind-icon">Float</a>
+				</li>
+				<li class=" tsd-kind-class tsd-parent-kind-module">
+					<a href="core_util.formatter.html" class="tsd-kind-icon">Formatter</a>
+				</li>
+				<li class=" tsd-kind-class tsd-parent-kind-module">
+					<a href="core_util.integer.html" class="tsd-kind-icon">Integer</a>
+				</li>
+				<li class=" tsd-kind-class tsd-parent-kind-module">
+					<a href="core_util.long.html" class="tsd-kind-icon">Long</a>
+				</li>
+				<li class=" tsd-kind-class tsd-parent-kind-module">
+					<a href="core_util.outputstream.html" class="tsd-kind-icon">Output<wbr>Stream</a>
+				</li>
+				<li class=" tsd-kind-class tsd-parent-kind-module">
+					<a href="core_util.standardcharsets.html" class="tsd-kind-icon">Standard<wbr>Charsets</a>
+				</li>
+				<li class=" tsd-kind-class tsd-parent-kind-module">
+					<a href="core_util.stringbuilder.html" class="tsd-kind-icon">String<wbr>Builder</a>
+				</li>
+				<li class=" tsd-kind-class tsd-parent-kind-module">
+					<a href="core_util.stringencoding.html" class="tsd-kind-icon">String<wbr>Encoding</a>
+				</li>
+				<li class=" tsd-kind-class tsd-parent-kind-module">
+					<a href="core_util.system.html" class="tsd-kind-icon">System</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

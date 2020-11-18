@@ -1,0 +1,896 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MatrixUtil | @zxing/library - v0.18.3</title>
+	<meta name="description" content="Documentation for @zxing/library - v0.18.3">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@zxing/library - v0.18.3</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/core_qrcode_encoder.html">core/qrcode/encoder</a>
+				</li>
+				<li>
+					<a href="core_qrcode_encoder.matrixutil.html">MatrixUtil</a>
+				</li>
+			</ul>
+			<h1>Class MatrixUtil</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<dl class="tsd-comment-tags">
+						<dt>author</dt>
+						<dd><p><a href="mailto:&#115;&#x61;&#116;&#x6f;&#114;&#117;&#120;&#x40;&#103;&#111;&#x6f;&#103;&#x6c;&#x65;&#46;&#x63;&#x6f;&#109;">&#115;&#x61;&#116;&#x6f;&#114;&#117;&#120;&#x40;&#103;&#111;&#x6f;&#103;&#x6c;&#x65;&#46;&#x63;&#x6f;&#109;</a> (Satoru Takabayashi) - creator</p>
+						</dd>
+						<dt>author</dt>
+						<dd><p><a href="mailto:&#100;&#115;&#119;&#105;&#116;&#x6b;&#105;&#x6e;&#64;&#103;&#x6f;&#x6f;&#103;&#x6c;&#101;&#46;&#x63;&#111;&#109;">&#100;&#115;&#119;&#105;&#116;&#x6b;&#105;&#x6e;&#64;&#103;&#x6f;&#x6f;&#103;&#x6c;&#101;&#46;&#x63;&#111;&#109;</a> (Daniel Switkin) - ported from C++</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">MatrixUtil</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-private"><a href="core_qrcode_encoder.matrixutil.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_qrcode_encoder.matrixutil.html#position_adjustment_pattern" class="tsd-kind-icon">POSITION_<wbr>ADJUSTMENT_<wbr>PATTERN</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_qrcode_encoder.matrixutil.html#position_adjustment_pattern_coordinate_table" class="tsd-kind-icon">POSITION_<wbr>ADJUSTMENT_<wbr>PATTERN_<wbr>COORDINATE_<wbr>TABLE</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_qrcode_encoder.matrixutil.html#position_detection_pattern" class="tsd-kind-icon">POSITION_<wbr>DETECTION_<wbr>PATTERN</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_qrcode_encoder.matrixutil.html#type_info_coordinates" class="tsd-kind-icon">TYPE_<wbr>INFO_<wbr>COORDINATES</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_qrcode_encoder.matrixutil.html#type_info_mask_pattern" class="tsd-kind-icon">TYPE_<wbr>INFO_<wbr>MASK_<wbr>PATTERN</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_qrcode_encoder.matrixutil.html#type_info_poly" class="tsd-kind-icon">TYPE_<wbr>INFO_<wbr>POLY</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_qrcode_encoder.matrixutil.html#version_info_poly" class="tsd-kind-icon">VERSION_<wbr>INFO_<wbr>POLY</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="core_qrcode_encoder.matrixutil.html#buildmatrix" class="tsd-kind-icon">build<wbr>Matrix</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="core_qrcode_encoder.matrixutil.html#calculatebchcode" class="tsd-kind-icon">calculateBCHCode</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="core_qrcode_encoder.matrixutil.html#clearmatrix" class="tsd-kind-icon">clear<wbr>Matrix</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="core_qrcode_encoder.matrixutil.html#embedbasicpatterns" class="tsd-kind-icon">embed<wbr>Basic<wbr>Patterns</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_qrcode_encoder.matrixutil.html#embeddarkdotatleftbottomcorner" class="tsd-kind-icon">embed<wbr>Dark<wbr>Dot<wbr>AtLeft<wbr>Bottom<wbr>Corner</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="core_qrcode_encoder.matrixutil.html#embeddatabits" class="tsd-kind-icon">embed<wbr>Data<wbr>Bits</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_qrcode_encoder.matrixutil.html#embedhorizontalseparationpattern" class="tsd-kind-icon">embed<wbr>Horizontal<wbr>Separation<wbr>Pattern</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_qrcode_encoder.matrixutil.html#embedpositionadjustmentpattern" class="tsd-kind-icon">embed<wbr>Position<wbr>Adjustment<wbr>Pattern</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_qrcode_encoder.matrixutil.html#embedpositiondetectionpattern" class="tsd-kind-icon">embed<wbr>Position<wbr>Detection<wbr>Pattern</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_qrcode_encoder.matrixutil.html#embedpositiondetectionpatternsandseparators" class="tsd-kind-icon">embed<wbr>Position<wbr>Detection<wbr>Patterns<wbr>And<wbr>Separators</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_qrcode_encoder.matrixutil.html#embedtimingpatterns" class="tsd-kind-icon">embed<wbr>Timing<wbr>Patterns</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="core_qrcode_encoder.matrixutil.html#embedtypeinfo" class="tsd-kind-icon">embed<wbr>Type<wbr>Info</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_qrcode_encoder.matrixutil.html#embedverticalseparationpattern" class="tsd-kind-icon">embed<wbr>Vertical<wbr>Separation<wbr>Pattern</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="core_qrcode_encoder.matrixutil.html#findmsbset" class="tsd-kind-icon">findMSBSet</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_qrcode_encoder.matrixutil.html#isempty" class="tsd-kind-icon">is<wbr>Empty</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="core_qrcode_encoder.matrixutil.html#maketypeinfobits" class="tsd-kind-icon">make<wbr>Type<wbr>Info<wbr>Bits</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="core_qrcode_encoder.matrixutil.html#makeversioninfobits" class="tsd-kind-icon">make<wbr>Version<wbr>Info<wbr>Bits</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_qrcode_encoder.matrixutil.html#maybeembedpositionadjustmentpatterns" class="tsd-kind-icon">maybe<wbr>Embed<wbr>Position<wbr>Adjustment<wbr>Patterns</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="core_qrcode_encoder.matrixutil.html#maybeembedversioninfo" class="tsd-kind-icon">maybe<wbr>Embed<wbr>Version<wbr>Info</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-private">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Matrix<wbr>Util<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_qrcode_encoder.matrixutil.html" class="tsd-signature-type">MatrixUtil</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/encoder/MatrixUtil.ts#L34">src/core/qrcode/encoder/MatrixUtil.ts:34</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <a href="core_qrcode_encoder.matrixutil.html" class="tsd-signature-type">MatrixUtil</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="position_adjustment_pattern" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> POSITION_<wbr>ADJUSTMENT_<wbr>PATTERN</h3>
+					<div class="tsd-signature tsd-kind-icon">POSITION_<wbr>ADJUSTMENT_<wbr>PATTERN<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = Array.from([Int32Array.from([1, 1, 1, 1, 1]),Int32Array.from([1, 0, 0, 0, 1]),Int32Array.from([1, 0, 1, 0, 1]),Int32Array.from([1, 0, 0, 0, 1]),Int32Array.from([1, 1, 1, 1, 1]),])</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/encoder/MatrixUtil.ts#L50">src/core/qrcode/encoder/MatrixUtil.ts:50</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="position_adjustment_pattern_coordinate_table" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> POSITION_<wbr>ADJUSTMENT_<wbr>PATTERN_<wbr>COORDINATE_<wbr>TABLE</h3>
+					<div class="tsd-signature tsd-kind-icon">POSITION_<wbr>ADJUSTMENT_<wbr>PATTERN_<wbr>COORDINATE_<wbr>TABLE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = Array.from([Int32Array.from([-1, -1, -1, -1, -1, -1, -1]),  // Version 1Int32Array.from([6, 18, -1, -1, -1, -1, -1]),  // Version 2Int32Array.from([6, 22, -1, -1, -1, -1, -1]),  // Version 3Int32Array.from([6, 26, -1, -1, -1, -1, -1]),  // Version 4Int32Array.from([6, 30, -1, -1, -1, -1, -1]),  // Version 5Int32Array.from([6, 34, -1, -1, -1, -1, -1]),  // Version 6Int32Array.from([6, 22, 38, -1, -1, -1, -1]),  // Version 7Int32Array.from([6, 24, 42, -1, -1, -1, -1]),  // Version 8Int32Array.from([6, 26, 46, -1, -1, -1, -1]),  // Version 9Int32Array.from([6, 28, 50, -1, -1, -1, -1]),  // Version 10Int32Array.from([6, 30, 54, -1, -1, -1, -1]),  // Version 11Int32Array.from([6, 32, 58, -1, -1, -1, -1]),  // Version 12Int32Array.from([6, 34, 62, -1, -1, -1, -1]),  // Version 13Int32Array.from([6, 26, 46, 66, -1, -1, -1]),  // Version 14Int32Array.from([6, 26, 48, 70, -1, -1, -1]),  // Version 15Int32Array.from([6, 26, 50, 74, -1, -1, -1]),  // Version 16Int32Array.from([6, 30, 54, 78, -1, -1, -1]),  // Version 17Int32Array.from([6, 30, 56, 82, -1, -1, -1]),  // Version 18Int32Array.from([6, 30, 58, 86, -1, -1, -1]),  // Version 19Int32Array.from([6, 34, 62, 90, -1, -1, -1]),  // Version 20Int32Array.from([6, 28, 50, 72, 94, -1, -1]),  // Version 21Int32Array.from([6, 26, 50, 74, 98, -1, -1]),  // Version 22Int32Array.from([6, 30, 54, 78, 102, -1, -1]),  // Version 23Int32Array.from([6, 28, 54, 80, 106, -1, -1]),  // Version 24Int32Array.from([6, 32, 58, 84, 110, -1, -1]),  // Version 25Int32Array.from([6, 30, 58, 86, 114, -1, -1]),  // Version 26Int32Array.from([6, 34, 62, 90, 118, -1, -1]),  // Version 27Int32Array.from([6, 26, 50, 74, 98, 122, -1]),  // Version 28Int32Array.from([6, 30, 54, 78, 102, 126, -1]),  // Version 29Int32Array.from([6, 26, 52, 78, 104, 130, -1]),  // Version 30Int32Array.from([6, 30, 56, 82, 108, 134, -1]),  // Version 31Int32Array.from([6, 34, 60, 86, 112, 138, -1]),  // Version 32Int32Array.from([6, 30, 58, 86, 114, 142, -1]),  // Version 33Int32Array.from([6, 34, 62, 90, 118, 146, -1]),  // Version 34Int32Array.from([6, 30, 54, 78, 102, 126, 150]),  // Version 35Int32Array.from([6, 24, 50, 76, 102, 128, 154]),  // Version 36Int32Array.from([6, 28, 54, 80, 106, 132, 158]),  // Version 37Int32Array.from([6, 32, 58, 84, 110, 136, 162]),  // Version 38Int32Array.from([6, 26, 54, 82, 110, 138, 166]),  // Version 39Int32Array.from([6, 30, 58, 86, 114, 142, 170]),  // Version 40])</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/encoder/MatrixUtil.ts#L59">src/core/qrcode/encoder/MatrixUtil.ts:59</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="position_detection_pattern" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> POSITION_<wbr>DETECTION_<wbr>PATTERN</h3>
+					<div class="tsd-signature tsd-kind-icon">POSITION_<wbr>DETECTION_<wbr>PATTERN<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = Array.from([Int32Array.from([1, 1, 1, 1, 1, 1, 1]),Int32Array.from([1, 0, 0, 0, 0, 0, 1]),Int32Array.from([1, 0, 1, 1, 1, 0, 1]),Int32Array.from([1, 0, 1, 1, 1, 0, 1]),Int32Array.from([1, 0, 1, 1, 1, 0, 1]),Int32Array.from([1, 0, 0, 0, 0, 0, 1]),Int32Array.from([1, 1, 1, 1, 1, 1, 1]),])</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/encoder/MatrixUtil.ts#L40">src/core/qrcode/encoder/MatrixUtil.ts:40</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="type_info_coordinates" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> TYPE_<wbr>INFO_<wbr>COORDINATES</h3>
+					<div class="tsd-signature tsd-kind-icon">TYPE_<wbr>INFO_<wbr>COORDINATES<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Array</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Int32Array</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = Array.from([Int32Array.from([8, 0]),Int32Array.from([8, 1]),Int32Array.from([8, 2]),Int32Array.from([8, 3]),Int32Array.from([8, 4]),Int32Array.from([8, 5]),Int32Array.from([8, 7]),Int32Array.from([8, 8]),Int32Array.from([7, 8]),Int32Array.from([5, 8]),Int32Array.from([4, 8]),Int32Array.from([3, 8]),Int32Array.from([2, 8]),Int32Array.from([1, 8]),Int32Array.from([0, 8]),])</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/encoder/MatrixUtil.ts#L103">src/core/qrcode/encoder/MatrixUtil.ts:103</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="type_info_mask_pattern" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> TYPE_<wbr>INFO_<wbr>MASK_<wbr>PATTERN</h3>
+					<div class="tsd-signature tsd-kind-icon">TYPE_<wbr>INFO_<wbr>MASK_<wbr>PATTERN<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 21522</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/encoder/MatrixUtil.ts#L126">src/core/qrcode/encoder/MatrixUtil.ts:126</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="type_info_poly" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> TYPE_<wbr>INFO_<wbr>POLY</h3>
+					<div class="tsd-signature tsd-kind-icon">TYPE_<wbr>INFO_<wbr>POLY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 1335</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/encoder/MatrixUtil.ts#L125">src/core/qrcode/encoder/MatrixUtil.ts:125</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="version_info_poly" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> VERSION_<wbr>INFO_<wbr>POLY</h3>
+					<div class="tsd-signature tsd-kind-icon">VERSION_<wbr>INFO_<wbr>POLY<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 7973</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/encoder/MatrixUtil.ts#L122">src/core/qrcode/encoder/MatrixUtil.ts:122</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="buildmatrix" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> build<wbr>Matrix</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">build<wbr>Matrix<span class="tsd-signature-symbol">(</span>dataBits<span class="tsd-signature-symbol">: </span><a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a>, ecLevel<span class="tsd-signature-symbol">: </span><a href="core_qrcode_decoder.errorcorrectionlevel.html" class="tsd-signature-type">ErrorCorrectionLevel</a>, version<span class="tsd-signature-symbol">: </span><a href="core_qrcode_decoder.version.html" class="tsd-signature-type">Version</a>, maskPattern<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, matrix<span class="tsd-signature-symbol">: </span><a href="core_qrcode_encoder.bytematrix.html" class="tsd-signature-type">ByteMatrix</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/encoder/MatrixUtil.ts#L139">src/core/qrcode/encoder/MatrixUtil.ts:139</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>dataBits: <a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a></h5>
+								</li>
+								<li>
+									<h5>ecLevel: <a href="core_qrcode_decoder.errorcorrectionlevel.html" class="tsd-signature-type">ErrorCorrectionLevel</a></h5>
+								</li>
+								<li>
+									<h5>version: <a href="core_qrcode_decoder.version.html" class="tsd-signature-type">Version</a></h5>
+								</li>
+								<li>
+									<h5>maskPattern: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>matrix: <a href="core_qrcode_encoder.bytematrix.html" class="tsd-signature-type">ByteMatrix</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="calculatebchcode" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> calculateBCHCode</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">calculateBCHCode<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, poly<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/encoder/MatrixUtil.ts#L308">src/core/qrcode/encoder/MatrixUtil.ts:308</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>poly: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="clearmatrix" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> clear<wbr>Matrix</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">clear<wbr>Matrix<span class="tsd-signature-symbol">(</span>matrix<span class="tsd-signature-symbol">: </span><a href="core_qrcode_encoder.bytematrix.html" class="tsd-signature-type">ByteMatrix</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/encoder/MatrixUtil.ts#L132">src/core/qrcode/encoder/MatrixUtil.ts:132</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>matrix: <a href="core_qrcode_encoder.bytematrix.html" class="tsd-signature-type">ByteMatrix</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="embedbasicpatterns" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> embed<wbr>Basic<wbr>Patterns</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">embed<wbr>Basic<wbr>Patterns<span class="tsd-signature-symbol">(</span>version<span class="tsd-signature-symbol">: </span><a href="core_qrcode_decoder.version.html" class="tsd-signature-type">Version</a>, matrix<span class="tsd-signature-symbol">: </span><a href="core_qrcode_encoder.bytematrix.html" class="tsd-signature-type">ByteMatrix</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/encoder/MatrixUtil.ts#L160">src/core/qrcode/encoder/MatrixUtil.ts:160</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>version: <a href="core_qrcode_decoder.version.html" class="tsd-signature-type">Version</a></h5>
+								</li>
+								<li>
+									<h5>matrix: <a href="core_qrcode_encoder.bytematrix.html" class="tsd-signature-type">ByteMatrix</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="embeddarkdotatleftbottomcorner" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> embed<wbr>Dark<wbr>Dot<wbr>AtLeft<wbr>Bottom<wbr>Corner</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">embed<wbr>Dark<wbr>Dot<wbr>AtLeft<wbr>Bottom<wbr>Corner<span class="tsd-signature-symbol">(</span>matrix<span class="tsd-signature-symbol">: </span><a href="core_qrcode_encoder.bytematrix.html" class="tsd-signature-type">ByteMatrix</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/encoder/MatrixUtil.ts#L380">src/core/qrcode/encoder/MatrixUtil.ts:380</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>matrix: <a href="core_qrcode_encoder.bytematrix.html" class="tsd-signature-type">ByteMatrix</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="embeddatabits" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> embed<wbr>Data<wbr>Bits</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">embed<wbr>Data<wbr>Bits<span class="tsd-signature-symbol">(</span>dataBits<span class="tsd-signature-symbol">: </span><a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a>, maskPattern<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, matrix<span class="tsd-signature-symbol">: </span><a href="core_qrcode_encoder.bytematrix.html" class="tsd-signature-type">ByteMatrix</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/encoder/MatrixUtil.ts#L228">src/core/qrcode/encoder/MatrixUtil.ts:228</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>dataBits: <a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a></h5>
+								</li>
+								<li>
+									<h5>maskPattern: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>matrix: <a href="core_qrcode_encoder.bytematrix.html" class="tsd-signature-type">ByteMatrix</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="embedhorizontalseparationpattern" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> embed<wbr>Horizontal<wbr>Separation<wbr>Pattern</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">embed<wbr>Horizontal<wbr>Separation<wbr>Pattern<span class="tsd-signature-symbol">(</span>xStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, yStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, matrix<span class="tsd-signature-symbol">: </span><a href="core_qrcode_encoder.bytematrix.html" class="tsd-signature-type">ByteMatrix</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/encoder/MatrixUtil.ts#L387">src/core/qrcode/encoder/MatrixUtil.ts:387</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>xStart: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>yStart: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>matrix: <a href="core_qrcode_encoder.bytematrix.html" class="tsd-signature-type">ByteMatrix</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="embedpositionadjustmentpattern" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> embed<wbr>Position<wbr>Adjustment<wbr>Pattern</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">embed<wbr>Position<wbr>Adjustment<wbr>Pattern<span class="tsd-signature-symbol">(</span>xStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, yStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, matrix<span class="tsd-signature-symbol">: </span><a href="core_qrcode_encoder.bytematrix.html" class="tsd-signature-type">ByteMatrix</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/encoder/MatrixUtil.ts#L409">src/core/qrcode/encoder/MatrixUtil.ts:409</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>xStart: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>yStart: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>matrix: <a href="core_qrcode_encoder.bytematrix.html" class="tsd-signature-type">ByteMatrix</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="embedpositiondetectionpattern" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> embed<wbr>Position<wbr>Detection<wbr>Pattern</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">embed<wbr>Position<wbr>Detection<wbr>Pattern<span class="tsd-signature-symbol">(</span>xStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, yStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, matrix<span class="tsd-signature-symbol">: </span><a href="core_qrcode_encoder.bytematrix.html" class="tsd-signature-type">ByteMatrix</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/encoder/MatrixUtil.ts#L418">src/core/qrcode/encoder/MatrixUtil.ts:418</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>xStart: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>yStart: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>matrix: <a href="core_qrcode_encoder.bytematrix.html" class="tsd-signature-type">ByteMatrix</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="embedpositiondetectionpatternsandseparators" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> embed<wbr>Position<wbr>Detection<wbr>Patterns<wbr>And<wbr>Separators</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">embed<wbr>Position<wbr>Detection<wbr>Patterns<wbr>And<wbr>Separators<span class="tsd-signature-symbol">(</span>matrix<span class="tsd-signature-symbol">: </span><a href="core_qrcode_encoder.bytematrix.html" class="tsd-signature-type">ByteMatrix</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/encoder/MatrixUtil.ts#L428">src/core/qrcode/encoder/MatrixUtil.ts:428</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>matrix: <a href="core_qrcode_encoder.bytematrix.html" class="tsd-signature-type">ByteMatrix</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="embedtimingpatterns" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> embed<wbr>Timing<wbr>Patterns</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">embed<wbr>Timing<wbr>Patterns<span class="tsd-signature-symbol">(</span>matrix<span class="tsd-signature-symbol">: </span><a href="core_qrcode_encoder.bytematrix.html" class="tsd-signature-type">ByteMatrix</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/encoder/MatrixUtil.ts#L363">src/core/qrcode/encoder/MatrixUtil.ts:363</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>matrix: <a href="core_qrcode_encoder.bytematrix.html" class="tsd-signature-type">ByteMatrix</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="embedtypeinfo" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> embed<wbr>Type<wbr>Info</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">embed<wbr>Type<wbr>Info<span class="tsd-signature-symbol">(</span>ecLevel<span class="tsd-signature-symbol">: </span><a href="core_qrcode_decoder.errorcorrectionlevel.html" class="tsd-signature-type">ErrorCorrectionLevel</a>, maskPattern<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, matrix<span class="tsd-signature-symbol">: </span><a href="core_qrcode_encoder.bytematrix.html" class="tsd-signature-type">ByteMatrix</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/encoder/MatrixUtil.ts#L173">src/core/qrcode/encoder/MatrixUtil.ts:173</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ecLevel: <a href="core_qrcode_decoder.errorcorrectionlevel.html" class="tsd-signature-type">ErrorCorrectionLevel</a></h5>
+								</li>
+								<li>
+									<h5>maskPattern: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>matrix: <a href="core_qrcode_encoder.bytematrix.html" class="tsd-signature-type">ByteMatrix</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="embedverticalseparationpattern" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> embed<wbr>Vertical<wbr>Separation<wbr>Pattern</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">embed<wbr>Vertical<wbr>Separation<wbr>Pattern<span class="tsd-signature-symbol">(</span>xStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, yStart<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, matrix<span class="tsd-signature-symbol">: </span><a href="core_qrcode_encoder.bytematrix.html" class="tsd-signature-type">ByteMatrix</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/encoder/MatrixUtil.ts#L398">src/core/qrcode/encoder/MatrixUtil.ts:398</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>xStart: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>yStart: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>matrix: <a href="core_qrcode_encoder.bytematrix.html" class="tsd-signature-type">ByteMatrix</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="findmsbset" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> findMSBSet</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">findMSBSet<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/encoder/MatrixUtil.ts#L279">src/core/qrcode/encoder/MatrixUtil.ts:279</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="isempty" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>Empty</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Empty<span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/encoder/MatrixUtil.ts#L359">src/core/qrcode/encoder/MatrixUtil.ts:359</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>value: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="maketypeinfobits" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> make<wbr>Type<wbr>Info<wbr>Bits</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">make<wbr>Type<wbr>Info<wbr>Bits<span class="tsd-signature-symbol">(</span>ecLevel<span class="tsd-signature-symbol">: </span><a href="core_qrcode_decoder.errorcorrectionlevel.html" class="tsd-signature-type">ErrorCorrectionLevel</a>, maskPattern<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, bits<span class="tsd-signature-symbol">: </span><a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/encoder/MatrixUtil.ts#L327">src/core/qrcode/encoder/MatrixUtil.ts:327</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>ecLevel: <a href="core_qrcode_decoder.errorcorrectionlevel.html" class="tsd-signature-type">ErrorCorrectionLevel</a></h5>
+								</li>
+								<li>
+									<h5>maskPattern: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>bits: <a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="makeversioninfobits" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> make<wbr>Version<wbr>Info<wbr>Bits</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">make<wbr>Version<wbr>Info<wbr>Bits<span class="tsd-signature-symbol">(</span>version<span class="tsd-signature-symbol">: </span><a href="core_qrcode_decoder.version.html" class="tsd-signature-type">Version</a>, bits<span class="tsd-signature-symbol">: </span><a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/encoder/MatrixUtil.ts#L348">src/core/qrcode/encoder/MatrixUtil.ts:348</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>version: <a href="core_qrcode_decoder.version.html" class="tsd-signature-type">Version</a></h5>
+								</li>
+								<li>
+									<h5>bits: <a href="core_common.bitarray.html" class="tsd-signature-type">BitArray</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="maybeembedpositionadjustmentpatterns" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> maybe<wbr>Embed<wbr>Position<wbr>Adjustment<wbr>Patterns</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">maybe<wbr>Embed<wbr>Position<wbr>Adjustment<wbr>Patterns<span class="tsd-signature-symbol">(</span>version<span class="tsd-signature-symbol">: </span><a href="core_qrcode_decoder.version.html" class="tsd-signature-type">Version</a>, matrix<span class="tsd-signature-symbol">: </span><a href="core_qrcode_encoder.bytematrix.html" class="tsd-signature-type">ByteMatrix</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/encoder/MatrixUtil.ts#L460">src/core/qrcode/encoder/MatrixUtil.ts:460</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>version: <a href="core_qrcode_decoder.version.html" class="tsd-signature-type">Version</a></h5>
+								</li>
+								<li>
+									<h5>matrix: <a href="core_qrcode_encoder.bytematrix.html" class="tsd-signature-type">ByteMatrix</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="maybeembedversioninfo" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> maybe<wbr>Embed<wbr>Version<wbr>Info</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">maybe<wbr>Embed<wbr>Version<wbr>Info<span class="tsd-signature-symbol">(</span>version<span class="tsd-signature-symbol">: </span><a href="core_qrcode_decoder.version.html" class="tsd-signature-type">Version</a>, matrix<span class="tsd-signature-symbol">: </span><a href="core_qrcode_encoder.bytematrix.html" class="tsd-signature-type">ByteMatrix</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/qrcode/encoder/MatrixUtil.ts#L204">src/core/qrcode/encoder/MatrixUtil.ts:204</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>version: <a href="core_qrcode_decoder.version.html" class="tsd-signature-type">Version</a></h5>
+								</li>
+								<li>
+									<h5>matrix: <a href="core_qrcode_encoder.bytematrix.html" class="tsd-signature-type">ByteMatrix</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/core_qrcode_encoder.html">core/qrcode/encoder</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_qrcode_encoder.blockpair.html" class="tsd-kind-icon">Block<wbr>Pair</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_qrcode_encoder.bytematrix.html" class="tsd-kind-icon">Byte<wbr>Matrix</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_qrcode_encoder.encoder.html" class="tsd-kind-icon">Encoder</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_qrcode_encoder.maskutil.html" class="tsd-kind-icon">Mask<wbr>Util</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="core_qrcode_encoder.matrixutil.html" class="tsd-kind-icon">Matrix<wbr>Util</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-private">
+								<a href="core_qrcode_encoder.matrixutil.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_qrcode_encoder.matrixutil.html#position_adjustment_pattern" class="tsd-kind-icon">POSITION_<wbr>ADJUSTMENT_<wbr>PATTERN</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_qrcode_encoder.matrixutil.html#position_adjustment_pattern_coordinate_table" class="tsd-kind-icon">POSITION_<wbr>ADJUSTMENT_<wbr>PATTERN_<wbr>COORDINATE_<wbr>TABLE</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_qrcode_encoder.matrixutil.html#position_detection_pattern" class="tsd-kind-icon">POSITION_<wbr>DETECTION_<wbr>PATTERN</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_qrcode_encoder.matrixutil.html#type_info_coordinates" class="tsd-kind-icon">TYPE_<wbr>INFO_<wbr>COORDINATES</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_qrcode_encoder.matrixutil.html#type_info_mask_pattern" class="tsd-kind-icon">TYPE_<wbr>INFO_<wbr>MASK_<wbr>PATTERN</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_qrcode_encoder.matrixutil.html#type_info_poly" class="tsd-kind-icon">TYPE_<wbr>INFO_<wbr>POLY</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_qrcode_encoder.matrixutil.html#version_info_poly" class="tsd-kind-icon">VERSION_<wbr>INFO_<wbr>POLY</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="core_qrcode_encoder.matrixutil.html#buildmatrix" class="tsd-kind-icon">build<wbr>Matrix</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="core_qrcode_encoder.matrixutil.html#calculatebchcode" class="tsd-kind-icon">calculateBCHCode</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="core_qrcode_encoder.matrixutil.html#clearmatrix" class="tsd-kind-icon">clear<wbr>Matrix</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="core_qrcode_encoder.matrixutil.html#embedbasicpatterns" class="tsd-kind-icon">embed<wbr>Basic<wbr>Patterns</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_qrcode_encoder.matrixutil.html#embeddarkdotatleftbottomcorner" class="tsd-kind-icon">embed<wbr>Dark<wbr>Dot<wbr>AtLeft<wbr>Bottom<wbr>Corner</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="core_qrcode_encoder.matrixutil.html#embeddatabits" class="tsd-kind-icon">embed<wbr>Data<wbr>Bits</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_qrcode_encoder.matrixutil.html#embedhorizontalseparationpattern" class="tsd-kind-icon">embed<wbr>Horizontal<wbr>Separation<wbr>Pattern</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_qrcode_encoder.matrixutil.html#embedpositionadjustmentpattern" class="tsd-kind-icon">embed<wbr>Position<wbr>Adjustment<wbr>Pattern</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_qrcode_encoder.matrixutil.html#embedpositiondetectionpattern" class="tsd-kind-icon">embed<wbr>Position<wbr>Detection<wbr>Pattern</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_qrcode_encoder.matrixutil.html#embedpositiondetectionpatternsandseparators" class="tsd-kind-icon">embed<wbr>Position<wbr>Detection<wbr>Patterns<wbr>And<wbr>Separators</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_qrcode_encoder.matrixutil.html#embedtimingpatterns" class="tsd-kind-icon">embed<wbr>Timing<wbr>Patterns</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="core_qrcode_encoder.matrixutil.html#embedtypeinfo" class="tsd-kind-icon">embed<wbr>Type<wbr>Info</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_qrcode_encoder.matrixutil.html#embedverticalseparationpattern" class="tsd-kind-icon">embed<wbr>Vertical<wbr>Separation<wbr>Pattern</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="core_qrcode_encoder.matrixutil.html#findmsbset" class="tsd-kind-icon">findMSBSet</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_qrcode_encoder.matrixutil.html#isempty" class="tsd-kind-icon">is<wbr>Empty</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="core_qrcode_encoder.matrixutil.html#maketypeinfobits" class="tsd-kind-icon">make<wbr>Type<wbr>Info<wbr>Bits</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="core_qrcode_encoder.matrixutil.html#makeversioninfobits" class="tsd-kind-icon">make<wbr>Version<wbr>Info<wbr>Bits</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_qrcode_encoder.matrixutil.html#maybeembedpositionadjustmentpatterns" class="tsd-kind-icon">maybe<wbr>Embed<wbr>Position<wbr>Adjustment<wbr>Patterns</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="core_qrcode_encoder.matrixutil.html#maybeembedversioninfo" class="tsd-kind-icon">maybe<wbr>Embed<wbr>Version<wbr>Info</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_qrcode_encoder.qrcode.html" class="tsd-kind-icon">QRCode</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

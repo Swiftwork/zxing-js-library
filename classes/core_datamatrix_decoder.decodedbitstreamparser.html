@@ -1,0 +1,591 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DecodedBitStreamParser | @zxing/library - v0.18.3</title>
+	<meta name="description" content="Documentation for @zxing/library - v0.18.3">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">@zxing/library - v0.18.3</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/core_datamatrix_decoder.html">core/datamatrix/decoder</a>
+				</li>
+				<li>
+					<a href="core_datamatrix_decoder.decodedbitstreamparser.html">DecodedBitStreamParser</a>
+				</li>
+			</ul>
+			<h1>Class DecodedBitStreamParser</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Data Matrix Codes can encode text as bits in one of several modes, and can use multiple modes
+						in one Data Matrix Code. This class decodes the bits back into text.</p>
+					</div>
+					<p>See ISO 16022:2006, 5.2.1 - 5.2.9.2</p>
+					<dl class="tsd-comment-tags">
+						<dt>author</dt>
+						<dd><p><a href="mailto:&#98;&#x62;&#x72;&#x6f;&#119;&#x6e;&#64;&#103;&#111;&#x6f;&#103;&#x6c;&#101;&#46;&#99;&#x6f;&#109;">&#98;&#x62;&#x72;&#x6f;&#119;&#x6e;&#64;&#103;&#111;&#x6f;&#103;&#x6c;&#101;&#46;&#99;&#x6f;&#109;</a> (Brian Brown)</p>
+						</dd>
+						<dt>author</dt>
+						<dd><p>Sean Owen</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">DecodedBitStreamParser</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_datamatrix_decoder.decodedbitstreamparser.html#c40_basic_set_chars" class="tsd-kind-icon">C40_<wbr>BASIC_<wbr>SET_<wbr>CHARS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_datamatrix_decoder.decodedbitstreamparser.html#c40_shift2_set_chars" class="tsd-kind-icon">C40_<wbr>SHIFT2_<wbr>SET_<wbr>CHARS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_datamatrix_decoder.decodedbitstreamparser.html#text_basic_set_chars" class="tsd-kind-icon">TEXT_<wbr>BASIC_<wbr>SET_<wbr>CHARS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_datamatrix_decoder.decodedbitstreamparser.html#text_shift2_set_chars" class="tsd-kind-icon">TEXT_<wbr>SHIFT2_<wbr>SET_<wbr>CHARS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_datamatrix_decoder.decodedbitstreamparser.html#text_shift3_set_chars" class="tsd-kind-icon">TEXT_<wbr>SHIFT3_<wbr>SET_<wbr>CHARS</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="core_datamatrix_decoder.decodedbitstreamparser.html#decode" class="tsd-kind-icon">decode</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_datamatrix_decoder.decodedbitstreamparser.html#decodeansix12segment" class="tsd-kind-icon">decode<wbr>Ansi<wbr>X12<wbr>Segment</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_datamatrix_decoder.decodedbitstreamparser.html#decodeasciisegment" class="tsd-kind-icon">decode<wbr>Ascii<wbr>Segment</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_datamatrix_decoder.decodedbitstreamparser.html#decodebase256segment" class="tsd-kind-icon">decode<wbr>Base256<wbr>Segment</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_datamatrix_decoder.decodedbitstreamparser.html#decodec40segment" class="tsd-kind-icon">decode<wbr>C40<wbr>Segment</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_datamatrix_decoder.decodedbitstreamparser.html#decodeedifactsegment" class="tsd-kind-icon">decode<wbr>Edifact<wbr>Segment</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_datamatrix_decoder.decodedbitstreamparser.html#decodetextsegment" class="tsd-kind-icon">decode<wbr>Text<wbr>Segment</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_datamatrix_decoder.decodedbitstreamparser.html#parsetwobytes" class="tsd-kind-icon">parse<wbr>Two<wbr>Bytes</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static"><a href="core_datamatrix_decoder.decodedbitstreamparser.html#unrandomize255state" class="tsd-kind-icon">unrandomize255<wbr>State</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="c40_basic_set_chars" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> C40_<wbr>BASIC_<wbr>SET_<wbr>CHARS</h3>
+					<div class="tsd-signature tsd-kind-icon">C40_<wbr>BASIC_<wbr>SET_<wbr>CHARS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [&#x27;*&#x27;, &#x27;*&#x27;, &#x27;*&#x27;, &#x27; &#x27;, &#x27;0&#x27;, &#x27;1&#x27;, &#x27;2&#x27;, &#x27;3&#x27;, &#x27;4&#x27;, &#x27;5&#x27;, &#x27;6&#x27;, &#x27;7&#x27;, &#x27;8&#x27;, &#x27;9&#x27;,&#x27;A&#x27;, &#x27;B&#x27;, &#x27;C&#x27;, &#x27;D&#x27;, &#x27;E&#x27;, &#x27;F&#x27;, &#x27;G&#x27;, &#x27;H&#x27;, &#x27;I&#x27;, &#x27;J&#x27;, &#x27;K&#x27;, &#x27;L&#x27;, &#x27;M&#x27;, &#x27;N&#x27;,&#x27;O&#x27;, &#x27;P&#x27;, &#x27;Q&#x27;, &#x27;R&#x27;, &#x27;S&#x27;, &#x27;T&#x27;, &#x27;U&#x27;, &#x27;V&#x27;, &#x27;W&#x27;, &#x27;X&#x27;, &#x27;Y&#x27;, &#x27;Z&#x27;]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/datamatrix/decoder/DecodedBitStreamParser.ts#L51">src/core/datamatrix/decoder/DecodedBitStreamParser.ts:51</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>See ISO 16022:2006, Annex C Table C.1
+							The C40 Basic Character Set (*&#39;s used for placeholders for the shift values)</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="c40_shift2_set_chars" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> C40_<wbr>SHIFT2_<wbr>SET_<wbr>CHARS</h3>
+					<div class="tsd-signature tsd-kind-icon">C40_<wbr>SHIFT2_<wbr>SET_<wbr>CHARS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [&#x27;!&#x27;, &#x27;&quot;&#x27;, &#x27;#&#x27;, &#x27;$&#x27;, &#x27;%&#x27;, &#x27;&amp;&#x27;, &#x27;\&#x27;&#x27;, &#x27;(&#x27;, &#x27;)&#x27;, &#x27;*&#x27;, &#x27;+&#x27;, &#x27;,&#x27;, &#x27;-&#x27;, &#x27;.&#x27;,&#x27;/&#x27;, &#x27;:&#x27;, &#x27;;&#x27;, &#x27;&lt;&#x27;, &#x27;&#x3D;&#x27;, &#x27;&gt;&#x27;, &#x27;?&#x27;, &#x27;@&#x27;, &#x27;[&#x27;, &#x27;\\&#x27;, &#x27;]&#x27;, &#x27;^&#x27;, &#x27;_&#x27;]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/datamatrix/decoder/DecodedBitStreamParser.ts#L57">src/core/datamatrix/decoder/DecodedBitStreamParser.ts:57</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="text_basic_set_chars" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> TEXT_<wbr>BASIC_<wbr>SET_<wbr>CHARS</h3>
+					<div class="tsd-signature tsd-kind-icon">TEXT_<wbr>BASIC_<wbr>SET_<wbr>CHARS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [&#x27;*&#x27;, &#x27;*&#x27;, &#x27;*&#x27;, &#x27; &#x27;, &#x27;0&#x27;, &#x27;1&#x27;, &#x27;2&#x27;, &#x27;3&#x27;, &#x27;4&#x27;, &#x27;5&#x27;, &#x27;6&#x27;, &#x27;7&#x27;, &#x27;8&#x27;, &#x27;9&#x27;,&#x27;a&#x27;, &#x27;b&#x27;, &#x27;c&#x27;, &#x27;d&#x27;, &#x27;e&#x27;, &#x27;f&#x27;, &#x27;g&#x27;, &#x27;h&#x27;, &#x27;i&#x27;, &#x27;j&#x27;, &#x27;k&#x27;, &#x27;l&#x27;, &#x27;m&#x27;, &#x27;n&#x27;,&#x27;o&#x27;, &#x27;p&#x27;, &#x27;q&#x27;, &#x27;r&#x27;, &#x27;s&#x27;, &#x27;t&#x27;, &#x27;u&#x27;, &#x27;v&#x27;, &#x27;w&#x27;, &#x27;x&#x27;, &#x27;y&#x27;, &#x27;z&#x27;]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/datamatrix/decoder/DecodedBitStreamParser.ts#L66">src/core/datamatrix/decoder/DecodedBitStreamParser.ts:66</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>See ISO 16022:2006, Annex C Table C.2
+							The Text Basic Character Set (*&#39;s used for placeholders for the shift values)</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="text_shift2_set_chars" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> TEXT_<wbr>SHIFT2_<wbr>SET_<wbr>CHARS</h3>
+					<div class="tsd-signature tsd-kind-icon">TEXT_<wbr>SHIFT2_<wbr>SET_<wbr>CHARS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = DecodedBitStreamParser.C40_SHIFT2_SET_CHARS</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/datamatrix/decoder/DecodedBitStreamParser.ts#L73">src/core/datamatrix/decoder/DecodedBitStreamParser.ts:73</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="text_shift3_set_chars" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> TEXT_<wbr>SHIFT3_<wbr>SET_<wbr>CHARS</h3>
+					<div class="tsd-signature tsd-kind-icon">TEXT_<wbr>SHIFT3_<wbr>SET_<wbr>CHARS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = [&#x27;&#x60;&#x27;, &#x27;A&#x27;, &#x27;B&#x27;, &#x27;C&#x27;, &#x27;D&#x27;, &#x27;E&#x27;, &#x27;F&#x27;, &#x27;G&#x27;, &#x27;H&#x27;, &#x27;I&#x27;, &#x27;J&#x27;, &#x27;K&#x27;, &#x27;L&#x27;, &#x27;M&#x27;, &#x27;N&#x27;,&#x27;O&#x27;, &#x27;P&#x27;, &#x27;Q&#x27;, &#x27;R&#x27;, &#x27;S&#x27;, &#x27;T&#x27;, &#x27;U&#x27;, &#x27;V&#x27;, &#x27;W&#x27;, &#x27;X&#x27;, &#x27;Y&#x27;, &#x27;Z&#x27;, &#x27;{&#x27;, &#x27;|&#x27;, &#x27;}&#x27;, &#x27;~&#x27;, String.fromCharCode(127)]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/datamatrix/decoder/DecodedBitStreamParser.ts#L75">src/core/datamatrix/decoder/DecodedBitStreamParser.ts:75</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
+					<a name="decode" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> decode</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">decode<span class="tsd-signature-symbol">(</span>bytes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="core_common.decoderresult.html" class="tsd-signature-type">DecoderResult</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/datamatrix/decoder/DecodedBitStreamParser.ts#L80">src/core/datamatrix/decoder/DecodedBitStreamParser.ts:80</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bytes: <span class="tsd-signature-type">Uint8Array</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="core_common.decoderresult.html" class="tsd-signature-type">DecoderResult</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="decodeansix12segment" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> decode<wbr>Ansi<wbr>X12<wbr>Segment</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">decode<wbr>Ansi<wbr>X12<wbr>Segment<span class="tsd-signature-symbol">(</span>bits<span class="tsd-signature-symbol">: </span><a href="core_common.bitsource.html" class="tsd-signature-type">BitSource</a>, result<span class="tsd-signature-symbol">: </span><a href="core_util.stringbuilder.html" class="tsd-signature-type">StringBuilder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/datamatrix/decoder/DecodedBitStreamParser.ts#L380">src/core/datamatrix/decoder/DecodedBitStreamParser.ts:380</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>See ISO 16022:2006, 5.2.7</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bits: <a href="core_common.bitsource.html" class="tsd-signature-type">BitSource</a></h5>
+								</li>
+								<li>
+									<h5>result: <a href="core_util.stringbuilder.html" class="tsd-signature-type">StringBuilder</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="decodeasciisegment" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> decode<wbr>Ascii<wbr>Segment</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">decode<wbr>Ascii<wbr>Segment<span class="tsd-signature-symbol">(</span>bits<span class="tsd-signature-symbol">: </span><a href="core_common.bitsource.html" class="tsd-signature-type">BitSource</a>, result<span class="tsd-signature-symbol">: </span><a href="core_util.stringbuilder.html" class="tsd-signature-type">StringBuilder</a>, resultTrailer<span class="tsd-signature-symbol">: </span><a href="core_util.stringbuilder.html" class="tsd-signature-type">StringBuilder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../enums/core_datamatrix_decoder.mode.html" class="tsd-signature-type">Mode</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/datamatrix/decoder/DecodedBitStreamParser.ts#L121">src/core/datamatrix/decoder/DecodedBitStreamParser.ts:121</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>See ISO 16022:2006, 5.2.3 and Annex C, Table C.2</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bits: <a href="core_common.bitsource.html" class="tsd-signature-type">BitSource</a></h5>
+								</li>
+								<li>
+									<h5>result: <a href="core_util.stringbuilder.html" class="tsd-signature-type">StringBuilder</a></h5>
+								</li>
+								<li>
+									<h5>resultTrailer: <a href="core_util.stringbuilder.html" class="tsd-signature-type">StringBuilder</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="../enums/core_datamatrix_decoder.mode.html" class="tsd-signature-type">Mode</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="decodebase256segment" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> decode<wbr>Base256<wbr>Segment</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">decode<wbr>Base256<wbr>Segment<span class="tsd-signature-symbol">(</span>bits<span class="tsd-signature-symbol">: </span><a href="core_common.bitsource.html" class="tsd-signature-type">BitSource</a>, result<span class="tsd-signature-symbol">: </span><a href="core_util.stringbuilder.html" class="tsd-signature-type">StringBuilder</a>, byteSegments<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/datamatrix/decoder/DecodedBitStreamParser.ts#L471">src/core/datamatrix/decoder/DecodedBitStreamParser.ts:471</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>See ISO 16022:2006, 5.2.9 and Annex B, B.2</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bits: <a href="core_common.bitsource.html" class="tsd-signature-type">BitSource</a></h5>
+								</li>
+								<li>
+									<h5>result: <a href="core_util.stringbuilder.html" class="tsd-signature-type">StringBuilder</a></h5>
+								</li>
+								<li>
+									<h5>byteSegments: <span class="tsd-signature-type">Uint8Array</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="decodec40segment" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> decode<wbr>C40<wbr>Segment</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">decode<wbr>C40<wbr>Segment<span class="tsd-signature-symbol">(</span>bits<span class="tsd-signature-symbol">: </span><a href="core_common.bitsource.html" class="tsd-signature-type">BitSource</a>, result<span class="tsd-signature-symbol">: </span><a href="core_util.stringbuilder.html" class="tsd-signature-type">StringBuilder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/datamatrix/decoder/DecodedBitStreamParser.ts#L196">src/core/datamatrix/decoder/DecodedBitStreamParser.ts:196</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>See ISO 16022:2006, 5.2.5 and Annex C, Table C.1</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bits: <a href="core_common.bitsource.html" class="tsd-signature-type">BitSource</a></h5>
+								</li>
+								<li>
+									<h5>result: <a href="core_util.stringbuilder.html" class="tsd-signature-type">StringBuilder</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="decodeedifactsegment" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> decode<wbr>Edifact<wbr>Segment</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">decode<wbr>Edifact<wbr>Segment<span class="tsd-signature-symbol">(</span>bits<span class="tsd-signature-symbol">: </span><a href="core_common.bitsource.html" class="tsd-signature-type">BitSource</a>, result<span class="tsd-signature-symbol">: </span><a href="core_util.stringbuilder.html" class="tsd-signature-type">StringBuilder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/datamatrix/decoder/DecodedBitStreamParser.ts#L440">src/core/datamatrix/decoder/DecodedBitStreamParser.ts:440</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>See ISO 16022:2006, 5.2.8 and Annex C Table C.3</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bits: <a href="core_common.bitsource.html" class="tsd-signature-type">BitSource</a></h5>
+								</li>
+								<li>
+									<h5>result: <a href="core_util.stringbuilder.html" class="tsd-signature-type">StringBuilder</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="decodetextsegment" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> decode<wbr>Text<wbr>Segment</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">decode<wbr>Text<wbr>Segment<span class="tsd-signature-symbol">(</span>bits<span class="tsd-signature-symbol">: </span><a href="core_common.bitsource.html" class="tsd-signature-type">BitSource</a>, result<span class="tsd-signature-symbol">: </span><a href="core_util.stringbuilder.html" class="tsd-signature-type">StringBuilder</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/datamatrix/decoder/DecodedBitStreamParser.ts#L285">src/core/datamatrix/decoder/DecodedBitStreamParser.ts:285</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>See ISO 16022:2006, 5.2.6 and Annex C, Table C.2</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>bits: <a href="core_common.bitsource.html" class="tsd-signature-type">BitSource</a></h5>
+								</li>
+								<li>
+									<h5>result: <a href="core_util.stringbuilder.html" class="tsd-signature-type">StringBuilder</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="parsetwobytes" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> parse<wbr>Two<wbr>Bytes</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">parse<wbr>Two<wbr>Bytes<span class="tsd-signature-symbol">(</span>firstByte<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, secondByte<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, result<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/datamatrix/decoder/DecodedBitStreamParser.ts#L427">src/core/datamatrix/decoder/DecodedBitStreamParser.ts:427</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>firstByte: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>secondByte: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>result: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+					<a name="unrandomize255state" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> <span class="tsd-flag ts-flagPrivate">Private</span> unrandomize255<wbr>State</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+						<li class="tsd-signature tsd-kind-icon">unrandomize255<wbr>State<span class="tsd-signature-symbol">(</span>randomizedBase256Codeword<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, base256CodewordPosition<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/Swiftwork/zxing-js-library/blob/c19ed9a/src/core/datamatrix/decoder/DecodedBitStreamParser.ts#L511">src/core/datamatrix/decoder/DecodedBitStreamParser.ts:511</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>See ISO 16022:2006, Annex B, B.2</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>randomizedBase256Codeword: <span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>base256CodewordPosition: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-module">
+						<a href="../modules/core_datamatrix_decoder.html">core/datamatrix/decoder</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-enum tsd-parent-kind-module tsd-is-not-exported">
+						<a href="../enums/core_datamatrix_decoder.mode.html" class="tsd-kind-icon">Mode</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_datamatrix_decoder.bitmatrixparser.html" class="tsd-kind-icon">Bit<wbr>Matrix<wbr>Parser</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_datamatrix_decoder.datablock.html" class="tsd-kind-icon">Data<wbr>Block</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class tsd-parent-kind-module">
+						<a href="core_datamatrix_decoder.decodedbitstreamparser.html" class="tsd-kind-icon">Decoded<wbr>Bit<wbr>Stream<wbr>Parser</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_datamatrix_decoder.decodedbitstreamparser.html#c40_basic_set_chars" class="tsd-kind-icon">C40_<wbr>BASIC_<wbr>SET_<wbr>CHARS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_datamatrix_decoder.decodedbitstreamparser.html#c40_shift2_set_chars" class="tsd-kind-icon">C40_<wbr>SHIFT2_<wbr>SET_<wbr>CHARS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_datamatrix_decoder.decodedbitstreamparser.html#text_basic_set_chars" class="tsd-kind-icon">TEXT_<wbr>BASIC_<wbr>SET_<wbr>CHARS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_datamatrix_decoder.decodedbitstreamparser.html#text_shift2_set_chars" class="tsd-kind-icon">TEXT_<wbr>SHIFT2_<wbr>SET_<wbr>CHARS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_datamatrix_decoder.decodedbitstreamparser.html#text_shift3_set_chars" class="tsd-kind-icon">TEXT_<wbr>SHIFT3_<wbr>SET_<wbr>CHARS</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
+								<a href="core_datamatrix_decoder.decodedbitstreamparser.html#decode" class="tsd-kind-icon">decode</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_datamatrix_decoder.decodedbitstreamparser.html#decodeansix12segment" class="tsd-kind-icon">decode<wbr>Ansi<wbr>X12<wbr>Segment</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_datamatrix_decoder.decodedbitstreamparser.html#decodeasciisegment" class="tsd-kind-icon">decode<wbr>Ascii<wbr>Segment</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_datamatrix_decoder.decodedbitstreamparser.html#decodebase256segment" class="tsd-kind-icon">decode<wbr>Base256<wbr>Segment</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_datamatrix_decoder.decodedbitstreamparser.html#decodec40segment" class="tsd-kind-icon">decode<wbr>C40<wbr>Segment</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_datamatrix_decoder.decodedbitstreamparser.html#decodeedifactsegment" class="tsd-kind-icon">decode<wbr>Edifact<wbr>Segment</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_datamatrix_decoder.decodedbitstreamparser.html#decodetextsegment" class="tsd-kind-icon">decode<wbr>Text<wbr>Segment</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_datamatrix_decoder.decodedbitstreamparser.html#parsetwobytes" class="tsd-kind-icon">parse<wbr>Two<wbr>Bytes</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private tsd-is-static">
+								<a href="core_datamatrix_decoder.decodedbitstreamparser.html#unrandomize255state" class="tsd-kind-icon">unrandomize255<wbr>State</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_datamatrix_decoder.decoder.html" class="tsd-kind-icon">Decoder</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_datamatrix_decoder.ecb.html" class="tsd-kind-icon">ECB</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_datamatrix_decoder.ecblocks.html" class="tsd-kind-icon">ECBlocks</a>
+					</li>
+					<li class=" tsd-kind-class tsd-parent-kind-module">
+						<a href="core_datamatrix_decoder.version.html" class="tsd-kind-icon">Version</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
